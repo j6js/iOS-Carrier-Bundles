@@ -5,7 +5,7 @@
 	<key>DerPriFileVersion</key>
 	<string>6.0.161</string>
 	<key>ShowVoNRSwitch</key>
-	<false/>
+	<true/>
 	<key>IgnoresDeactivateOnNetworkScanServiceMask</key>
 	<integer>131072</integer>
 	<key>Enable5GStandaloneByDefault</key>
@@ -29,7 +29,7 @@
 		<key>Voice</key>
 		<dict>
 			<key>EnableVoNRByDefault</key>
-			<false/>
+			<true/>
 		</dict>
 		<key>XCAP</key>
 		<dict>
@@ -68,7 +68,7 @@
 		</dict>
 	</dict>
 	<key>SupportsVoNR</key>
-	<false/>
+	<true/>
 	<key>DerPriFileName</key>
 	<string>overrides_V53_V54_V57.der.pri</string>
 	<key>ShowVolteSwitch</key>

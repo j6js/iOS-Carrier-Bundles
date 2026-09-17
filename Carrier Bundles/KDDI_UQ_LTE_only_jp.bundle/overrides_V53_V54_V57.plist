@@ -3,7 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>DerPriFileVersion</key>
-	<string>6.0.161</string>
+	<string>6.0.162</string>
+	<key>Show5GWarningUnsupportedCarrier</key>
+	<false/>
+	<key>SatelliteNoDataSuspendDelayTimeout</key>
+	<integer>1</integer>
 	<key>MTU</key>
 	<array>
 		<dict>
@@ -19,10 +23,23 @@
 			<integer>1420</integer>
 		</dict>
 	</array>
+	<key>Show5GSwitch</key>
+	<true/>
 	<key>ShowHighDataModeSwitch</key>
 	<true/>
+	<key>SatelliteSystemTransitionTimeToAllowed</key>
+	<integer>30</integer>
+	<key>ShowSatelliteSwitch</key>
+	<true/>
+	<key>HomeSatelliteSystemName</key>
+	<string>SpaceX UQ mobile</string>
 	<key>IMSConfig</key>
 	<dict>
+		<key>Satellite</key>
+		<dict>
+			<key>IMSServiceMask</key>
+			<integer>2</integer>
+		</dict>
 		<key>Signaling</key>
 		<dict>
 			<key>InviteErrorResponsesToTriggerCSFB</key>
@@ -35,10 +52,61 @@
 			<true/>
 		</dict>
 	</dict>
+	<key>Supports5GStandalone</key>
+	<false/>
 	<key>DerPriFileName</key>
 	<string>overrides_V53_V54_V57.der.pri</string>
+	<key>SupportsSatellite</key>
+	<true/>
+	<key>SatelliteAccessInfo</key>
+	<dict>
+		<key>AllowCarrierApp</key>
+		<true/>
+		<key>AppCategories</key>
+		<array>
+			<string>8011</string>
+			<string>8012</string>
+			<string>8013</string>
+			<string>8014</string>
+			<string>8010</string>
+			<string>8009</string>
+			<string>8008</string>
+			<string>8007</string>
+			<string>8005</string>
+			<string>8003</string>
+			<string>8002</string>
+			<string>8001</string>
+			<string>8004</string>
+			<string>8006</string>
+			<string>8015</string>
+		</array>
+		<key>Tier</key>
+		<integer>4</integer>
+	</dict>
 	<key>DataIndicatorOverrideForNRMmwave</key>
 	<string>NRPlus</string>
+	<key>Enable5GAutoByDefault</key>
+	<true/>
+	<key>SupportsNRNSAInboundRoaming</key>
+	<true/>
+	<key>MMS</key>
+	<dict>
+		<key>MaxMessageSizeOverSatellite</key>
+		<integer>3000</integer>
+	</dict>
+	<key>SatelliteApps</key>
+	<array>
+		<string>jp.uqmobile.uqmobileportalapp.ios</string>
+	</array>
+	<key>PushSettings</key>
+	<dict>
+		<key>Topic</key>
+		<string>com.kddi.Kddientapp</string>
+	</dict>
+	<key>SupportedPLMNs</key>
+	<array>
+		<string>44055</string>
+	</array>
 	<key>apns</key>
 	<array>
 		<dict>
@@ -124,15 +192,5 @@
 			<integer>30</integer>
 		</dict>
 	</array>
-	<key>Supports5GStandalone</key>
-	<false/>
-	<key>Show5GWarningUnsupportedCarrier</key>
-	<false/>
-	<key>Enable5GAutoByDefault</key>
-	<true/>
-	<key>Show5GSwitch</key>
-	<true/>
-	<key>SupportsNRNSAInboundRoaming</key>
-	<true/>
 </dict>
 </plist>

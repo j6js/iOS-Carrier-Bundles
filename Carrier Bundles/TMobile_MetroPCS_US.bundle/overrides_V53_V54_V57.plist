@@ -2,18 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>SupportsVoNR</key>
-	<true/>
 	<key>DerPriFileVersion</key>
 	<string>6.0.161</string>
 	<key>Show5GWarningUnsupportedCarrier</key>
 	<false/>
 	<key>Show5GStandaloneSwitch</key>
 	<true/>
-	<key>_Exclude</key>
-	<array>
-		<string>EnableLTEAfterUpgrade</string>
-	</array>
+	<key>SatelliteNoDataSuspendDelayTimeout</key>
+	<integer>1</integer>
 	<key>MTU</key>
 	<array>
 		<dict>
@@ -29,14 +25,41 @@
 			<integer>1436</integer>
 		</dict>
 	</array>
+	<key>_Exclude</key>
+	<array>
+		<string>EnableLTEAfterUpgrade</string>
+	</array>
 	<key>Enable5GStandaloneByDefault</key>
 	<true/>
 	<key>Show5GSwitch</key>
 	<true/>
-	<key>ShowHighDataModeSwitch</key>
-	<true/>
 	<key>IPv6SupportedDataModeMask</key>
 	<integer>106527</integer>
+	<key>SatelliteSystemTransitionTimeToAllowed</key>
+	<integer>5</integer>
+	<key>ShowHighDataModeSwitch</key>
+	<true/>
+	<key>ShowSatelliteSwitch</key>
+	<true/>
+	<key>Location</key>
+	<dict>
+		<key>EmergencyLocation</key>
+		<dict>
+			<key>AugmentedEmergencyAction</key>
+			<dict>
+				<key>AML</key>
+				<dict>
+					<key>SMSOverNAS</key>
+					<dict>
+						<key>SMSDestination</key>
+						<string>9265</string>
+						<key>EnableForSatellitePLMNs</key>
+						<true/>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+	</dict>
 	<key>IMSConfig</key>
 	<dict>
 		<key>SMS</key>
@@ -64,8 +87,20 @@
 			</dict>
 		</dict>
 	</dict>
+	<key>CarrierEntitlements</key>
+	<dict>
+		<key>SupportedEntitlements</key>
+		<integer>4720025</integer>
+	</dict>
 	<key>DerPriFileName</key>
 	<string>overrides_V53_V54_V57.der.pri</string>
+	<key>SupportsSatellite</key>
+	<true/>
+	<key>SatelliteAccessInfo</key>
+	<dict>
+		<key>AllowCarrierApp</key>
+		<true/>
+	</dict>
 	<key>AllowSAOnWiFiAssociation</key>
 	<true/>
 	<key>DataIndicatorOverrideForNRMmwave</key>
@@ -76,6 +111,10 @@
 	<true/>
 	<key>SupportsNRNSAInboundRoaming</key>
 	<true/>
+	<key>SatelliteApps</key>
+	<array>
+		<string>com.metropcs.mymetro</string>
+	</array>
 	<key>TechSettings</key>
 	<dict>
 		<key>SuppressSAInOverCellHandover</key>
@@ -83,117 +122,9 @@
 	</dict>
 	<key>Enable5GStandaloneAfterUpgrade</key>
 	<true/>
-	<key>apns</key>
-	<array>
-		<dict>
-			<key>configuration</key>
-			<array>
-				<dict>
-					<key>type-mask</key>
-					<integer>32769</integer>
-					<key>password</key>
-					<string></string>
-					<key>AllowedProtocolMaskInDomesticRoaming</key>
-					<integer>1</integer>
-					<key>enableXLAT464</key>
-					<true/>
-					<key>AllowedProtocolMaskInRoaming</key>
-					<integer>1</integer>
-					<key>username</key>
-					<string></string>
-					<key>apn</key>
-					<string>fast.metropcs.com</string>
-					<key>AllowedProtocolMask</key>
-					<integer>2</integer>
-				</dict>
-				<dict>
-					<key>AlwaysOnPDU</key>
-					<true/>
-					<key>Support5GSaHandOver</key>
-					<true/>
-					<key>AllowedProtocolMaskInDomesticRoaming</key>
-					<integer>3</integer>
-					<key>password</key>
-					<string></string>
-					<key>tech-type-mask</key>
-					<integer>131072</integer>
-					<key>AllowedProtocolMaskInRoaming</key>
-					<integer>3</integer>
-					<key>SupportSwitchOver</key>
-					<true/>
-					<key>type-mask</key>
-					<integer>131072</integer>
-					<key>username</key>
-					<string></string>
-					<key>apn</key>
-					<string>ims</string>
-					<key>AllowedProtocolMask</key>
-					<integer>2</integer>
-				</dict>
-				<dict>
-					<key>type-mask</key>
-					<integer>1048582</integer>
-					<key>password</key>
-					<string></string>
-					<key>AllowedProtocolMaskInDomesticRoaming</key>
-					<integer>1</integer>
-					<key>tech-type-mask</key>
-					<integer>1048582</integer>
-					<key>enableXLAT464</key>
-					<true/>
-					<key>AllowedProtocolMaskInRoaming</key>
-					<integer>1</integer>
-					<key>username</key>
-					<string></string>
-					<key>apn</key>
-					<string>tmus</string>
-					<key>AllowedProtocolMask</key>
-					<integer>2</integer>
-				</dict>
-				<dict>
-					<key>type-mask</key>
-					<integer>16</integer>
-					<key>password</key>
-					<string></string>
-					<key>AllowedProtocolMaskInDomesticRoaming</key>
-					<integer>1</integer>
-					<key>enableXLAT464</key>
-					<true/>
-					<key>AllowedProtocolMaskInRoaming</key>
-					<integer>1</integer>
-					<key>username</key>
-					<string></string>
-					<key>apn</key>
-					<string>pcweb.metropcs.com</string>
-					<key>AllowedProtocolMask</key>
-					<integer>2</integer>
-				</dict>
-				<dict>
-					<key>AlwaysOnPDU</key>
-					<true/>
-					<key>password</key>
-					<string></string>
-					<key>AllowedProtocolMaskInDomesticRoaming</key>
-					<integer>3</integer>
-					<key>tech-type-mask</key>
-					<integer>262144</integer>
-					<key>type-mask</key>
-					<integer>262144</integer>
-					<key>AllowedProtocolMaskInRoaming</key>
-					<integer>3</integer>
-					<key>username</key>
-					<string></string>
-					<key>apn</key>
-					<string>sos</string>
-					<key>AllowedProtocolMask</key>
-					<integer>2</integer>
-				</dict>
-			</array>
-			<key>technology-mask</key>
-			<integer>25</integer>
-		</dict>
-	</array>
 	<key>Enable5GAutoAfterUpgrade</key>
+	<true/>
+	<key>SupportsVoNR</key>
 	<true/>
 </dict>
 </plist>

@@ -4,14 +4,12 @@
 <dict>
 	<key>CarrierEntitlements</key>
 	<dict>
-		<key>SupportPhysicalSIMtoESIMTransfer</key>
-		<true/>
-		<key>SupportsOnDevicePhysicalSIMConvert</key>
-		<true/>
+		<key>UpdatePeriod</key>
+		<integer>168</integer>
 		<key>SupportSecureIntent</key>
 		<true/>
-		<key>ProtocolVersion</key>
-		<string>2</string>
+		<key>ServerAddress</key>
+		<string>https://es-de.vodafone.com:4445/ium-OEMInterface/servlet/IUMServlet</string>
 		<key>ProvisioningRecheckPeriod</key>
 		<integer>24</integer>
 		<key>Authentication</key>
@@ -21,18 +19,22 @@
 			<key>Username</key>
 			<string>0$IMSI@nai.epc.mnc$MNC.mcc$MCC.3gppnetwork.org</string>
 		</dict>
+		<key>UserAgent</key>
+		<string>Entitlement/$version ($device) iOS/$iOSVersion</string>
 		<key>SupportedEntitlements</key>
-		<integer>109568</integer>
-		<key>ServerAddress</key>
-		<string>https://es-de.vodafone.com:4445/ium-OEMInterface/servlet/IUMServlet</string>
+		<integer>4303872</integer>
+		<key>SupportedAuthorizationTokens</key>
+		<integer>2</integer>
+		<key>SupportPhysicalSIMtoESIMTransfer</key>
+		<true/>
+		<key>ProtocolVersion</key>
+		<string>2</string>
 		<key>SupportedActions</key>
 		<array>
 			<string>TransferSIMService</string>
 		</array>
-		<key>UpdatePeriod</key>
-		<integer>168</integer>
-		<key>UserAgent</key>
-		<string>Entitlement/$version ($device) iOS/$iOSVersion</string>
+		<key>SupportsOnDevicePhysicalSIMConvert</key>
+		<true/>
 	</dict>
 	<key>CellularPlanProvisioningSettings</key>
 	<dict>
@@ -506,8 +508,6 @@
 		<key>ShowBusinessMessagingSwitch</key>
 		<true/>
 		<key>SupportsE2EE</key>
-		<false/>
-		<key>ShowRCSSwitch</key>
 		<true/>
 		<key>EnableRCSByDefault</key>
 		<true/>

@@ -359,8 +359,6 @@
 			<integer>6</integer>
 		</dict>
 	</array>
-	<key>SuppressSimToolkitSendShortMessageNotifications</key>
-	<true/>
 	<key>IgnoresDeactivateOnNetworkScanServiceMask</key>
 	<integer>131072</integer>
 	<key>IMSConfig</key>
@@ -622,6 +620,8 @@
 			<true/>
 		</dict>
 	</dict>
+	<key>SuppressSimToolkitSendShortMessageNotifications</key>
+	<true/>
 	<key>VVMIgnoresIntlDataRoaming</key>
 	<false/>
 	<key>AllowedServicesTypeMaskOnInternet</key>
@@ -698,6 +698,19 @@
 			<string>Orange F</string>
 		</dict>
 	</array>
+	<key>CarrierSpace</key>
+	<dict>
+		<key>SupportsPlans</key>
+		<false/>
+		<key>TeamIDList</key>
+		<array>
+			<string>JNVAG2CN37</string>
+		</array>
+		<key>SupportsUsage</key>
+		<false/>
+		<key>SupportsApps</key>
+		<true/>
+	</dict>
 	<key>CarrierName</key>
 	<string>Orange France</string>
 	<key>SupportsImsCapability</key>
@@ -719,5 +732,10 @@
 	<string>https://assistance.orange.fr/mobile-tablette/tous-les-mobiles-et-tablettes/installer-et-utiliser/communiquer/gerer-les-appels/emettre-un-appel/voix-4g-volte-connaitre-les-conditions-d-eligibilite-et-gerer-vos-services-incompatibles_154006-302982</string>
 	<key>VoWiFiCustomerCareWebsite</key>
 	<string>https://assistance.orange.fr/mobile-tablette/tous-les-mobiles-et-tablettes/installer-et-utiliser/communiquer/gerer-les-appels/emettre-un-appel/appels-wi-fi-appeler-grace-au-reseau-wifi_183036-729530#onglet1</string>
+	<key>CarrierAppDiscoverability</key>
+	<dict>
+		<key>AllowCarrierSpaceApp</key>
+		<true/>
+	</dict>
 </dict>
 </plist>

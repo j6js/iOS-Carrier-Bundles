@@ -2,9 +2,86 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>DataIndicatorOverrideForNRMmwave</key>
+	<string>NRPlus</string>
 	<key>DerPriFileVersion</key>
-	<string>0.1.161</string>
+	<string>6.0.161</string>
 	<key>DerPriFileName</key>
 	<string>overrides_V53_V54_V57.der.pri</string>
+	<key>Enable5GStandaloneByDefault</key>
+	<true/>
+	<key>Show5GStandaloneSwitchOnlyWhenEntitled</key>
+	<true/>
+	<key>ShowVoNRSwitch</key>
+	<true/>
+	<key>SupportsVoNR</key>
+	<true/>
+	<key>AllowSAOnWiFiAssociation</key>
+	<true/>
+	<key>apns</key>
+	<array>
+		<dict>
+			<key>type-mask</key>
+			<integer>32817</integer>
+			<key>password</key>
+			<string></string>
+			<key>enableXLAT464</key>
+			<true/>
+			<key>AllowedProtocolMaskInRoaming</key>
+			<integer>1</integer>
+			<key>username</key>
+			<string></string>
+			<key>apn</key>
+			<string>internet</string>
+			<key>AllowedProtocolMask</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>password</key>
+			<string>vodafone</string>
+			<key>username</key>
+			<string>vodafone</string>
+			<key>apn</key>
+			<string>mms</string>
+			<key>type-mask</key>
+			<integer>4</integer>
+		</dict>
+		<dict>
+			<key>type-mask</key>
+			<integer>131072</integer>
+			<key>password</key>
+			<string></string>
+			<key>tech-type-mask</key>
+			<integer>131072</integer>
+			<key>Support5GSaHandOver</key>
+			<true/>
+			<key>SupportSwitchOver</key>
+			<true/>
+			<key>username</key>
+			<string></string>
+			<key>apn</key>
+			<string>ims</string>
+			<key>AllowNoDNS</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>Show5GStandaloneSwitch</key>
+	<true/>
+	<key>IMSConfig</key>
+	<dict>
+		<key>SMS</key>
+		<dict>
+			<key>SupportedDomains</key>
+			<dict>
+				<key>NR</key>
+				<true/>
+			</dict>
+		</dict>
+		<key>Voice</key>
+		<dict>
+			<key>EnableVoNRByDefault</key>
+			<true/>
+		</dict>
+	</dict>
 </dict>
 </plist>

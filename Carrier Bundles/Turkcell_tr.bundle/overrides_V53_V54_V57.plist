@@ -2,21 +2,92 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>DerPriFileName</key>
-	<string>overrides_V53_V54_V57.der.pri</string>
-	<key>Show4GSwitchWith5G</key>
+	<key>DerPriFileVersion</key>
+	<string>6.0.161</string>
+	<key>ShowVoNRSwitch</key>
+	<true/>
+	<key>AllowSAOnWiFiAssociation</key>
 	<true/>
 	<key>SupportsSimWithNoMsisdn</key>
 	<true/>
-	<key>DerPriFileVersion</key>
-	<string>0.1.161</string>
 	<key>IMSConfig</key>
 	<dict>
-		<key>Signaling</key>
+		<key>SMS</key>
 		<dict>
-			<key>ussdEnabled</key>
+			<key>SupportedDomains</key>
+			<dict>
+				<key>LTE</key>
+				<true/>
+				<key>NR</key>
+				<true/>
+			</dict>
+		</dict>
+		<key>Voice</key>
+		<dict>
+			<key>EnableVoNRByDefault</key>
 			<true/>
 		</dict>
 	</dict>
+	<key>SupportsVoNR</key>
+	<true/>
+	<key>DerPriFileName</key>
+	<string>overrides_V53_V54_V57.der.pri</string>
+	<key>DataIndicatorOverrideForNRMmwave</key>
+	<string>NRPlus</string>
+	<key>ShowVolteSwitch</key>
+	<false/>
+	<key>Show5GStandaloneSwitch</key>
+	<true/>
+	<key>apns</key>
+	<array>
+		<dict>
+			<key>password</key>
+			<string>mms</string>
+			<key>username</key>
+			<string>mms</string>
+			<key>apn</key>
+			<string>mms</string>
+			<key>type-mask</key>
+			<integer>4</integer>
+		</dict>
+		<dict>
+			<key>type-mask</key>
+			<integer>32817</integer>
+			<key>password</key>
+			<string></string>
+			<key>enableXLAT464</key>
+			<true/>
+			<key>AllowedProtocolMaskInRoaming</key>
+			<integer>3</integer>
+			<key>username</key>
+			<string></string>
+			<key>apn</key>
+			<string>internet</string>
+			<key>AllowedProtocolMask</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>type-mask</key>
+			<integer>131072</integer>
+			<key>Support5GSaHandOver</key>
+			<true/>
+			<key>password</key>
+			<string></string>
+			<key>tech-type-mask</key>
+			<integer>131072</integer>
+			<key>SupportSwitchOver</key>
+			<true/>
+			<key>username</key>
+			<string></string>
+			<key>apn</key>
+			<string>ims</string>
+			<key>AllowedProtocolMask</key>
+			<integer>2</integer>
+		</dict>
+	</array>
+	<key>Show5GSwitch</key>
+	<true/>
+	<key>Enable5GStandaloneByDefault</key>
+	<true/>
 </dict>
 </plist>

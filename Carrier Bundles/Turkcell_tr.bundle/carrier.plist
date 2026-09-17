@@ -540,9 +540,13 @@ QMpSe63CwucKP1RO+TIi7xkRwSl5BgQToxJ0z6J0X10bi6FSeBaMYG996wdurEkj</string>
 			<true/>
 			<key>AdditionalContactParams</key>
 			<dict>
+				<key>REGISTER</key>
+				<string>+g.3gpp.nw-init-ussi</string>
 				<key>REGISTER,INVITE,INVITE:*</key>
 				<string>+g.3gpp.mid-call;+g.3gpp.srvcc-alerting;+g.3gpp.ps2cs-srvcc-orig-pre-alerting</string>
 			</dict>
+			<key>AllowIncomingUssdSessions</key>
+			<true/>
 			<key>TriggerCSFBOnSDPError</key>
 			<true/>
 			<key>AlwaysAddSipInstance</key>
@@ -550,6 +554,8 @@ QMpSe63CwucKP1RO+TIi7xkRwSl5BgQToxJ0z6J0X10bi6FSeBaMYG996wdurEkj</string>
 			<key>SupportPEarlyMediaHeader</key>
 			<true/>
 			<key>UseCIDUrlInPIDF</key>
+			<true/>
+			<key>ussdEnabled</key>
 			<true/>
 			<key>ForbiddenRegistrationErrorCodes</key>
 			<string>-4XX</string>

@@ -726,6 +726,8 @@
 		<false/>
 		<key>SupportsEmergencyRTT</key>
 		<false/>
+		<key>SupportsTTY</key>
+		<false/>
 	</dict>
 	<key>MyAccountURLTitle</key>
 	<string>My Account</string>

@@ -34,6 +34,11 @@
 		<key>UserAgent</key>
 		<string>Entitlement/$version ($device) iOS/$iOSVersion  Carrier Settings/$carrierBundleVersion</string>
 	</dict>
+	<key>EmergencyCalling</key>
+	<dict>
+		<key>PrioritizeNetworkNumbers</key>
+		<true/>
+	</dict>
 	<key>OTASoftwareUpdate</key>
 	<dict>
 		<key>SoftwareUpdateOptInRequired</key>

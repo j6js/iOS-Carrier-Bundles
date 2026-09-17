@@ -279,7 +279,7 @@
 	<key>PhoneNumberRegistrationGatewayAddress</key>
 	<string>+447860015000</string>
 	<key>IPv6SupportedDataModeMask</key>
-	<integer>12319</integer>
+	<integer>110623</integer>
 	<key>OverrideOperatorWiFiName</key>
 	<string>Türk Telekom Wi-Fi</string>
 	<key>MMS</key>

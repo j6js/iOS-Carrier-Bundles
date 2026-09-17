@@ -354,47 +354,49 @@
 	<dict>
 		<key>Signaling</key>
 		<dict>
-			<key>strictCallFlows</key>
-			<true/>
-			<key>DropRegistrationOnSRVCC</key>
-			<true/>
-			<key>InviteErrorResponsesToTriggerCSFB</key>
-			<string>3XX,4XX,5XX,6XX,-402,-403,-404,-412,-422,-429,-480,-486,-487,-600,-603,-604,-605,-607</string>
-			<key>UseCIDUrlInPIDF</key>
-			<true/>
-			<key>SecurityAgreementAlgs</key>
-			<string>ipsec-3gpp;alg=hmac-md5-96;ealg=aes-cbc;mod=trans;prot=esp,ipsec-3gpp;alg=hmac-md5-96;ealg=null;mod=trans;prot=esp,ipsec-3gpp;alg=hmac-sha-1-96;ealg=aes-cbc;mod=trans;prot=esp;,ipsec-3gpp;alg=hmac-sha-1-96;ealg=null;mod=trans;prot=esp</string>
-			<key>UseFakeSAsForDeregistration</key>
-			<true/>
-			<key>SupportPEarlyMediaHeader</key>
-			<true/>
-			<key>RingbackTimerSeconds</key>
-			<integer>45</integer>
-			<key>RingingTimerSeconds</key>
-			<integer>95</integer>
-			<key>WaitForRingingTimerMTSeconds</key>
-			<integer>15</integer>
-			<key>EarlyMediaNeedsHeader</key>
-			<true/>
-			<key>AlwaysSendSessionProgress</key>
-			<true/>
-			<key>CountryOfOriginationFormat</key>
-			<string>PANI</string>
-			<key>UseOutgoingSipUri</key>
-			<false/>
-			<key>Preconditions</key>
-			<string>Supported</string>
 			<key>AdditionalContactParams</key>
 			<dict>
 				<key>REGISTER,INVITE,INVITE:*</key>
 				<string>+g.3gpp.mid-call;+g.3gpp.srvcc-alerting;+g.3gpp.ps2cs-srvcc-orig-pre-alerting</string>
 			</dict>
-			<key>AlwaysAddSipInstance</key>
-			<true/>
-			<key>UseIPSec</key>
-			<true/>
+			<key>UseOutgoingSipUri</key>
+			<false/>
 			<key>TriggerCSFBOnSDPError</key>
 			<true/>
+			<key>AlwaysAddSipInstance</key>
+			<true/>
+			<key>UseFakeSAsForDeregistration</key>
+			<true/>
+			<key>SupportPEarlyMediaHeader</key>
+			<true/>
+			<key>UseCIDUrlInPIDF</key>
+			<true/>
+			<key>EarlyMediaNeedsHeader</key>
+			<true/>
+			<key>strictCallFlows</key>
+			<true/>
+			<key>AlwaysAddGeolocationForEmergencyCalls</key>
+			<true/>
+			<key>InviteErrorResponsesToTriggerCSFB</key>
+			<string>3XX,4XX,5XX,6XX,-402,-403,-404,-412,-422,-429,-480,-486,-487,-600,-603,-604,-605,-607</string>
+			<key>AlwaysSendSessionProgress</key>
+			<true/>
+			<key>DropRegistrationOnSRVCC</key>
+			<true/>
+			<key>RingbackTimerSeconds</key>
+			<integer>45</integer>
+			<key>WaitForRingingTimerMTSeconds</key>
+			<integer>15</integer>
+			<key>CountryOfOriginationFormat</key>
+			<string>PANI</string>
+			<key>Preconditions</key>
+			<string>Supported</string>
+			<key>UseIPSec</key>
+			<true/>
+			<key>RingingTimerSeconds</key>
+			<integer>95</integer>
+			<key>SecurityAgreementAlgs</key>
+			<string>ipsec-3gpp;alg=hmac-md5-96;ealg=aes-cbc;mod=trans;prot=esp,ipsec-3gpp;alg=hmac-md5-96;ealg=null;mod=trans;prot=esp,ipsec-3gpp;alg=hmac-sha-1-96;ealg=aes-cbc;mod=trans;prot=esp;,ipsec-3gpp;alg=hmac-sha-1-96;ealg=null;mod=trans;prot=esp</string>
 		</dict>
 		<key>Voice</key>
 		<dict>

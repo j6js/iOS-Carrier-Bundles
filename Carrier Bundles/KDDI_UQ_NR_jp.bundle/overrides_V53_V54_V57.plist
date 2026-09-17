@@ -7,7 +7,7 @@
 	<key>Enable5GStandaloneByDefault</key>
 	<true/>
 	<key>DerPriFileVersion</key>
-	<string>6.0.162</string>
+	<string>6.0.163</string>
 	<key>IMSConfig</key>
 	<dict>
 		<key>Emergency</key>

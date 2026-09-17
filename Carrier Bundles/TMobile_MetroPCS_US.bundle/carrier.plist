@@ -871,38 +871,106 @@
 			<key>configuration</key>
 			<array>
 				<dict>
+					<key>type-mask</key>
+					<integer>1081351</integer>
 					<key>password</key>
 					<string></string>
+					<key>AllowedProtocolMaskInDomesticRoaming</key>
+					<integer>1</integer>
+					<key>enableXLAT464</key>
+					<true/>
+					<key>AllowedProtocolMaskInRoaming</key>
+					<integer>1</integer>
 					<key>username</key>
 					<string></string>
 					<key>apn</key>
-					<string>beta</string>
+					<string>fast.metropcs.com</string>
+					<key>AllowedProtocolMask</key>
+					<integer>2</integer>
+				</dict>
+				<dict>
+					<key>AlwaysOnPDU</key>
+					<true/>
+					<key>Support5GSaHandOver</key>
+					<true/>
+					<key>AllowedProtocolMaskInDomesticRoaming</key>
+					<integer>3</integer>
+					<key>password</key>
+					<string></string>
+					<key>tech-type-mask</key>
+					<integer>131072</integer>
+					<key>AllowedProtocolMaskInRoaming</key>
+					<integer>3</integer>
+					<key>SupportSwitchOver</key>
+					<true/>
 					<key>type-mask</key>
-					<integer>32775</integer>
+					<integer>131072</integer>
+					<key>username</key>
+					<string></string>
+					<key>apn</key>
+					<string>ims</string>
+					<key>AllowedProtocolMask</key>
+					<integer>2</integer>
 				</dict>
 				<dict>
 					<key>password</key>
 					<string></string>
+					<key>AllowedProtocolMaskInDomesticRoaming</key>
+					<integer>1</integer>
+					<key>tech-type-mask</key>
+					<integer>1048582</integer>
+					<key>enableXLAT464</key>
+					<true/>
+					<key>AllowedProtocolMaskInRoaming</key>
+					<integer>1</integer>
 					<key>username</key>
 					<string></string>
 					<key>apn</key>
-					<string>beta</string>
-					<key>type-mask</key>
-					<integer>32774</integer>
+					<string>tmus</string>
+					<key>AllowedProtocolMask</key>
+					<integer>2</integer>
 				</dict>
 				<dict>
+					<key>type-mask</key>
+					<integer>16</integer>
 					<key>password</key>
 					<string></string>
+					<key>AllowedProtocolMaskInDomesticRoaming</key>
+					<integer>1</integer>
+					<key>enableXLAT464</key>
+					<true/>
+					<key>AllowedProtocolMaskInRoaming</key>
+					<integer>1</integer>
 					<key>username</key>
 					<string></string>
 					<key>apn</key>
 					<string>pcweb.metropcs.com</string>
+					<key>AllowedProtocolMask</key>
+					<integer>2</integer>
+				</dict>
+				<dict>
+					<key>AlwaysOnPDU</key>
+					<true/>
+					<key>password</key>
+					<string></string>
+					<key>AllowedProtocolMaskInDomesticRoaming</key>
+					<integer>3</integer>
+					<key>tech-type-mask</key>
+					<integer>262144</integer>
 					<key>type-mask</key>
-					<integer>16</integer>
+					<integer>262144</integer>
+					<key>AllowedProtocolMaskInRoaming</key>
+					<integer>3</integer>
+					<key>username</key>
+					<string></string>
+					<key>apn</key>
+					<string>sos</string>
+					<key>AllowedProtocolMask</key>
+					<integer>2</integer>
 				</dict>
 			</array>
 			<key>technology-mask</key>
-			<integer>9</integer>
+			<integer>25</integer>
 		</dict>
 	</array>
 	<key>EncryptedIdentity</key>

@@ -133,21 +133,19 @@
 			<integer>360</integer>
 			<integer>600</integer>
 		</array>
-		<key>MinCompatibleWatchOS</key>
-		<string>4.3</string>
-		<key>ProvisioningMethod</key>
-		<string>CarrierFlow</string>
 		<key>SupportedSKUs</key>
 		<array>
 			<string>SKU_EU</string>
 			<string>SKU_POST2018_ALL</string>
 		</array>
+		<key>MinCompatibleWatchOS</key>
+		<string>4.3</string>
+		<key>ProvisioningMethod</key>
+		<string>CarrierFlow</string>
 		<key>RequireLiveIDCheck</key>
 		<true/>
 		<key>SupportsFauxCard</key>
 		<false/>
-		<key>GServerURL</key>
-		<string>https://sm-v4-031-a-gtm.pr.go-esim.com</string>
 	</dict>
 	<key>ShowVolteWarningUnsupportedCarrier</key>
 	<false/>
@@ -172,11 +170,11 @@
 						<string>ESP</string>
 						<key>EncryptionAlgorithm</key>
 						<array>
-							<string>AES-128</string>
+							<string>AES-256</string>
 						</array>
 						<key>IntegrityAlgorithm</key>
 						<array>
-							<string>SHA1-96</string>
+							<string>SHA2-256</string>
 						</array>
 						<key>SecureRekey</key>
 						<integer>0</integer>
@@ -216,9 +214,9 @@
 					<key>EncryptionAlgorithm</key>
 					<string>AES-256</string>
 					<key>IntegrityAlgorithm</key>
-					<string>SHA1-96</string>
+					<string>SHA2-256</string>
 					<key>DHGroup</key>
-					<integer>2</integer>
+					<integer>14</integer>
 					<key>AuthenticationMethod</key>
 					<string>None</string>
 					<key>Lifetime</key>
@@ -534,16 +532,18 @@
 		<true/>
 		<key>Media</key>
 		<dict>
-			<key>InactivityTimerRTPSeconds</key>
-			<integer>20</integer>
+			<key>UseRestrictiveDirectionWhenCreatingAnswer</key>
+			<false/>
 			<key>ModeSetAMRWB</key>
 			<string></string>
 			<key>RTCPIntervalSeconds</key>
 			<string>5</string>
 			<key>IncludeSDPModeChangeCapability</key>
 			<true/>
-			<key>UseRestrictiveDirectionWhenCreatingAnswer</key>
-			<false/>
+			<key>InactivityTimerRTPSeconds</key>
+			<integer>20</integer>
+			<key>RingbackTone</key>
+			<string>UK</string>
 		</dict>
 		<key>Voice</key>
 		<dict>

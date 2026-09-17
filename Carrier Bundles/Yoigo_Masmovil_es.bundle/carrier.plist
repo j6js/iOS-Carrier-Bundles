@@ -36,6 +36,8 @@
 	<true/>
 	<key>MyAccountURLTitle</key>
 	<string>MASMOVIL</string>
+	<key>AllowedServicesTypeMaskOnInternet</key>
+	<integer>32768</integer>
 	<key>RoamingVoicemailPilotNumber</key>
 	<string>+34656242242</string>
 	<key>ShowVolteWarningUnsupportedCarrier</key>
@@ -211,6 +213,26 @@
 	</dict>
 	<key>OverrideOperatorWiFiName</key>
 	<string>Llamadas Wi-Fi</string>
+	<key>CarrierEntitlements</key>
+	<dict>
+		<key>SupportedEntitlements</key>
+		<integer>4194305</integer>
+		<key>ProtocolVersion</key>
+		<string>2</string>
+		<key>ServerAddress</key>
+		<string>https://aes.orange.es/core/v2</string>
+		<key>Authentication</key>
+		<dict>
+			<key>Type</key>
+			<integer>1</integer>
+			<key>Username</key>
+			<string>0$IMSI@nai.epc.mnc$MNC.mcc$MCC.3gppnetwork.org</string>
+		</dict>
+		<key>SupportedAuthorizationTokens</key>
+		<integer>2</integer>
+		<key>UpdatePeriod</key>
+		<integer>24</integer>
+	</dict>
 	<key>RCS</key>
 	<dict>
 		<key>EnableBusinessMessagingByDefault</key>
@@ -222,13 +244,13 @@
 		</dict>
 		<key>ShowBusinessMessagingSwitch</key>
 		<true/>
-		<key>SupportsE2EE</key>
-		<false/>
 		<key>ShowRCSSwitch</key>
 		<true/>
 		<key>EnableRCSByDefault</key>
 		<true/>
 	</dict>
+	<key>PhoneNumberRegistrationGatewayAddress</key>
+	<string>+447786205094</string>
 	<key>SupportedSIMs</key>
 	<array>
 		<string>21404_ID-89340414</string>
@@ -240,8 +262,6 @@
 		<string>21404_ID-89340471</string>
 		<string>21404_ID-89340475</string>
 	</array>
-	<key>PhoneNumberRegistrationGatewayAddress</key>
-	<string>+447786205094</string>
 	<key>CarrierName</key>
 	<string>MASMOVIL</string>
 	<key>AttachAPN</key>
@@ -283,7 +303,7 @@
 			<key>apn</key>
 			<string>internet</string>
 			<key>type-mask</key>
-			<integer>49</integer>
+			<integer>32817</integer>
 		</dict>
 	</array>
 	<key>OTASoftwareUpdate</key>

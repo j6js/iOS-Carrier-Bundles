@@ -35,6 +35,10 @@
 		<string>V57</string>
 		<string>D23</string>
 		<string>V159</string>
+		<string>V63</string>
+		<string>V64s</string>
+		<string>V68</string>
+		<string>V64</string>
 	</array>
 	<key>SupportedSIMOverrides</key>
 	<dict>
@@ -56,6 +60,10 @@
 				<string>V57</string>
 				<string>D23</string>
 				<string>V159</string>
+				<string>V63</string>
+				<string>V64s</string>
+				<string>V68</string>
+				<string>V64</string>
 			</array>
 		</dict>
 		<key>310599_GID2-A8</key>
@@ -76,6 +84,10 @@
 				<string>V57</string>
 				<string>D23</string>
 				<string>V159</string>
+				<string>V63</string>
+				<string>V64s</string>
+				<string>V68</string>
+				<string>V64</string>
 			</array>
 		</dict>
 		<key>310590_GID2-FF</key>
@@ -96,6 +108,10 @@
 				<string>V57</string>
 				<string>D23</string>
 				<string>V159</string>
+				<string>V63</string>
+				<string>V64s</string>
+				<string>V68</string>
+				<string>V64</string>
 			</array>
 		</dict>
 		<key>310590_GID2-A8</key>
@@ -116,6 +132,10 @@
 				<string>V57</string>
 				<string>D23</string>
 				<string>V159</string>
+				<string>V63</string>
+				<string>V64s</string>
+				<string>V68</string>
+				<string>V64</string>
 			</array>
 		</dict>
 	</dict>

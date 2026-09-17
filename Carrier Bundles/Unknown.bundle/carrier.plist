@@ -539,11 +539,6 @@
 	<string>none</string>
 	<key>Show3GSwitchWithVolte</key>
 	<true/>
-	<key>VoiceTextMedia</key>
-	<dict>
-		<key>SupportsTTY</key>
-		<true/>
-	</dict>
 	<key>AllowAttachAPNEditing</key>
 	<true/>
 	<key>ShowLTEWarningUnsupportedCarrier</key>

@@ -89,6 +89,8 @@
 			<true/>
 			<key>RegistrationRetryBaseTimeSeconds</key>
 			<integer>30</integer>
+			<key>AddGeolocationSupportedHeader</key>
+			<true/>
 			<key>SipTimers</key>
 			<dict>
 				<key>InviteResponseTimeout</key>

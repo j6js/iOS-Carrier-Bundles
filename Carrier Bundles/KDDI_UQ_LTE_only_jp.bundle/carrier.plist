@@ -104,7 +104,7 @@
 		<key>SupportSecureIntent</key>
 		<true/>
 		<key>SupportedEntitlements</key>
-		<integer>8193</integer>
+		<integer>532497</integer>
 		<key>Authentication</key>
 		<dict>
 			<key>Type</key>

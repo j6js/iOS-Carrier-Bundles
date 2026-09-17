@@ -778,26 +778,25 @@
 		<true/>
 		<key>Signaling</key>
 		<dict>
-			<key>UseEphemeralSipSourcePortForTcp</key>
+			<key>AdditionalHeaders</key>
+			<dict>
+				<key>INVITE[911,wifi]</key>
+				<array>
+					<string>P-com.ServiceType: Static-Emergency</string>
+				</array>
+			</dict>
+			<key>UseDialogEventPackage</key>
 			<true/>
-			<key>RingbackTimerSeconds</key>
-			<integer>60</integer>
-			<key>RingingTimerSeconds</key>
-			<integer>55</integer>
-			<key>AllowPhoneContextInEmergencyUri</key>
-			<false/>
-			<key>ImpuRank</key>
-			<string>MDN@domain</string>
-			<key>SessionExpiresSeconds</key>
-			<integer>300</integer>
-			<key>UseCIDUrlInPIDF</key>
+			<key>strictCallFlows</key>
 			<true/>
-			<key>ActivationBackoffTimerOverIWLANMilliseconds</key>
-			<integer>3600000</integer>
-			<key>IgnoreReregistrationErrorCodes</key>
-			<string></string>
-			<key>RetryAfterStatusCodes</key>
-			<string>480,486,500,503,600</string>
+			<key>InviteErrorResponsesToTriggerCSFB</key>
+			<string>503</string>
+			<key>PdpBackOffTimerforRA</key>
+			<integer>900000</integer>
+			<key>CallSetupPingTimerMilliseconds</key>
+			<integer>2000</integer>
+			<key>VerstatFeatureCapability</key>
+			<string>Dynamic</string>
 			<key>SipTimers</key>
 			<dict>
 				<key>F</key>
@@ -815,24 +814,14 @@
 			</dict>
 			<key>UserAgentHeaderValue</key>
 			<string>APPLE---${DEVICE}---${OS_VERSION}</string>
-			<key>CallSetupPingTimerMilliseconds</key>
-			<integer>2000</integer>
-			<key>AccessBarringType</key>
-			<string>Both</string>
-			<key>AdditionalFeatureTags</key>
-			<dict>
-				<key>voice</key>
-				<dict>
-					<key>audio</key>
-					<string></string>
-				</dict>
-			</dict>
-			<key>EmergencyRegistrationTimeoutSeconds</key>
-			<integer>2</integer>
-			<key>LocationForShortCodeCalls</key>
-			<string>BOTH</string>
-			<key>AllowLimitedAccessModeRegistration</key>
-			<true/>
+			<key>IgnoreReregistrationErrorCodes</key>
+			<string></string>
+			<key>RegistrationPolicy</key>
+			<string>VZW</string>
+			<key>RingingTimerSeconds</key>
+			<integer>55</integer>
+			<key>ClearThrottlingOnSocketErrors</key>
+			<string></string>
 			<key>OutgoingCallPrefix</key>
 			<dict>
 				<key>Local</key>
@@ -840,84 +829,12 @@
 				<key>International</key>
 				<string>011</string>
 			</dict>
-			<key>IncomingCallEndReasons</key>
-			<dict>
-				<key>CallPulled</key>
-				<dict>
-					<key>ReasonHeaderText</key>
-					<string>Call Has Been Pulled by Another Device</string>
-					<key>TerminationEvent</key>
-					<string>TransferredToOtherDevice</string>
-				</dict>
-				<key>AllDevicesBusy</key>
-				<dict>
-					<key>ReasonHeaderText</key>
-					<string>Another device sent All Devices Busy response</string>
-					<key>TerminationEvent</key>
-					<string>RemoteCallRejected</string>
-				</dict>
-				<key>CallLimitReached</key>
-				<dict>
-					<key>ReasonHeaderText</key>
-					<string>Simultaneous Call Limit Has Already Been Reached</string>
-					<key>StatusCode</key>
-					<integer>403</integer>
-					<key>TerminationEvent</key>
-					<string>SecondaryDeviceInUse</string>
-				</dict>
-				<key>ForbiddenDeregister</key>
-				<dict>
-					<key>ReasonHeaderText</key>
-					<string>Forbidden - Originating user not registered</string>
-					<key>DropsRegistration</key>
-					<true/>
-					<key>StatusCode</key>
-					<integer>403</integer>
-				</dict>
-				<key>CallCompletionElsewhere</key>
-				<dict>
-					<key>ReasonHeaderText</key>
-					<string>Call Completion Elsewhere</string>
-					<key>TerminationEvent</key>
-					<string>CallAnsweredElsewhere</string>
-				</dict>
-			</dict>
-			<key>CountryOfOriginationFormat</key>
-			<string>PANI</string>
-			<key>PdpBackOffTimerforRA</key>
-			<integer>900000</integer>
-			<key>strictCallFlows</key>
-			<true/>
-			<key>AlwaysPrack18x</key>
-			<true/>
-			<key>EmergencyCallBackModeExpirationSeconds</key>
-			<integer>300</integer>
-			<key>ReportSipErrorsDuringReRegistration</key>
-			<true/>
-			<key>VerstatFeatureCapability</key>
-			<string>Dynamic</string>
-			<key>AlwaysSetPhoneContext</key>
-			<true/>
-			<key>InviteErrorResponsesToTriggerCSFB</key>
-			<string>503</string>
-			<key>EmergencyURNs</key>
-			<dict>
-				<key>922</key>
-				<string>922@vzims.com</string>
-			</dict>
+			<key>AllowPhoneContextInEmergencyUri</key>
+			<false/>
 			<key>AllowSimultaneousCallsWhileUnregistered</key>
 			<false/>
-			<key>AdditionalHeaders</key>
-			<dict>
-				<key>INVITE[911,wifi]</key>
-				<array>
-					<string>P-com.ServiceType: Static-Emergency</string>
-				</array>
-			</dict>
 			<key>EmergencyRingbackTimerSeconds</key>
 			<integer>600</integer>
-			<key>TriggerCSFBOnWaitForRingingTimeout</key>
-			<false/>
 			<key>CallEndReasons</key>
 			<dict>
 				<key>CodecNotSupported</key>
@@ -967,34 +884,123 @@
 					<string>Far Device Joined N-way Call</string>
 				</dict>
 			</dict>
-			<key>AllowRemoteHoldForUnconfirmedCalls</key>
+			<key>EmergencyCallBackModeExpirationSeconds</key>
+			<integer>300</integer>
+			<key>Preconditions</key>
+			<string>None</string>
+			<key>RegisterSmsWhenAccessBarringZero</key>
 			<true/>
 			<key>ResetCallIdOnInitialRegistration</key>
 			<true/>
-			<key>SupportPEarlyMediaHeader</key>
-			<false/>
-			<key>RegistrationPolicy</key>
-			<string>VZW</string>
-			<key>ContactUser</key>
-			<string>+MDN</string>
-			<key>RegisterSmsWhenAccessBarringZero</key>
+			<key>PIDFConfidence</key>
+			<integer>90</integer>
+			<key>UseCIDUrlInPIDF</key>
 			<true/>
-			<key>UseDialogEventPackage</key>
+			<key>FastEmergencyLocationEnabled</key>
 			<true/>
-			<key>ReRegistrationHysteresisTimerMilliseconds</key>
-			<integer>60000</integer>
-			<key>ClearThrottlingOnSocketErrors</key>
-			<string></string>
-			<key>RequirePreconditionsWhenMandatory</key>
-			<false/>
+			<key>AlwaysAddGeolocationForEmergencyCalls</key>
+			<true/>
+			<key>AllowLimitedAccessModeRegistration</key>
+			<true/>
 			<key>RestartRingbackTimerOn180</key>
 			<true/>
-			<key>Preconditions</key>
-			<string>None</string>
-			<key>EarlyMediaNeedsHeader</key>
-			<false/>
+			<key>EmergencyURNs</key>
+			<dict>
+				<key>922</key>
+				<string>922@vzims.com</string>
+			</dict>
+			<key>SessionExpiresSeconds</key>
+			<integer>300</integer>
+			<key>ContactUser</key>
+			<string>+MDN</string>
+			<key>AlwaysSetPhoneContext</key>
+			<true/>
+			<key>EmergencyRegistrationTimeoutSeconds</key>
+			<integer>2</integer>
 			<key>EmergencyImpuRank</key>
 			<string>MDN@domain</string>
+			<key>ImpuRank</key>
+			<string>MDN@domain</string>
+			<key>ReportSipErrorsDuringReRegistration</key>
+			<true/>
+			<key>AdditionalFeatureTags</key>
+			<dict>
+				<key>voice</key>
+				<dict>
+					<key>audio</key>
+					<string></string>
+				</dict>
+			</dict>
+			<key>TriggerCSFBOnWaitForRingingTimeout</key>
+			<false/>
+			<key>ReRegistrationHysteresisTimerMilliseconds</key>
+			<integer>60000</integer>
+			<key>SupportPEarlyMediaHeader</key>
+			<false/>
+			<key>RequirePreconditionsWhenMandatory</key>
+			<false/>
+			<key>IncomingCallEndReasons</key>
+			<dict>
+				<key>CallPulled</key>
+				<dict>
+					<key>ReasonHeaderText</key>
+					<string>Call Has Been Pulled by Another Device</string>
+					<key>TerminationEvent</key>
+					<string>TransferredToOtherDevice</string>
+				</dict>
+				<key>AllDevicesBusy</key>
+				<dict>
+					<key>ReasonHeaderText</key>
+					<string>Another device sent All Devices Busy response</string>
+					<key>TerminationEvent</key>
+					<string>RemoteCallRejected</string>
+				</dict>
+				<key>CallLimitReached</key>
+				<dict>
+					<key>ReasonHeaderText</key>
+					<string>Simultaneous Call Limit Has Already Been Reached</string>
+					<key>StatusCode</key>
+					<integer>403</integer>
+					<key>TerminationEvent</key>
+					<string>SecondaryDeviceInUse</string>
+				</dict>
+				<key>ForbiddenDeregister</key>
+				<dict>
+					<key>ReasonHeaderText</key>
+					<string>Forbidden - Originating user not registered</string>
+					<key>DropsRegistration</key>
+					<true/>
+					<key>StatusCode</key>
+					<integer>403</integer>
+				</dict>
+				<key>CallCompletionElsewhere</key>
+				<dict>
+					<key>ReasonHeaderText</key>
+					<string>Call Completion Elsewhere</string>
+					<key>TerminationEvent</key>
+					<string>CallAnsweredElsewhere</string>
+				</dict>
+			</dict>
+			<key>AccessBarringType</key>
+			<string>Both</string>
+			<key>CountryOfOriginationFormat</key>
+			<string>PANI</string>
+			<key>LocationForShortCodeCalls</key>
+			<string>BOTH</string>
+			<key>UseEphemeralSipSourcePortForTcp</key>
+			<true/>
+			<key>RetryAfterStatusCodes</key>
+			<string>480,486,500,503,600</string>
+			<key>RingbackTimerSeconds</key>
+			<integer>60</integer>
+			<key>AlwaysPrack18x</key>
+			<true/>
+			<key>AllowRemoteHoldForUnconfirmedCalls</key>
+			<true/>
+			<key>ActivationBackoffTimerOverIWLANMilliseconds</key>
+			<integer>3600000</integer>
+			<key>EarlyMediaNeedsHeader</key>
+			<false/>
 			<key>MinSessionExpiresSeconds</key>
 			<integer>300</integer>
 		</dict>

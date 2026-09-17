@@ -7,7 +7,7 @@
 		<key>SupportSecureIntent</key>
 		<true/>
 		<key>SupportedEntitlements</key>
-		<integer>9217</integer>
+		<integer>41985</integer>
 		<key>ProtocolVersion</key>
 		<string>2</string>
 		<key>Authentication</key>
@@ -298,12 +298,14 @@
 		<string>1.2</string>
 		<key>MaxImageDimension</key>
 		<integer>1024</integer>
-		<key>MMSC</key>
-		<string>http://217.31.233.18:6001/MM1Servlet</string>
 		<key>GroupModeEnabled</key>
 		<false/>
+		<key>MMSC</key>
+		<string>http://217.31.233.18:6001/MM1Servlet</string>
 		<key>MaxVideoBitrate</key>
 		<integer>131072</integer>
+		<key>CarrierRequiredPhoneNumberHeaderName</key>
+		<string>X-MSISDN</string>
 		<key>Proxy</key>
 		<string>212.65.136.226:9401</string>
 		<key>MaxMessageSize</key>
@@ -637,7 +639,7 @@
 			<key>BsfHost</key>
 			<string>bsf.ims.mnc002.mcc286.pub.3gppnetwork.org</string>
 			<key>SupportsCW</key>
-			<true/>
+			<false/>
 		</dict>
 		<key>EnableWiFiCallingWithoutEntitlement</key>
 		<true/>

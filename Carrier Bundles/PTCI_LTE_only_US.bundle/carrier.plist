@@ -454,6 +454,8 @@
 		<false/>
 		<key>SupportsEmergencyRTT</key>
 		<false/>
+		<key>SupportsTTY</key>
+		<false/>
 	</dict>
 	<key>SupportedPLMNs</key>
 	<array>

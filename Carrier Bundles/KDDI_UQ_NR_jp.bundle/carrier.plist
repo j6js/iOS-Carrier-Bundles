@@ -34,6 +34,11 @@
 	</dict>
 	<key>SupportsPDNAuthentication</key>
 	<true/>
+	<key>PushSettings</key>
+	<dict>
+		<key>Topic</key>
+		<string>com.kddi.Kddientapp</string>
+	</dict>
 	<key>VMSMFilterNumber</key>
 	<string>1417</string>
 	<key>ShowDialAssist</key>
@@ -92,6 +97,8 @@
 		<integer>20</integer>
 		<key>MaxVoiceCallWaitPeriod</key>
 		<integer>0</integer>
+		<key>MaxMessageSizeOverSatellite</key>
+		<integer>3000</integer>
 		<key>AllowReturnReports</key>
 		<false/>
 		<key>CarrierRequiredPhoneNumberHeaderName</key>
@@ -104,7 +111,7 @@
 		<key>SupportSecureIntent</key>
 		<true/>
 		<key>SupportedEntitlements</key>
-		<integer>8201</integer>
+		<integer>532505</integer>
 		<key>Authentication</key>
 		<dict>
 			<key>Type</key>
@@ -156,6 +163,8 @@
 	</dict>
 	<key>SupportsUserBusyCauseCode</key>
 	<true/>
+	<key>SatelliteSystemTransitionTimeToAllowed</key>
+	<integer>30</integer>
 	<key>SMSSettings</key>
 	<dict>
 		<key>OutgoingSMSPrefix</key>
@@ -205,6 +214,8 @@
 	<true/>
 	<key>ShowVolteWarningUnsupportedCarrier</key>
 	<false/>
+	<key>SupportsSatellite</key>
+	<true/>
 	<key>PhoneSettings</key>
 	<dict>
 		<key>AutoCallPickupTimer</key>
@@ -276,6 +287,8 @@
 	<false/>
 	<key>SuspendFastDormancyAllowed</key>
 	<true/>
+	<key>HomeSatelliteSystemName</key>
+	<string>SpaceX UQ mobile</string>
 	<key>PhoneNumberRegistrationGatewayAddress</key>
 	<array>
 		<string>00090002</string>
@@ -314,45 +327,10 @@
 	</dict>
 	<key>HomeBundleIdentifier</key>
 	<string>com.apple.Japan</string>
-	<key>ShowHighDataModeSwitch</key>
+	<key>ShowSatelliteSwitch</key>
 	<true/>
 	<key>IMSConfig</key>
 	<dict>
-		<key>Media</key>
-		<dict>
-			<key>SuppressOctetAlignAttributeForBECodecs</key>
-			<false/>
-			<key>EnableRemoteRTCPDeactivation</key>
-			<true/>
-			<key>EnableBandwidthSpecifiers</key>
-			<true/>
-			<key>AudioCodecs</key>
-			<dict>
-				<key>109</key>
-				<dict>
-					<key>ch-aw-recv</key>
-					<string>2</string>
-					<key>br</key>
-					<string>13.2</string>
-					<key>SampleRate</key>
-					<integer>16000</integer>
-					<key>EncodingName</key>
-					<string>EVS</string>
-					<key>bw</key>
-					<string>nb-swb</string>
-				</dict>
-			</dict>
-			<key>InactivityTimerRTPSeconds</key>
-			<integer>20</integer>
-			<key>SuppressBSUntilPreconditionsMet</key>
-			<true/>
-			<key>SelectLatestForkWithActiveEarlyMedia</key>
-			<true/>
-			<key>ModeSetAMRWB</key>
-			<string>0,1,2</string>
-			<key>EVSHardBwLimit</key>
-			<string>nb-swb</string>
-		</dict>
 		<key>Signaling</key>
 		<dict>
 			<key>DefaultAuthAlgorithm</key>
@@ -527,30 +505,10 @@
 			<key>StartLocalQosTimerOnSessionProgress</key>
 			<true/>
 		</dict>
-		<key>XCAP</key>
+		<key>Satellite</key>
 		<dict>
-			<key>BsfHost</key>
-			<string>bsf.ims.mnc051.mcc440.pub.3gppnetwork.org</string>
-			<key>DisableOnNetworkError</key>
-			<false/>
-			<key>ForbiddenHttpErrorCodes</key>
-			<string></string>
-			<key>NafPort</key>
-			<integer>8090</integer>
-			<key>SupportsCLIR</key>
-			<false/>
-			<key>Auid</key>
-			<string>mtasxdms/simservs.ngn.etsi.org</string>
-			<key>ContentType</key>
-			<string>application/xcap-el+xml</string>
-			<key>UnsolicitedRequestDelay</key>
-			<integer>0</integer>
-			<key>supported</key>
-			<true/>
-			<key>SupportsCFErasure</key>
-			<false/>
-			<key>imsFeatureDependency</key>
-			<true/>
+			<key>IMSServiceMask</key>
+			<integer>2</integer>
 		</dict>
 		<key>ConferenceCalling</key>
 		<dict>
@@ -582,6 +540,66 @@
 			<key>allowCSFBInVolteMode</key>
 			<false/>
 		</dict>
+		<key>XCAP</key>
+		<dict>
+			<key>BsfHost</key>
+			<string>bsf.ims.mnc051.mcc440.pub.3gppnetwork.org</string>
+			<key>DisableOnNetworkError</key>
+			<false/>
+			<key>ForbiddenHttpErrorCodes</key>
+			<string></string>
+			<key>NafPort</key>
+			<integer>8090</integer>
+			<key>SupportsCLIR</key>
+			<false/>
+			<key>Auid</key>
+			<string>mtasxdms/simservs.ngn.etsi.org</string>
+			<key>ContentType</key>
+			<string>application/xcap-el+xml</string>
+			<key>UnsolicitedRequestDelay</key>
+			<integer>0</integer>
+			<key>supported</key>
+			<true/>
+			<key>SupportsCFErasure</key>
+			<false/>
+			<key>imsFeatureDependency</key>
+			<true/>
+		</dict>
+		<key>Media</key>
+		<dict>
+			<key>SuppressOctetAlignAttributeForBECodecs</key>
+			<false/>
+			<key>EnableRemoteRTCPDeactivation</key>
+			<true/>
+			<key>EnableBandwidthSpecifiers</key>
+			<true/>
+			<key>AudioCodecs</key>
+			<dict>
+				<key>109</key>
+				<dict>
+					<key>ch-aw-recv</key>
+					<string>2</string>
+					<key>br</key>
+					<string>13.2</string>
+					<key>SampleRate</key>
+					<integer>16000</integer>
+					<key>EncodingName</key>
+					<string>EVS</string>
+					<key>bw</key>
+					<string>nb-swb</string>
+				</dict>
+			</dict>
+			<key>InactivityTimerRTPSeconds</key>
+			<integer>20</integer>
+			<key>SuppressBSUntilPreconditionsMet</key>
+			<true/>
+			<key>SelectLatestForkWithActiveEarlyMedia</key>
+			<true/>
+			<key>ModeSetAMRWB</key>
+			<string>0,1,2</string>
+			<key>EVSHardBwLimit</key>
+			<string>nb-swb</string>
+		</dict>
 		<key>Voice</key>
 		<dict>
 			<key>DialAsEmergencyOverIMSForUndetectedEmergency</key>
@@ -608,6 +626,8 @@
 	<true/>
 	<key>CarrierName</key>
 	<string>UQ mobile</string>
+	<key>ShowHighDataModeSwitch</key>
+	<true/>
 	<key>CarrierBookmarks</key>
 	<array>
 		<dict>
@@ -668,8 +688,31 @@
 	<false/>
 	<key>RemoteDiagnosticsWWANAllowed</key>
 	<true/>
-	<key>ShowVolteSwitch</key>
-	<false/>
+	<key>SatelliteAccessInfo</key>
+	<dict>
+		<key>AllowCarrierApp</key>
+		<true/>
+		<key>AppCategories</key>
+		<array>
+			<string>8011</string>
+			<string>8012</string>
+			<string>8013</string>
+			<string>8014</string>
+			<string>8010</string>
+			<string>8009</string>
+			<string>8008</string>
+			<string>8007</string>
+			<string>8005</string>
+			<string>8003</string>
+			<string>8002</string>
+			<string>8001</string>
+			<string>8004</string>
+			<string>8006</string>
+			<string>8015</string>
+		</array>
+		<key>Tier</key>
+		<integer>4</integer>
+	</dict>
 	<key>MTU</key>
 	<array>
 		<dict>
@@ -685,6 +728,8 @@
 			<integer>1420</integer>
 		</dict>
 	</array>
+	<key>ShowVolteSwitch</key>
+	<false/>
 	<key>Location</key>
 	<dict>
 		<key>AllowOTDOADuringEmergencyMode</key>
@@ -693,6 +738,7 @@
 	<key>SupportedPLMNs</key>
 	<array>
 		<string>44054</string>
+		<string>44055</string>
 	</array>
 	<key>SupportsImsCapability</key>
 	<true/>
@@ -702,6 +748,8 @@
 	<true/>
 	<key>VoicemailPilotNumber</key>
 	<string>1417</string>
+	<key>SatelliteNoDataSuspendDelayTimeout</key>
+	<integer>1</integer>
 	<key>UseTetheringAuthenticationOnCDMA</key>
 	<false/>
 	<key>CellBroadcast</key>
@@ -933,6 +981,10 @@
 			</array>
 		</dict>
 	</dict>
+	<key>SatelliteApps</key>
+	<array>
+		<string>jp.uqmobile.uqmobileportalapp.ios</string>
+	</array>
 	<key>apns</key>
 	<array>
 		<dict>

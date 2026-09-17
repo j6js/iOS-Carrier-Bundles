@@ -125,6 +125,8 @@
 		</array>
 		<key>SupportContextSwitchOver</key>
 		<true/>
+		<key>EPDGTimeout</key>
+		<integer>45</integer>
 		<key>5wiServiceMask</key>
 		<integer>3</integer>
 		<key>IKE</key>
