@@ -197,7 +197,7 @@
 			<key>RemoteCertificateHostname</key>
 			<string>epdg.epc.mnc860.mcc354.pub.3gppnetwork.org</string>
 			<key>RemoteCertificateAuthorityName</key>
-			<string>Go Daddy Secure Certificate Authority - G2</string>
+			<string>GoDaddy TLS Root CA - R1</string>
 			<key>NATTKeepAliveEnabled</key>
 			<true/>
 			<key>Proposals</key>
@@ -432,18 +432,26 @@
 			</dict>
 			<key>DefaultAuthAlgorithm</key>
 			<string>AKAv1-MD5</string>
-			<key>ussdEnabled</key>
+			<key>AllowGeolocationForEmergencyCallsWhileInboundRoaming</key>
 			<true/>
-			<key>UseCIDUrlInPIDF</key>
-			<true/>
-			<key>SupportPEarlyMediaHeader</key>
+			<key>AddLocationToEmergencySMS</key>
 			<false/>
 			<key>AlwaysAddSipInstance</key>
 			<true/>
+			<key>SendEmergencyLocationUpdates</key>
+			<true/>
+			<key>SupportPEarlyMediaHeader</key>
+			<false/>
+			<key>UseCIDUrlInPIDF</key>
+			<true/>
 			<key>EarlyMediaNeedsHeader</key>
 			<false/>
+			<key>ussdEnabled</key>
+			<true/>
 			<key>AllowEmergencyRetryForIPSec</key>
 			<true/>
+			<key>PIDFGeoPrivShape</key>
+			<string>ellipsoid</string>
 			<key>EmergencyRingbackTimerSeconds</key>
 			<integer>90</integer>
 			<key>AdditionalHeaders</key>
@@ -454,7 +462,7 @@
 					<string>Supported: geolocation</string>
 				</array>
 			</dict>
-			<key>strictCallFlows</key>
+			<key>AlwaysAddGeolocationForEmergencyCalls</key>
 			<true/>
 			<key>InviteErrorResponsesToTriggerCSFB</key>
 			<string>3XX,4XX,5XX,-504,6XX</string>
@@ -462,10 +470,16 @@
 			<true/>
 			<key>MaxUdpMessageSize</key>
 			<integer>1200</integer>
+			<key>PIDFConfidence</key>
+			<integer>90</integer>
 			<key>TriggerCSFBOnWaitForRingingTimeout</key>
+			<true/>
+			<key>strictCallFlows</key>
 			<true/>
 			<key>RingbackTimerSeconds</key>
 			<integer>60</integer>
+			<key>Allow3DPIDFInMessages</key>
+			<true/>
 			<key>CountryOfOriginationFormat</key>
 			<string>PANI</string>
 			<key>VerstatFeatureCapability</key>
@@ -474,10 +488,12 @@
 			<true/>
 			<key>Preconditions</key>
 			<string>Supported</string>
-			<key>UseIPSec</key>
-			<true/>
+			<key>EmergencyLocationUpdateTimeSeconds</key>
+			<integer>25</integer>
 			<key>RingingTimerSeconds</key>
 			<integer>65</integer>
+			<key>UseIPSec</key>
+			<true/>
 			<key>RegistrationExpirationSeconds</key>
 			<integer>3600</integer>
 		</dict>

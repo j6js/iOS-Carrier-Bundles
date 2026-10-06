@@ -105,7 +105,7 @@
 		<key>SupportedEntitlements</key>
 		<integer>1</integer>
 		<key>ProtocolVersion</key>
-		<integer>2</integer>
+		<string>2</string>
 		<key>ServerAddress</key>
 		<string>https://des.umniah.com/entitlement/</string>
 		<key>Authentication</key>

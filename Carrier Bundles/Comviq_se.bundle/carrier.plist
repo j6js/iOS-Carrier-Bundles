@@ -394,37 +394,6 @@
 			<key>enableInNonVoLTEMode</key>
 			<false/>
 		</dict>
-		<key>XCAP</key>
-		<dict>
-			<key>NafHost</key>
-			<string>xcap.ims.mnc007.mcc240.pub.3gppnetwork.org</string>
-			<key>BsfPort</key>
-			<integer>80</integer>
-			<key>imsFeatureDependency</key>
-			<true/>
-			<key>NafPort</key>
-			<integer>80</integer>
-			<key>SupportsCLIR</key>
-			<false/>
-			<key>supported</key>
-			<true/>
-			<key>ContentType</key>
-			<string>application/xcap-el+xml</string>
-			<key>DisableOnNetworkError</key>
-			<true/>
-			<key>ForbiddenHttpErrorCodes</key>
-			<string>404,501,502,503,504</string>
-			<key>AllowedOnlyWhenIMSRegistered</key>
-			<true/>
-			<key>SupportsCFErasure</key>
-			<false/>
-			<key>imsRegistrationDependency</key>
-			<true/>
-			<key>BsfHost</key>
-			<string>bsf.mnc007.mcc240.pub.3gppnetwork.org</string>
-			<key>SupportsCW</key>
-			<true/>
-		</dict>
 		<key>Media</key>
 		<dict>
 			<key>RTCPIntervalSeconds</key>
@@ -460,8 +429,48 @@
 			<key>IncludeSDPModeChangeCapability</key>
 			<true/>
 		</dict>
+		<key>XCAP</key>
+		<dict>
+			<key>NafHost</key>
+			<string>xcap.ims.mnc007.mcc240.pub.3gppnetwork.org</string>
+			<key>BsfPort</key>
+			<integer>80</integer>
+			<key>imsFeatureDependency</key>
+			<true/>
+			<key>NafPort</key>
+			<integer>80</integer>
+			<key>SupportsCLIR</key>
+			<false/>
+			<key>supported</key>
+			<true/>
+			<key>ContentType</key>
+			<string>application/xcap-el+xml</string>
+			<key>DisableOnNetworkError</key>
+			<true/>
+			<key>ForbiddenHttpErrorCodes</key>
+			<string>404,501,502,503,504</string>
+			<key>AllowedOnlyWhenIMSRegistered</key>
+			<true/>
+			<key>SupportsCFErasure</key>
+			<false/>
+			<key>imsRegistrationDependency</key>
+			<true/>
+			<key>BsfHost</key>
+			<string>bsf.mnc007.mcc240.pub.3gppnetwork.org</string>
+			<key>SupportsCW</key>
+			<true/>
+		</dict>
 		<key>EnableWiFiCallingWithoutEntitlement</key>
 		<true/>
+		<key>Voice</key>
+		<dict>
+			<key>EnableVoLTEWithVoWiFi</key>
+			<true/>
+			<key>E911OverITechSupported</key>
+			<false/>
+			<key>EnableVolteByDefault</key>
+			<true/>
+		</dict>
 	</dict>
 	<key>SMSSettings</key>
 	<dict>

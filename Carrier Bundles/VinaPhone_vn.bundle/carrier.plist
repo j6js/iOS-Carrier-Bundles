@@ -167,7 +167,7 @@
 			<key>PreferredTechnology</key>
 			<string>ims</string>
 			<key>PreferredTechnologyRoaming</key>
-			<string>ims</string>
+			<string>wifi</string>
 		</dict>
 		<key>ExtraConfigurationAttributeRequestv6</key>
 		<array>
@@ -264,7 +264,7 @@
 	<key>DataIndicatorOverrideForLTE</key>
 	<string>4G</string>
 	<key>ShowVolteSwitch</key>
-	<true/>
+	<false/>
 	<key>apns</key>
 	<array>
 		<dict>
@@ -272,54 +272,64 @@
 			<string></string>
 			<key>username</key>
 			<string></string>
+			<key>AllowedProtocolMask</key>
+			<integer>3</integer>
 			<key>apn</key>
 			<string>m3-world</string>
 			<key>type-mask</key>
 			<integer>32817</integer>
-			<key>AllowedProtocolMask</key>
-			<integer>3</integer>
+			<key>AlwaysOnPDU</key>
+			<true/>
 		</dict>
 		<dict>
-			<key>type-mask</key>
-			<integer>131072</integer>
+			<key>AlwaysOnPDU</key>
+			<true/>
 			<key>password</key>
 			<string></string>
+			<key>Support5GSaHandOver</key>
+			<true/>
 			<key>tech-type-mask</key>
 			<integer>131072</integer>
-			<key>UseNetworkMTU</key>
-			<true/>
+			<key>type-mask</key>
+			<integer>131072</integer>
+			<key>AllowedProtocolMask</key>
+			<integer>3</integer>
 			<key>SupportSwitchOver</key>
 			<true/>
 			<key>username</key>
 			<string></string>
+			<key>UseNetworkMTU</key>
+			<true/>
 			<key>apn</key>
 			<string>ims</string>
-			<key>AllowedProtocolMask</key>
-			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>password</key>
 			<string></string>
 			<key>username</key>
 			<string></string>
+			<key>AllowedProtocolMask</key>
+			<integer>3</integer>
 			<key>apn</key>
 			<string>m3-mms</string>
 			<key>type-mask</key>
 			<integer>4</integer>
-			<key>AllowedProtocolMask</key>
-			<integer>3</integer>
+			<key>AlwaysOnPDU</key>
+			<true/>
 		</dict>
 		<dict>
+			<key>AlwaysOnPDU</key>
+			<true/>
 			<key>password</key>
 			<string></string>
 			<key>tech-type-mask</key>
+			<integer>1048576</integer>
+			<key>type-mask</key>
 			<integer>1048576</integer>
 			<key>username</key>
 			<string></string>
 			<key>apn</key>
 			<string>xcap</string>
-			<key>type-mask</key>
-			<integer>1048576</integer>
 			<key>AllowedProtocolMask</key>
 			<integer>3</integer>
 		</dict>

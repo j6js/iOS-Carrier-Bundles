@@ -109,11 +109,11 @@
 		</dict>
 		<dict>
 			<key>type-mask</key>
-			<integer>1048582</integer>
+			<integer>1048578</integer>
 			<key>password</key>
 			<string></string>
 			<key>tech-type-mask</key>
-			<integer>1048582</integer>
+			<integer>1048578</integer>
 			<key>enableXLAT464</key>
 			<true/>
 			<key>AllowedProtocolMaskInRoaming</key>

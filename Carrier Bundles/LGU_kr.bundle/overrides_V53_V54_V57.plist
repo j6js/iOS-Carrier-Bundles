@@ -2,7 +2,11 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>ShowHighDataModeSwitch</key>
+	<key>DerPriFileVersion</key>
+	<string>6.1.161</string>
+	<key>ShowVoNRSwitch</key>
+	<true/>
+	<key>Enable5GStandaloneByDefault</key>
 	<true/>
 	<key>MTU</key>
 	<array>
@@ -13,14 +17,112 @@
 			<integer>1428</integer>
 		</dict>
 	</array>
-	<key>Enable5GAutoByDefault</key>
+	<key>ShowHighDataModeSwitch</key>
+	<true/>
+	<key>IMSConfig</key>
+	<dict>
+		<key>SMS</key>
+		<dict>
+			<key>SupportedDomains</key>
+			<dict>
+				<key>LTE</key>
+				<true/>
+				<key>NR</key>
+				<true/>
+			</dict>
+		</dict>
+		<key>Voice</key>
+		<dict>
+			<key>EnableVoNRByDefault</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>SupportsVoNR</key>
 	<true/>
 	<key>DerPriFileName</key>
 	<string>overrides_V53_V54_V57.der.pri</string>
-	<key>DerPriFileVersion</key>
-	<string>6.0.161</string>
+	<key>apns</key>
+	<array>
+		<dict>
+			<key>configuration</key>
+			<array>
+				<dict>
+					<key>type-mask</key>
+					<integer>1081349</integer>
+					<key>password</key>
+					<string></string>
+					<key>AlwaysOnPDU</key>
+					<true/>
+					<key>enableXLAT464</key>
+					<true/>
+					<key>AllowedProtocolMaskInRoaming</key>
+					<integer>3</integer>
+					<key>username</key>
+					<string></string>
+					<key>apn</key>
+					<string>internet.lguplus.co.kr</string>
+					<key>AllowedProtocolMask</key>
+					<integer>3</integer>
+				</dict>
+				<dict>
+					<key>type-mask</key>
+					<integer>131072</integer>
+					<key>password</key>
+					<string></string>
+					<key>AlwaysOnPDU</key>
+					<true/>
+					<key>AllowedProtocolMaskInRoaming</key>
+					<integer>3</integer>
+					<key>username</key>
+					<string></string>
+					<key>apn</key>
+					<string>IMS</string>
+					<key>AllowedProtocolMask</key>
+					<integer>3</integer>
+				</dict>
+				<dict>
+					<key>password</key>
+					<string></string>
+					<key>username</key>
+					<string></string>
+					<key>AllowedProtocolMaskInRoaming</key>
+					<integer>3</integer>
+					<key>apn</key>
+					<string>emergency.lguplus.co.kr</string>
+					<key>type-mask</key>
+					<integer>262144</integer>
+					<key>AllowedProtocolMask</key>
+					<integer>1</integer>
+				</dict>
+				<dict>
+					<key>type-mask</key>
+					<integer>48</integer>
+					<key>password</key>
+					<string></string>
+					<key>AlwaysOnPDU</key>
+					<true/>
+					<key>enableXLAT464</key>
+					<true/>
+					<key>AllowedProtocolMaskInRoaming</key>
+					<integer>3</integer>
+					<key>username</key>
+					<string></string>
+					<key>apn</key>
+					<string>tethering.lguplus.co.kr</string>
+					<key>AllowedProtocolMask</key>
+					<integer>3</integer>
+				</dict>
+			</array>
+			<key>technology-mask</key>
+			<integer>9</integer>
+		</dict>
+	</array>
+	<key>Show5GStandaloneSwitch</key>
+	<true/>
 	<key>Show5GWarningUnsupportedCarrier</key>
 	<false/>
+	<key>Enable5GAutoByDefault</key>
+	<true/>
 	<key>SupportsNRNSAInboundRoaming</key>
 	<true/>
 	<key>Show5GSwitch</key>

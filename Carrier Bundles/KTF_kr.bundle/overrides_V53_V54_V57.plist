@@ -29,7 +29,7 @@
 		<key>Voice</key>
 		<dict>
 			<key>EnableVoNRByDefault</key>
-			<true/>
+			<false/>
 		</dict>
 		<key>XCAP</key>
 		<dict>

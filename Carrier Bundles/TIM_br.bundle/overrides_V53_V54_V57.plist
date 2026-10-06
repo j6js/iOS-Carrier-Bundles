@@ -3,15 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>DerPriFileVersion</key>
-	<string>6.0.162</string>
+	<string>6.1.161</string>
 	<key>Enable5GStandaloneByDefault</key>
-	<false/>
+	<true/>
 	<key>_Exclude</key>
 	<array>
 		<string>EnableLTEAfterUpgrade</string>
 	</array>
-	<key>ShowHighDataModeSwitch</key>
-	<true/>
+	<key>IMSConfig</key>
+	<dict>
+		<key>SMS</key>
+		<dict>
+			<key>SupportedDomains</key>
+			<dict>
+				<key>NR</key>
+				<true/>
+			</dict>
+		</dict>
+	</dict>
 	<key>PhoneAccountTransfer</key>
 	<dict>
 		<key>TransferErrorCodes</key>
@@ -40,19 +49,12 @@
 		<key>MinCompatibleOS</key>
 		<string>18.0</string>
 	</dict>
-	<key>IMSConfig</key>
-	<dict>
-		<key>SMS</key>
-		<dict>
-			<key>SupportedDomains</key>
-			<dict>
-				<key>NR</key>
-				<true/>
-			</dict>
-		</dict>
-	</dict>
+	<key>ShowHighDataModeSwitch</key>
+	<true/>
 	<key>DerPriFileName</key>
 	<string>overrides_V53_V54_V57.der.pri</string>
+	<key>IPv6SupportedDataModeMask</key>
+	<integer>110623</integer>
 	<key>CarrierEntitlements</key>
 	<dict>
 		<key>SupportedEntitlements</key>
@@ -71,6 +73,8 @@
 		<key>SupportCrossPlatformSIMTransfer</key>
 		<true/>
 	</dict>
+	<key>DataIndicatorOverrideForNRMmwave</key>
+	<string>NRPlus</string>
 	<key>Show5GStandaloneSwitch</key>
 	<true/>
 	<key>Show5GWarningUnsupportedCarrier</key>

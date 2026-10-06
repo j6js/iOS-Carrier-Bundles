@@ -6,12 +6,32 @@
 	<dict>
 		<key>AlertConfigurations</key>
 		<dict>
+			<key>Configuration_mx_2</key>
+			<dict>
+				<key>Sound</key>
+				<string>cbs_alert_us.caf</string>
+				<key>OverrideAccessibilityVibrationSetting</key>
+				<true/>
+				<key>Vibration</key>
+				<string>cbs_vibe_us.plist</string>
+			</dict>
 			<key>Configuration_mx_1</key>
 			<dict>
 				<key>Sound</key>
 				<string>cbs_alert_ca.caf</string>
+				<key>OverrideAccessibilityVibrationSetting</key>
+				<true/>
 				<key>Vibration</key>
 				<string>cbs_vibe_ca.plist</string>
+			</dict>
+			<key>Configuration_mx_3</key>
+			<dict>
+				<key>Sound</key>
+				<string>Text</string>
+				<key>OverrideAccessibilityVibrationSetting</key>
+				<true/>
+				<key>Vibration</key>
+				<string>Default</string>
 			</dict>
 		</dict>
 		<key>SwitchGroupTitle</key>
@@ -36,7 +56,7 @@
 				<key>AlertType</key>
 				<string>Alerta Nivel 2</string>
 				<key>AlertConfiguration</key>
-				<string>Configuration_mx_1</string>
+				<string>Configuration_mx_2</string>
 				<key>EmergencyAlert</key>
 				<true/>
 				<key>ToServiceID</key>
@@ -48,7 +68,7 @@
 				<key>AlertType</key>
 				<string>Alerta Nivel 3</string>
 				<key>AlertConfiguration</key>
-				<string>Configuration_mx_1</string>
+				<string>Configuration_mx_3</string>
 				<key>EmergencyAlert</key>
 				<true/>
 				<key>ToServiceID</key>
@@ -108,7 +128,7 @@
 				<key>AlertType</key>
 				<string>Alerta Nivel 2</string>
 				<key>AlertConfiguration</key>
-				<string>Configuration_mx_1</string>
+				<string>Configuration_mx_2</string>
 				<key>EmergencyAlert</key>
 				<true/>
 				<key>ToServiceID</key>
@@ -120,7 +140,7 @@
 				<key>AlertType</key>
 				<string>Alerta Nivel 3</string>
 				<key>AlertConfiguration</key>
-				<string>Configuration_mx_1</string>
+				<string>Configuration_mx_3</string>
 				<key>EmergencyAlert</key>
 				<true/>
 				<key>ToServiceID</key>
@@ -158,30 +178,28 @@
 				<key>EnabledByDefault</key>
 				<false/>
 				<key>SwitchName</key>
-				<string>Mensajes de Prueba</string>
+				<string>Alerta de Prueba</string>
 				<key>ShowTimestamp</key>
 				<true/>
 				<key>SoundAlertPeriod</key>
 				<integer>8000</integer>
 				<key>NotificationTitle</key>
-				<string>Mensaje de Prueba</string>
+				<string>Alerta de Prueba</string>
 				<key>UserConfigurable</key>
 				<true/>
 			</dict>
 			<key>Alerta Nivel 3</key>
 			<dict>
-				<key>SoundAlertPeriod</key>
-				<integer>8000</integer>
-				<key>NotificationTitle</key>
-				<string>Alerta Grave</string>
+				<key>EnabledByDefault</key>
+				<true/>
 				<key>SwitchName</key>
-				<string>Alerta Grave</string>
+				<string>Aviso de Protección Civil</string>
 				<key>ShowTimestamp</key>
 				<true/>
 				<key>UserConfigurable</key>
-				<true/>
-				<key>EnabledByDefault</key>
-				<true/>
+				<false/>
+				<key>NotificationTitle</key>
+				<string>Aviso de Protección Civil</string>
 				<key>SoundAlertDeviceInMute</key>
 				<true/>
 			</dict>
@@ -207,9 +225,9 @@
 				<key>SoundAlertPeriod</key>
 				<integer>8000</integer>
 				<key>NotificationTitle</key>
-				<string>Alerta Máxima</string>
+				<string>Alerta Máxima por Sismo</string>
 				<key>SwitchName</key>
-				<string>Alerta Nivel 1</string>
+				<string>Alerta Máxima por Sismo</string>
 				<key>ShowTimestamp</key>
 				<true/>
 				<key>UserConfigurable</key>
@@ -238,18 +256,16 @@
 			</dict>
 			<key>Alerta Nivel 2</key>
 			<dict>
-				<key>SoundAlertPeriod</key>
-				<integer>8000</integer>
-				<key>NotificationTitle</key>
-				<string>Alerta Extrema</string>
+				<key>EnabledByDefault</key>
+				<true/>
 				<key>SwitchName</key>
-				<string>Alerta Extrema</string>
+				<string>Alerta Máxima</string>
 				<key>ShowTimestamp</key>
 				<true/>
 				<key>UserConfigurable</key>
-				<true/>
-				<key>EnabledByDefault</key>
-				<true/>
+				<false/>
+				<key>NotificationTitle</key>
+				<string>Alerta Máxima</string>
 				<key>SoundAlertDeviceInMute</key>
 				<true/>
 			</dict>
@@ -258,9 +274,9 @@
 				<key>SoundAlertPeriod</key>
 				<integer>8000</integer>
 				<key>NotificationTitle</key>
-				<string>Mensaje de Información</string>
+				<string>Mensajes de información</string>
 				<key>SwitchName</key>
-				<string>Mensajes de Información</string>
+				<string>Mensajes de información</string>
 				<key>ShowTimestamp</key>
 				<true/>
 				<key>UserConfigurable</key>

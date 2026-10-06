@@ -1224,8 +1224,6 @@
 	</dict>
 	<key>RemoteCardProvisioningSettings</key>
 	<dict>
-		<key>MinCompatibleWatchOSStandaloneMode</key>
-		<string>26.1</string>
 		<key>MatchingICCIDPrefixes</key>
 		<array>
 			<string>891480</string>
@@ -1249,6 +1247,8 @@
 		</array>
 		<key>MinCompatibleWatchOS</key>
 		<string>5.2.1</string>
+		<key>MinCompatibleWatchOSForStandaloneMode</key>
+		<string>26.1</string>
 		<key>ProvisioningMethod</key>
 		<string>CarrierFlow</string>
 		<key>SupportsFauxCard</key>

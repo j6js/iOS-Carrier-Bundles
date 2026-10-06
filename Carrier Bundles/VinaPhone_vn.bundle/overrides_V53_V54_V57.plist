@@ -9,12 +9,29 @@
 	<key>DerPriFileName</key>
 	<string>overrides_V53_V54_V57.der.pri</string>
 	<key>DerPriFileVersion</key>
-	<string>5.0.161</string>
+	<string>6.1.161</string>
+	<key>Enable5GStandaloneByDefault</key>
+	<false/>
 	<key>Show5GWarningUnsupportedCarrier</key>
 	<false/>
 	<key>SupportsNRNSAInboundRoaming</key>
 	<true/>
 	<key>Show5GSwitch</key>
+	<true/>
+	<key>IMSConfig</key>
+	<dict>
+		<key>SMS</key>
+		<dict>
+			<key>SupportedDomains</key>
+			<dict>
+				<key>LTE</key>
+				<true/>
+				<key>NR</key>
+				<true/>
+			</dict>
+		</dict>
+	</dict>
+	<key>Show5GStandaloneSwitch</key>
 	<true/>
 </dict>
 </plist>

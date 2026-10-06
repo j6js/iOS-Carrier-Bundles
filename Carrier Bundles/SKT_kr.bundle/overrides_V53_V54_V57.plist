@@ -2,21 +2,29 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>DerPriFileVersion</key>
+	<string>6.1.161</string>
+	<key>ShowVoNRSwitch</key>
+	<true/>
+	<key>Enable5GStandaloneByDefault</key>
+	<true/>
 	<key>ShowHighDataModeSwitch</key>
 	<true/>
-	<key>Enable5GAutoByDefault</key>
+	<key>IMSConfig</key>
+	<dict>
+		<key>Voice</key>
+		<dict>
+			<key>EnableVoNRByDefault</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>SupportsVoNR</key>
 	<true/>
 	<key>DerPriFileName</key>
 	<string>overrides_V53_V54_V57.der.pri</string>
-	<key>DerPriFileVersion</key>
-	<string>0.1.161</string>
-	<key>Show5GWarningUnsupportedCarrier</key>
-	<false/>
 	<key>ShowVolteSwitch</key>
 	<false/>
-	<key>SupportsNRNSAInboundRoaming</key>
-	<true/>
-	<key>Show5GSwitch</key>
+	<key>Show5GStandaloneSwitch</key>
 	<true/>
 	<key>apns</key>
 	<array>
@@ -28,6 +36,8 @@
 					<integer>4227077</integer>
 					<key>password</key>
 					<string></string>
+					<key>AlwaysOnPDU</key>
+					<true/>
 					<key>enableXLAT464</key>
 					<true/>
 					<key>AllowedProtocolMaskInRoaming</key>
@@ -40,14 +50,18 @@
 					<integer>3</integer>
 				</dict>
 				<dict>
+					<key>AlwaysOnPDU</key>
+					<true/>
 					<key>password</key>
 					<string></string>
+					<key>type-mask</key>
+					<integer>131072</integer>
+					<key>Support5GSaHandOver</key>
+					<true/>
 					<key>username</key>
 					<string></string>
 					<key>apn</key>
 					<string>ims</string>
-					<key>type-mask</key>
-					<integer>131072</integer>
 					<key>AllowedProtocolMask</key>
 					<integer>3</integer>
 				</dict>
@@ -56,6 +70,8 @@
 					<integer>48</integer>
 					<key>password</key>
 					<string></string>
+					<key>AlwaysOnPDU</key>
+					<true/>
 					<key>enableXLAT464</key>
 					<true/>
 					<key>AllowedProtocolMaskInRoaming</key>
@@ -95,5 +111,13 @@
 			<integer>1</integer>
 		</dict>
 	</array>
+	<key>Show5GWarningUnsupportedCarrier</key>
+	<false/>
+	<key>Enable5GAutoByDefault</key>
+	<true/>
+	<key>Show5GSwitch</key>
+	<true/>
+	<key>SupportsNRNSAInboundRoaming</key>
+	<true/>
 </dict>
 </plist>
