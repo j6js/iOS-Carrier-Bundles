@@ -5,7 +5,7 @@ This repo contains the Carrier Bundles currently bundled with iOS version 27.2 f
 ## Last Extraction Metadata
 
 #### Last Extraction Time
-`2026-10-09 03:30:37 UTC`
+`2026-10-10 03:10:28 UTC`
 
 #### iOS Build Info
 
