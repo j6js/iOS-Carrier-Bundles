@@ -127,10 +127,14 @@
 	<string>Ooredoo WiFi Call</string>
 	<key>CarrierEntitlements</key>
 	<dict>
-		<key>SupportedEntitlements</key>
-		<integer>1025</integer>
+		<key>SupportsOnDevicePhysicalSIMConvert</key>
+		<true/>
+		<key>SupportSecureIntent</key>
+		<true/>
 		<key>ProtocolVersion</key>
 		<string>2</string>
+		<key>ProvisioningRecheckPeriod</key>
+		<integer>1</integer>
 		<key>Authentication</key>
 		<dict>
 			<key>Type</key>
@@ -138,12 +142,18 @@
 			<key>Username</key>
 			<string>0$IMSI@nai.epc.mnc$MNC.mcc$MCC.3gppnetwork.org</string>
 		</dict>
-		<key>ProvisioningRecheckPeriod</key>
-		<integer>1</integer>
+		<key>SupportedEntitlements</key>
+		<integer>9217</integer>
 		<key>ServerAddress</key>
 		<string>https://es.ooredoo.mv/entitlement</string>
+		<key>SupportedActions</key>
+		<array>
+			<string>transferSIMService</string>
+		</array>
 		<key>UpdatePeriod</key>
 		<integer>24</integer>
+		<key>SupportPhysicalSIMtoESIMTransfer</key>
+		<true/>
 	</dict>
 	<key>ShowDialAssist</key>
 	<true/>
@@ -169,6 +179,34 @@
 	</dict>
 	<key>ShowWiFiCallingWarningUnsupportedCarrier</key>
 	<false/>
+	<key>PhoneAccountTransfer</key>
+	<dict>
+		<key>LocalInstallSMDPURL</key>
+		<string>https://ooredoomdv.rsp.instant-connectivity.com</string>
+		<key>TransferErrorCodes</key>
+		<dict>
+			<key>CarrierDefaultErrors</key>
+			<array>
+				<string>400</string>
+			</array>
+			<key>BillingErrors</key>
+			<array>
+				<string>401</string>
+			</array>
+			<key>IneligibleAccountErrors</key>
+			<array>
+				<string>402</string>
+			</array>
+			<key>MaintenanceErrors</key>
+			<array>
+				<string>403</string>
+			</array>
+			<key>BlockedAccountErrors</key>
+			<array>
+				<string>405</string>
+			</array>
+		</dict>
+	</dict>
 	<key>ShowVolteSwitch</key>
 	<true/>
 	<key>SupportsImsCapability</key>
@@ -382,6 +420,8 @@
 	<dict>
 		<key>MultiSIMTopic</key>
 		<string>com.ooredoo.es</string>
+		<key>CellularPlanTransferTopic</key>
+		<string>com.ooredoo.es.magnolia</string>
 	</dict>
 	<key>apns</key>
 	<array>

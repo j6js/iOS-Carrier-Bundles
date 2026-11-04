@@ -15,6 +15,8 @@
 			<key>Username</key>
 			<string>0$IMSI@nai.epc.mnc$MNC.mcc$MCC.3gppnetwork.org</string>
 		</dict>
+		<key>SupportedAuthorizationTokens</key>
+		<integer>2</integer>
 		<key>UpdatePeriod</key>
 		<integer>24</integer>
 	</dict>
@@ -78,10 +80,10 @@
 	</dict>
 	<key>ShowVolteWarningUnsupportedCarrier</key>
 	<false/>
-	<key>ShowDialAssist</key>
-	<true/>
 	<key>PhoneNumberRegistrationGatewayAddress</key>
 	<string>+447786205094</string>
+	<key>ShowDialAssist</key>
+	<true/>
 	<key>WatchCustomerServicePhoneNumber</key>
 	<string>0735 300 400</string>
 	<key>MVNOOverrides</key>
@@ -496,17 +498,29 @@
 	<integer>53</integer>
 	<key>AllowedServicesTypeMaskOnInternet</key>
 	<integer>32768</integer>
-	<key>SuppressSimToolkitSendShortMessageNotifications</key>
-	<true/>
+	<key>RCS</key>
+	<dict>
+		<key>EnableBusinessMessagingByDefault</key>
+		<true/>
+		<key>ProvisioningData</key>
+		<dict>
+			<key>ServerURL</key>
+			<string>config.rcs.mnc$mnc.mcc$mcc.jibecloud.net</string>
+		</dict>
+		<key>ShowBusinessMessagingSwitch</key>
+		<true/>
+		<key>EnableRCSByDefault</key>
+		<true/>
+	</dict>
 	<key>PushSettings</key>
 	<dict>
 		<key>MultiSIMTopic</key>
 		<string>se.tre.entitlement.multisim</string>
 	</dict>
+	<key>SuppressSimToolkitSendShortMessageNotifications</key>
+	<true/>
 	<key>VVMIgnoresIntlDataRoaming</key>
 	<false/>
-	<key>VisualVoicemailServiceName</key>
-	<string>IMAP</string>
 	<key>EnableLTEAfterUpgrade</key>
 	<true/>
 	<key>StatusBarImages</key>
@@ -520,6 +534,8 @@
 			<string>3 SE</string>
 		</dict>
 	</array>
+	<key>VisualVoicemailServiceName</key>
+	<string>IMAP</string>
 	<key>CarrierName</key>
 	<string>3 SE</string>
 	<key>SupportsImsCapability</key>

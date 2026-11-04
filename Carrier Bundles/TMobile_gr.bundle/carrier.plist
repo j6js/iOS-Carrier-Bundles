@@ -207,7 +207,7 @@
 	<key>ShowDialAssist</key>
 	<true/>
 	<key>OverrideOperatorWiFiName</key>
-	<string>COSMOTE WiFi</string>
+	<string>Telekom WiFi</string>
 	<key>MMS</key>
 	<dict>
 		<key>MMSC</key>
@@ -359,11 +359,13 @@
 	<dict>
 		<key>Signaling</key>
 		<dict>
-			<key>WaitForRingingTimerMOSeconds</key>
-			<integer>25</integer>
+			<key>EarlyMediaNeedsHeader</key>
+			<true/>
 			<key>RingbackTimerSeconds</key>
 			<integer>130</integer>
 			<key>EnableCellularNetworkInfo</key>
+			<true/>
+			<key>UseCIDUrlInPIDF</key>
 			<true/>
 			<key>RingingTimerSeconds</key>
 			<integer>130</integer>
@@ -371,8 +373,8 @@
 			<false/>
 			<key>MaxTransportErrors</key>
 			<integer>5</integer>
-			<key>UseOutgoingSipUri</key>
-			<true/>
+			<key>Preconditions</key>
+			<string>Supported</string>
 			<key>SipTimers</key>
 			<dict>
 				<key>InviteResponseTimeout</key>
@@ -380,6 +382,10 @@
 			</dict>
 			<key>AlwaysAddPrivacyHeader</key>
 			<true/>
+			<key>UseOutgoingSipUri</key>
+			<true/>
+			<key>PIDFGeoPrivShape</key>
+			<string>ellipsoid</string>
 			<key>AlwaysSendSessionProgress</key>
 			<true/>
 			<key>IncomingCallEndReasons</key>
@@ -481,11 +487,17 @@
 			<string>49,51,65</string>
 			<key>UseIPSec</key>
 			<true/>
-			<key>strictCallFlows</key>
-			<true/>
+			<key>Allow3DPIDFInMessages</key>
+			<false/>
 			<key>IncompleteRegistrationThrottlingIntervalSeconds</key>
 			<integer>0</integer>
+			<key>strictCallFlows</key>
+			<true/>
 			<key>DeferMediaActivationOnSessionConfirmed</key>
+			<true/>
+			<key>AllowGeolocationForEmergencyCallsWhileInboundRoaming</key>
+			<true/>
+			<key>SendEmergencyLocationUpdates</key>
 			<true/>
 			<key>InviteErrorResponsesToTriggerCSFB</key>
 			<string>-380,3XX,4XX,5XX,6XX</string>
@@ -507,6 +519,8 @@
 			</dict>
 			<key>SupportPEarlyMediaHeader</key>
 			<true/>
+			<key>AlwaysAddGeolocationForEmergencyCalls</key>
+			<true/>
 			<key>TriggerCSFBOnSDPError</key>
 			<true/>
 			<key>AdditionalContactParams</key>
@@ -520,15 +534,15 @@
 			<true/>
 			<key>ussdEnabled</key>
 			<true/>
-			<key>PreconditionUpdateDelayTimerMilliseconds</key>
-			<integer>130000</integer>
-			<key>Preconditions</key>
-			<string>Supported</string>
 			<key>RequirePreconditionsWhenMandatory</key>
 			<false/>
+			<key>AddLocationToEmergencySMS</key>
+			<false/>
+			<key>PreconditionUpdateDelayTimerMilliseconds</key>
+			<integer>130000</integer>
+			<key>WaitForRingingTimerMOSeconds</key>
+			<integer>25</integer>
 			<key>IgnoreRegNotificationContactExpires</key>
-			<true/>
-			<key>EarlyMediaNeedsHeader</key>
 			<true/>
 			<key>WaitForRingingTimerMTSeconds</key>
 			<integer>25</integer>
@@ -658,7 +672,7 @@
 			<key>ServiceCode</key>
 			<string>13888</string>
 			<key>ServiceName</key>
-			<string>COSMOTE Call Center</string>
+			<string>Telekom Call Center</string>
 		</dict>
 	</array>
 	<key>PushSettings</key>
@@ -676,7 +690,7 @@
 			<key>CarrierName</key>
 			<string>COSMOTE</string>
 			<key>StatusBarCarrierName</key>
-			<string>COSMOTE</string>
+			<string>Telekom</string>
 		</dict>
 		<dict>
 			<key>AllowPrefixMatching</key>
@@ -684,19 +698,19 @@
 			<key>CarrierName</key>
 			<string>GR COSMOTE</string>
 			<key>StatusBarCarrierName</key>
-			<string>COSMOTE</string>
+			<string>Telekom</string>
 		</dict>
 	</array>
 	<key>SMSEncoding</key>
 	<integer>519</integer>
 	<key>CarrierName</key>
-	<string>COSMOTE</string>
+	<string>Telekom</string>
 	<key>SupportsImsCapability</key>
 	<true/>
 	<key>MyAccountURL</key>
-	<string>https://www.cosmote.gr</string>
+	<string>https://www.telekom.gr</string>
 	<key>MyAccountURLTitle</key>
-	<string>COSMOTE</string>
+	<string>Telekom</string>
 	<key>MandatoryVerify</key>
 	<dict>
 		<key>SIMs</key>

@@ -84,8 +84,39 @@
 	<dict>
 		<key>Media</key>
 		<dict>
+			<key>AudioCodecs</key>
+			<dict>
+				<key>97</key>
+				<dict>
+					<key>br</key>
+					<string>5.9-24.4</string>
+					<key>SampleRate</key>
+					<integer>16000</integer>
+					<key>EncodingName</key>
+					<string>EVS</string>
+					<key>bw</key>
+					<string>nb-swb</string>
+					<key>max-red</key>
+					<string>0</string>
+				</dict>
+				<key>96</key>
+				<dict>
+					<key>br</key>
+					<string>9.6-24.4</string>
+					<key>SampleRate</key>
+					<integer>16000</integer>
+					<key>EncodingName</key>
+					<string>EVS</string>
+					<key>bw</key>
+					<string>swb</string>
+					<key>max-red</key>
+					<string>0</string>
+				</dict>
+			</dict>
 			<key>IncludeSDPModeChangeCapability</key>
 			<true/>
+			<key>EVSHardBwLimit</key>
+			<string>nb-swb</string>
 		</dict>
 		<key>Signaling</key>
 		<dict>

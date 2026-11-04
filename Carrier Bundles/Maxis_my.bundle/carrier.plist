@@ -18,7 +18,7 @@
 			<string>0$IMSI@nai.epc.mnc$MNC.mcc$MCC.3gppnetwork.org</string>
 		</dict>
 		<key>ServerAddress</key>
-		<string>https://apple-es.maxis.com.my:8088/ESMaxis</string>
+		<string>https://apple-es.maxis.com.my:443/ESMaxis</string>
 		<key>SupportPhysicalSIMtoESIMTransfer</key>
 		<true/>
 		<key>UpdatePeriod</key>

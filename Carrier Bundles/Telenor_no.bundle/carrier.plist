@@ -662,5 +662,12 @@
 		<string>24201_ID-89470022</string>
 		<string>24201_ID-89470023</string>
 	</array>
+	<key>CarrierAppDiscoverability</key>
+	<dict>
+		<key>347021850</key>
+		<array>
+			<string>Telenor</string>
+		</array>
+	</dict>
 </dict>
 </plist>

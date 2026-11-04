@@ -48,7 +48,7 @@
 	<key>CarrierEntitlements</key>
 	<dict>
 		<key>SupportedEntitlements</key>
-		<integer>4203697</integer>
+		<integer>4205745</integer>
 		<key>SupportPhysicalSIMtoESIMTransfer</key>
 		<true/>
 		<key>SupportsOnDevicePhysicalSIMConvert</key>

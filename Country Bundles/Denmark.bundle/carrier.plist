@@ -253,6 +253,23 @@
 	<array>
 		<string>dk</string>
 	</array>
+	<key>Location</key>
+	<dict>
+		<key>EmergencyLocation</key>
+		<dict>
+			<key>AugmentedEmergencyAction</key>
+			<dict>
+				<key>AML</key>
+				<dict>
+					<key>SMS</key>
+					<dict>
+						<key>Destination</key>
+						<string>+4591155555</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+	</dict>
 	<key>CountryName</key>
 	<string>Denmark</string>
 	<key>SupportedCountryIds</key>
@@ -260,13 +277,13 @@
 		<string>238</string>
 		<string>com.apple.Denmark</string>
 	</array>
+	<key>ShowTARandomizationSwitch</key>
+	<true/>
 	<key>VoiceTextMedia</key>
 	<dict>
 		<key>SupportsRTT</key>
 		<true/>
 	</dict>
-	<key>ShowTARandomizationSwitch</key>
-	<true/>
 	<key>EmergencyCalling</key>
 	<dict>
 		<key>EmergencyNumbers</key>
@@ -276,6 +293,14 @@
 				<string>112</string>
 				<key>PreferredEmergencyNumber</key>
 				<true/>
+			</dict>
+			<dict>
+				<key>SupportsText</key>
+				<true/>
+				<key>Number</key>
+				<string>+4521206112</string>
+				<key>SupportsVoice</key>
+				<false/>
 			</dict>
 		</array>
 	</dict>

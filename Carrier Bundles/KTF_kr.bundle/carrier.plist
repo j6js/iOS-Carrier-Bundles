@@ -35,76 +35,6 @@
 		<key>SoftwareUpdateOptInRequired</key>
 		<false/>
 	</dict>
-	<key>EmergencyCalling</key>
-	<dict>
-		<key>EmergencyNumbers</key>
-		<array>
-			<dict>
-				<key>Number</key>
-				<string>111</string>
-				<key>Category</key>
-				<integer>6</integer>
-			</dict>
-			<dict>
-				<key>Title</key>
-				<string>EMERGENCY_DISAMBIGUATION_POLICE</string>
-				<key>Number</key>
-				<string>112</string>
-				<key>PreferredEmergencyNumber</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>Number</key>
-				<string>113</string>
-				<key>Category</key>
-				<integer>3</integer>
-			</dict>
-			<dict>
-				<key>Number</key>
-				<string>117</string>
-				<key>Category</key>
-				<integer>18</integer>
-			</dict>
-			<dict>
-				<key>Number</key>
-				<string>118</string>
-				<key>Category</key>
-				<integer>19</integer>
-			</dict>
-			<dict>
-				<key>PreferredEmergencyNumber</key>
-				<true/>
-				<key>Category</key>
-				<integer>4</integer>
-				<key>Title</key>
-				<string>EMERGENCY_DISAMBIGUATION_FIRE_EMERGENCY_AMBULANCE</string>
-				<key>Number</key>
-				<string>119</string>
-			</dict>
-			<dict>
-				<key>Number</key>
-				<string>119#</string>
-				<key>Category</key>
-				<integer>4</integer>
-			</dict>
-			<dict>
-				<key>PreferredEmergencyNumber</key>
-				<true/>
-				<key>Category</key>
-				<integer>8</integer>
-				<key>Title</key>
-				<string>EMERGENCY_DISAMBIGUATION_COAST_GUARD</string>
-				<key>Number</key>
-				<string>122</string>
-			</dict>
-			<dict>
-				<key>Number</key>
-				<string>125</string>
-				<key>Category</key>
-				<integer>9</integer>
-			</dict>
-		</array>
-	</dict>
 	<key>AttachAPN</key>
 	<dict>
 		<key>3GPP</key>
@@ -368,27 +298,8 @@
 				<key>H</key>
 				<integer>36000</integer>
 			</dict>
-			<key>EmergencyURNs</key>
-			<dict>
-				<key>122</key>
-				<string>urn:service:sos.marine</string>
-				<key>112</key>
-				<string>urn:service:sos.police</string>
-				<key>125</key>
-				<string>urn:service:sos.country-specific.kr.125</string>
-				<key>118</key>
-				<string>urn:service:sos.country-specific.kr.118</string>
-				<key>911</key>
-				<string>urn:service:sos.fire</string>
-				<key>111</key>
-				<string>urn:service:sos.country-specific.kr.111</string>
-				<key>117</key>
-				<string>urn:service:sos.country-specific.kr.117</string>
-				<key>113</key>
-				<string>urn:service:sos.country-specific.kr.113</string>
-				<key>119</key>
-				<string>urn:service:sos.fire</string>
-			</dict>
+			<key>SessionExpiresSeconds</key>
+			<integer>360</integer>
 			<key>RingbackTimerSeconds</key>
 			<integer>180</integer>
 			<key>SendPreferredServiceInInvite</key>
@@ -400,8 +311,8 @@
 			</dict>
 			<key>RequirePreconditionsWhenMandatory</key>
 			<false/>
-			<key>SessionExpiresSeconds</key>
-			<integer>360</integer>
+			<key>UserAgentHeaderValue</key>
+			<string>TTA-VoLTE/2.0 ${OS}/${OS_VERSION} ${DEVICE}/1.0/KT</string>
 			<key>Preconditions</key>
 			<string>None</string>
 			<key>UseNormalIdentityForEmergencyCalls</key>
@@ -486,8 +397,6 @@
 					<string>SIP</string>
 				</dict>
 			</dict>
-			<key>UserAgentHeaderValue</key>
-			<string>TTA-VoLTE/2.0 ${OS}/${OS_VERSION} ${DEVICE}/1.0/KT</string>
 			<key>RingingTimerSeconds</key>
 			<integer>90</integer>
 			<key>RegistrationMaxTime</key>

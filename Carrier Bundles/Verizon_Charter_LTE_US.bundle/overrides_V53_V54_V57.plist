@@ -112,7 +112,7 @@
 			<key>NoFallbackVoiceService</key>
 			<true/>
 			<key>SupportPEarlyMediaHeader</key>
-			<false/>
+			<true/>
 			<key>IPSecSegmentOffset</key>
 			<integer>210</integer>
 			<key>AdditionalFeatureTags</key>
@@ -131,7 +131,7 @@
 				</dict>
 			</dict>
 			<key>EarlyMediaNeedsHeader</key>
-			<false/>
+			<true/>
 			<key>AlwaysAddSipInstanceToSubscribeRequest</key>
 			<true/>
 			<key>T3396PdpBackOffSeconds</key>

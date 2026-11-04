@@ -795,16 +795,12 @@
 			<integer>90</integer>
 			<key>UseCIDUrlInPIDF</key>
 			<true/>
-			<key>AccessNetworkRefreshDelayMilliseconds</key>
-			<integer>30000</integer>
 			<key>AlwaysAddGeolocationForEmergencyCalls</key>
 			<true/>
 			<key>PIDFGeoPrivShape</key>
 			<string>ellipsoid</string>
 			<key>EnableBrandedCalling</key>
 			<true/>
-			<key>AccessNetworkRefreshMethod</key>
-			<string>INVITE</string>
 			<key>IgnoreOverridesForWPSCalls</key>
 			<true/>
 			<key>UseTupleInPIDF</key>

@@ -31,6 +31,8 @@
 	<true/>
 	<key>MyAccountURLTitle</key>
 	<string>epic</string>
+	<key>AllowedServicesTypeMaskOnInternet</key>
+	<integer>32768</integer>
 	<key>ShowVolteWarningUnsupportedCarrier</key>
 	<false/>
 	<key>StatusBarImages</key>
@@ -58,16 +60,63 @@
 	</array>
 	<key>IMSConfig</key>
 	<dict>
+		<key>Media</key>
+		<dict>
+			<key>AudioCodecs</key>
+			<dict>
+				<key>109</key>
+				<dict>
+					<key>ch-aw-recv</key>
+					<string>0</string>
+					<key>br</key>
+					<string>5.9-24.4</string>
+					<key>SampleRate</key>
+					<integer>16000</integer>
+					<key>EncodingName</key>
+					<string>EVS</string>
+					<key>bw</key>
+					<string>nb-swb</string>
+					<key>max-red</key>
+					<string>240</string>
+				</dict>
+			</dict>
+			<key>EVSHardBwLimit</key>
+			<string>nb-swb</string>
+		</dict>
 		<key>Voice</key>
 		<dict>
 			<key>EnableVolteByDefault</key>
 			<true/>
 		</dict>
 	</dict>
-	<key>ShowDialAssist</key>
-	<true/>
+	<key>CarrierEntitlements</key>
+	<dict>
+		<key>SupportSecureIntent</key>
+		<true/>
+		<key>SupportedEntitlements</key>
+		<integer>8193</integer>
+		<key>ProtocolVersion</key>
+		<string>2</string>
+		<key>Authentication</key>
+		<dict>
+			<key>Type</key>
+			<integer>1</integer>
+			<key>Username</key>
+			<string>0$IMSI@nai.epc.mnc$MNC.mcc$MCC.3gppnetwork.org</string>
+		</dict>
+		<key>ServerAddress</key>
+		<string>https://es.epic.com.mt</string>
+		<key>SupportPhysicalSIMtoESIMTransfer</key>
+		<true/>
+		<key>SupportsOnDevicePhysicalSIMConvert</key>
+		<true/>
+		<key>UpdatePeriod</key>
+		<integer>24</integer>
+	</dict>
 	<key>Show3GSwitchWith4G</key>
 	<false/>
+	<key>ShowDialAssist</key>
+	<true/>
 	<key>PhoneNumberRegistrationGatewayAddress</key>
 	<string>+447786205094</string>
 	<key>CarrierName</key>
@@ -90,6 +139,38 @@
 	</dict>
 	<key>VisualVoicemailServiceName</key>
 	<string>none</string>
+	<key>PhoneAccountTransfer</key>
+	<dict>
+		<key>LocalInstallSMDPURL</key>
+		<string>https://mct.prod.ondemandconnectivity.com</string>
+		<key>TransferErrorCodes</key>
+		<dict>
+			<key>MaintenanceErrors</key>
+			<array>
+				<string>5020</string>
+				<string>5021</string>
+				<string>5022</string>
+			</array>
+			<key>IneligibleAccountErrors</key>
+			<array>
+				<string>5010</string>
+				<string>5011</string>
+				<string>5012</string>
+				<string>5013</string>
+			</array>
+			<key>CarrierDefaultErrors</key>
+			<array>
+				<string>5000</string>
+				<string>5001</string>
+				<string>5002</string>
+				<string>5009</string>
+			</array>
+		</dict>
+		<key>MinCompatibleOS</key>
+		<string>27.3</string>
+		<key>SupportsFallbackToLegacyFlow</key>
+		<false/>
+	</dict>
 	<key>ShowVolteSwitch</key>
 	<false/>
 	<key>Show3GSwitchWithVolte</key>
@@ -115,6 +196,11 @@
 		<key>MaxMessageSize</key>
 		<integer>307200</integer>
 	</dict>
+	<key>PushSettings</key>
+	<dict>
+		<key>CellularPlanTransferTopic</key>
+		<string>mt.com.epic.notification.iphone-transfer</string>
+	</dict>
 	<key>apns</key>
 	<array>
 		<dict>
@@ -125,7 +211,7 @@
 			<key>apn</key>
 			<string>connect</string>
 			<key>type-mask</key>
-			<integer>49</integer>
+			<integer>32817</integer>
 		</dict>
 		<dict>
 			<key>password</key>

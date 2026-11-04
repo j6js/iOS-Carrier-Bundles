@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>DerPriFileVersion</key>
-	<string>5.0.162</string>
+	<string>6.2.161</string>
 	<key>ShowVoNRSwitch</key>
 	<true/>
-	<key>SupportsNRNSAInboundRoaming</key>
+	<key>Enable5GStandaloneByDefault</key>
 	<true/>
 	<key>_Exclude</key>
 	<array>
@@ -41,6 +41,8 @@
 	<true/>
 	<key>DerPriFileName</key>
 	<string>overrides_V53_V54_V57.der.pri</string>
+	<key>DataIndicatorOverrideForNRMmwave</key>
+	<string>NRPlus</string>
 	<key>ShowVolteSwitch</key>
 	<false/>
 	<key>Show5GStandaloneSwitch</key>
@@ -98,9 +100,9 @@
 	</array>
 	<key>Enable5GAutoByDefault</key>
 	<true/>
-	<key>Show5GSwitch</key>
+	<key>SupportsNRNSAInboundRoaming</key>
 	<true/>
-	<key>Enable5GStandaloneByDefault</key>
+	<key>Show5GSwitch</key>
 	<true/>
 </dict>
 </plist>

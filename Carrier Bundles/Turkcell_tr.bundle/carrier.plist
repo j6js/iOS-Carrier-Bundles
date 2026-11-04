@@ -19,6 +19,8 @@
 		</dict>
 		<key>ServerAddress</key>
 		<string>https://ses-prod.turkcell.com.tr</string>
+		<key>SupportPhysicalSIMtoESIMTransfer</key>
+		<true/>
 		<key>SupportedActions</key>
 		<array>
 			<string>TransferSIMService</string>
@@ -254,7 +256,7 @@
 			</array>
 		</dict>
 		<key>MinCompatibleOS</key>
-		<string>27.0</string>
+		<string>27.3</string>
 		<key>SupportsFallbackToLegacyFlow</key>
 		<false/>
 	</dict>

@@ -94,12 +94,12 @@
 		</dict>
 		<key>XCAP</key>
 		<dict>
-			<key>NafUseSecureTransport</key>
-			<true/>
+			<key>useSecureTransport</key>
+			<false/>
 			<key>BsfHost</key>
 			<string>bsf.ims.mnc152.mcc502.pub.3gppnetwork.org</string>
 			<key>NafHost</key>
-			<string>xcap.ims.mnc152.mcc502.pub.3gppnetwork.org</string>
+			<string>naf.ims.mnc152.mcc502.pub.3gppnetwork.org</string>
 			<key>supported</key>
 			<true/>
 			<key>BsfPort</key>
@@ -176,7 +176,7 @@
 	<key>SupportsImsCapability</key>
 	<true/>
 	<key>ShowCallForwardingSwitch</key>
-	<false/>
+	<true/>
 	<key>HomeBundleIdentifier</key>
 	<string>com.apple.Malaysia</string>
 	<key>APNEditabilityTypemaskNew</key>
@@ -194,7 +194,7 @@
 					<key>AllowedProtocolMask</key>
 					<integer>3</integer>
 					<key>type-mask</key>
-					<integer>49</integer>
+					<integer>1048625</integer>
 				</dict>
 				<dict>
 					<key>password</key>

@@ -725,8 +725,10 @@
 			<integer>1</integer>
 			<key>MaxReRegistrationAttempts</key>
 			<integer>0</integer>
-			<key>PrivacyHeaderValue</key>
-			<string>header</string>
+			<key>SendPreferredServiceInInvite</key>
+			<true/>
+			<key>ShowBrandedCallingSwitch</key>
+			<true/>
 			<key>AdditionalHeaders</key>
 			<dict>
 				<key>INVITE[wifi,911]</key>
@@ -735,8 +737,6 @@
 					<string>Supported: geolocation</string>
 				</array>
 			</dict>
-			<key>ShowBrandedCallingSwitch</key>
-			<true/>
 			<key>AllowGeolocationForEmergencyCallsWhileInboundRoaming</key>
 			<true/>
 			<key>InviteErrorResponsesToTriggerCSFB</key>
@@ -751,8 +751,8 @@
 			<false/>
 			<key>VerstatFeatureCapability</key>
 			<string>Enabled</string>
-			<key>LocalQoSTimeoutMTSeconds</key>
-			<integer>6</integer>
+			<key>PrivacyHeaderValue</key>
+			<string>header</string>
 			<key>SipTimers</key>
 			<dict>
 				<key>D</key>
@@ -772,12 +772,12 @@
 				<key>H</key>
 				<integer>32000</integer>
 			</dict>
-			<key>EarlyMediaNeedsHeader</key>
-			<true/>
+			<key>LocalQoSTimeoutMTSeconds</key>
+			<integer>6</integer>
 			<key>LocalQoSTimeoutMOSeconds</key>
 			<integer>10</integer>
-			<key>ReRegisterOnErrorCodes</key>
-			<string>REGISTER:403,480,500,503,504;INVITE:60,403,408,504</string>
+			<key>EarlyMediaNeedsHeader</key>
+			<true/>
 			<key>RegisterOnServiceUpdate</key>
 			<false/>
 			<key>SpamCallRiskLevels</key>
@@ -840,16 +840,12 @@
 			<integer>90</integer>
 			<key>UseCIDUrlInPIDF</key>
 			<true/>
-			<key>AccessNetworkRefreshDelayMilliseconds</key>
-			<integer>30000</integer>
 			<key>AlwaysAddGeolocationForEmergencyCalls</key>
 			<true/>
 			<key>PIDFGeoPrivShape</key>
 			<string>ellipsoid</string>
 			<key>EnableBrandedCalling</key>
 			<true/>
-			<key>AccessNetworkRefreshMethod</key>
-			<string>INVITE</string>
 			<key>IgnoreOverridesForWPSCalls</key>
 			<true/>
 			<key>UseTupleInPIDF</key>
@@ -909,10 +905,10 @@
 					<string>RemoteHangup</string>
 				</dict>
 			</dict>
+			<key>ReRegisterOnErrorCodes</key>
+			<string>REGISTER:403,480,500,503,504;INVITE:60,403,408,504</string>
 			<key>LocationForShortCodeCalls</key>
 			<string>CIVIC</string>
-			<key>SendPreferredServiceInInvite</key>
-			<true/>
 			<key>CountryOfOriginationFormat</key>
 			<string>BOTH</string>
 			<key>BrandedCallingAssetServersAllowList</key>

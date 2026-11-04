@@ -165,6 +165,22 @@ qbFzE8L6YoYX</string>
 	</dict>
 	<key>ShowDialAssist</key>
 	<true/>
+	<key>CarrierEntitlements</key>
+	<dict>
+		<key>SupportedEntitlements</key>
+		<integer>1</integer>
+		<key>ProtocolVersion</key>
+		<string>2</string>
+		<key>ServerAddress</key>
+		<string>https://ios.es.unitel.mn</string>
+		<key>Authentication</key>
+		<dict>
+			<key>Type</key>
+			<integer>1</integer>
+			<key>Username</key>
+			<string>0$IMSI@nai.epc.mnc$MNC.mcc$MCC.3gppnetwork.org</string>
+		</dict>
+	</dict>
 	<key>PhoneNumberRegistrationGatewayAddress</key>
 	<array>
 		<string>+447786205094</string>
@@ -239,7 +255,7 @@ qbFzE8L6YoYX</string>
 			<key>apn</key>
 			<string>net</string>
 			<key>type-mask</key>
-			<integer>49</integer>
+			<integer>32817</integer>
 			<key>AllowedProtocolMask</key>
 			<integer>3</integer>
 		</dict>

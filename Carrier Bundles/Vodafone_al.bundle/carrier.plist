@@ -24,12 +24,12 @@
 		<key>TransportFallback</key>
 		<false/>
 	</dict>
-	<key>ShowVolteWarningUnsupportedCarrier</key>
-	<false/>
-	<key>RoamingVoicemailPilotNumber</key>
-	<string>+35569135</string>
 	<key>RegistrationOptInRequired</key>
 	<true/>
+	<key>RoamingVoicemailPilotNumber</key>
+	<string>+35569135</string>
+	<key>ShowVolteWarningUnsupportedCarrier</key>
+	<false/>
 	<key>StatusBarImages</key>
 	<array>
 		<dict>
@@ -173,13 +173,15 @@
 			<key>E911OverCSIfNoIMSReg</key>
 			<true/>
 			<key>E911OverITechSupported</key>
-			<true/>
+			<false/>
 			<key>EnableVolteByDefault</key>
 			<true/>
 		</dict>
 	</dict>
 	<key>OverrideOperatorWiFiName</key>
 	<string>VodafoneAL WiFiCall</string>
+	<key>Show3GSwitchWith4G</key>
+	<false/>
 	<key>ShowDialAssist</key>
 	<true/>
 	<key>PhoneNumberRegistrationGatewayAddress</key>
@@ -299,6 +301,8 @@
 			<key>PreferredTechnology</key>
 			<string>ims</string>
 		</dict>
+		<key>EmergencyRemoteIdRequired</key>
+		<true/>
 		<key>ExtraConfigurationAttributeRequestv6</key>
 		<array>
 			<dict>
@@ -333,19 +337,6 @@
 				<integer>262144</integer>
 			</dict>
 		</array>
-		<key>ExtraConfigurationAttributeRequestv4</key>
-		<array>
-			<dict>
-				<key>Identifier</key>
-				<integer>16384</integer>
-				<key>Name</key>
-				<string>AssignedPCSCFIPv4</string>
-				<key>Type</key>
-				<string>IPv4Address</string>
-			</dict>
-		</array>
-		<key>5wiServiceMask</key>
-		<integer>1</integer>
 		<key>IKE</key>
 		<dict>
 			<key>NATTKeepAliveEnabled</key>
@@ -368,9 +359,34 @@
 			<key>RemoteAddress</key>
 			<string>epdg.epc.mnc002.mcc276.pub.3gppnetwork.org</string>
 		</dict>
+		<key>5wiServiceMask</key>
+		<integer>1</integer>
+		<key>ExtraConfigurationAttributeRequestv4</key>
+		<array>
+			<dict>
+				<key>Identifier</key>
+				<integer>16384</integer>
+				<key>Name</key>
+				<string>AssignedPCSCFIPv4</string>
+				<key>Type</key>
+				<string>IPv4Address</string>
+			</dict>
+		</array>
 	</dict>
 	<key>apns</key>
 	<array>
+		<dict>
+			<key>password</key>
+			<string></string>
+			<key>tech-type-mask</key>
+			<integer>262144</integer>
+			<key>username</key>
+			<string></string>
+			<key>apn</key>
+			<string>sos</string>
+			<key>type-mask</key>
+			<integer>262144</integer>
+		</dict>
 		<dict>
 			<key>password</key>
 			<string>web</string>

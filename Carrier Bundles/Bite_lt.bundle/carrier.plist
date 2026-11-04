@@ -327,6 +327,8 @@
 		</dict>
 		<key>Signaling</key>
 		<dict>
+			<key>CountryOfOriginationFormat</key>
+			<string>PANI</string>
 			<key>RingingTimerSeconds</key>
 			<integer>95</integer>
 			<key>UseIPSec</key>
@@ -344,8 +346,8 @@
 			</dict>
 			<key>RingbackTimerSeconds</key>
 			<integer>90</integer>
-			<key>CountryOfOriginationFormat</key>
-			<string>PANI</string>
+			<key>ValidateSipMessageRecipient</key>
+			<false/>
 		</dict>
 		<key>XCAP</key>
 		<dict>

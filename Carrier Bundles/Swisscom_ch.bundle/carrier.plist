@@ -21,6 +21,8 @@
 		</dict>
 		<key>SupportedEntitlements</key>
 		<integer>80897</integer>
+		<key>SupportedAuthorizationTokens</key>
+		<integer>2</integer>
 		<key>UserAgent</key>
 		<string>Entitlement/$version ($device) iOS/$iOSVersion</string>
 		<key>SupportCrossPlatformSIMTransfer</key>
@@ -29,8 +31,6 @@
 		<true/>
 		<key>ProtocolVersion</key>
 		<string>2</string>
-		<key>SupportsOnDevicePhysicalSIMConvert</key>
-		<true/>
 		<key>EnableDeviceAccountIdentifier</key>
 		<true/>
 		<key>DisableSecondaryCredentials</key>
@@ -40,6 +40,8 @@
 			<string>AuthenticateTrustFlag</string>
 			<string>TransferSIMService</string>
 		</array>
+		<key>SupportsOnDevicePhysicalSIMConvert</key>
+		<true/>
 	</dict>
 	<key>EmergencyCalling</key>
 	<dict>
@@ -699,6 +701,20 @@
 	<integer>48</integer>
 	<key>AllowedServicesTypeMaskOnInternet</key>
 	<integer>32768</integer>
+	<key>RCS</key>
+	<dict>
+		<key>EnableBusinessMessagingByDefault</key>
+		<true/>
+		<key>ProvisioningData</key>
+		<dict>
+			<key>ServerURL</key>
+			<string>config.rcs.mnc$mnc.mcc$mcc.jibecloud.net</string>
+		</dict>
+		<key>ShowBusinessMessagingSwitch</key>
+		<true/>
+		<key>EnableRCSByDefault</key>
+		<true/>
+	</dict>
 	<key>PushSettings</key>
 	<dict>
 		<key>MultiSIMTopic</key>

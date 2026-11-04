@@ -218,7 +218,7 @@
 		<string>Emergency Alerts</string>
 		<key>PrimaryBroadcastLanguages</key>
 		<array>
-			<string>se</string>
+			<string>sv</string>
 		</array>
 		<key>AlertTypes</key>
 		<dict>
@@ -227,7 +227,7 @@
 				<key>EnabledByDefault</key>
 				<false/>
 				<key>SoundIsMutableInDND</key>
-				<false/>
+				<true/>
 				<key>SwitchName</key>
 				<string>Test</string>
 				<key>UserConfigurable</key>
@@ -235,7 +235,7 @@
 				<key>NotificationTitle</key>
 				<string>Test</string>
 				<key>SoundAlertDeviceInMute</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>SilentImportantAlert</key>
 			<dict>
@@ -287,7 +287,7 @@
 				<key>EnabledByDefault</key>
 				<false/>
 				<key>SoundIsMutableInDND</key>
-				<false/>
+				<true/>
 				<key>SwitchName</key>
 				<string>Exercise</string>
 				<key>UserConfigurable</key>
@@ -295,14 +295,14 @@
 				<key>NotificationTitle</key>
 				<string>Exercise</string>
 				<key>SoundAlertDeviceInMute</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>Importantmessage</key>
 			<dict>
 				<key>EnabledByDefault</key>
 				<true/>
 				<key>SoundIsMutableInDND</key>
-				<false/>
+				<true/>
 				<key>SwitchName</key>
 				<string>Important message</string>
 				<key>UserConfigurable</key>
@@ -310,14 +310,14 @@
 				<key>NotificationTitle</key>
 				<string>Important message</string>
 				<key>SoundAlertDeviceInMute</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>Allclear</key>
 			<dict>
 				<key>EnabledByDefault</key>
 				<true/>
 				<key>SoundIsMutableInDND</key>
-				<false/>
+				<true/>
 				<key>SwitchName</key>
 				<string>All clear</string>
 				<key>UserConfigurable</key>
@@ -325,7 +325,7 @@
 				<key>NotificationTitle</key>
 				<string>All clear</string>
 				<key>SoundAlertDeviceInMute</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>WHAM</key>
 			<dict>

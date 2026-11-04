@@ -135,25 +135,6 @@
 			</array>
 		</dict>
 	</dict>
-	<key>com.apple.voicemail.imap</key>
-	<dict>
-		<key>MaxGreetingDuration</key>
-		<integer>30</integer>
-		<key>UsesSSL</key>
-		<false/>
-		<key>GreetingNotification</key>
-		<true/>
-		<key>MinPINLength</key>
-		<integer>4</integer>
-		<key>UsesMWI</key>
-		<false/>
-		<key>ClientManagesTrash</key>
-		<false/>
-		<key>BeaconAddress</key>
-		<string>6065</string>
-		<key>MaxPINLength</key>
-		<integer>4</integer>
-	</dict>
 	<key>TechSettings</key>
 	<dict>
 		<key>iRatPolicies</key>
@@ -486,6 +467,8 @@
 			<false/>
 		</dict>
 	</dict>
+	<key>SuppressSimToolkitSendShortMessageNotifications</key>
+	<true/>
 	<key>ForceWPSCallsOverCS</key>
 	<false/>
 	<key>TetheringPhoneNumber</key>

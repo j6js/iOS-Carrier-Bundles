@@ -581,6 +581,8 @@
 	<true/>
 	<key>VVMNotificationFallbackTimeout</key>
 	<integer>420</integer>
+	<key>SuppressSimToolkitSendShortMessageNotifications</key>
+	<true/>
 	<key>OTASoftwareUpdate</key>
 	<dict>
 		<key>SoftwareUpdateOptInRequired</key>
@@ -590,10 +592,10 @@
 	<true/>
 	<key>TetheringURL</key>
 	<string>http://www.o2.co.uk/iphonehelp/modem</string>
-	<key>VoicemailPilotNumber</key>
-	<string>901</string>
 	<key>Show3GSwitchWith4G</key>
 	<false/>
+	<key>VoicemailPilotNumber</key>
+	<string>901</string>
 	<key>CellBroadcast</key>
 	<dict>
 		<key>AlertTypes</key>

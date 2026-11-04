@@ -103,16 +103,18 @@
 			<key>Username</key>
 			<string>0$IMSI@nai.epc.mnc$MNC.mcc$MCC.3gppnetwork.org</string>
 		</dict>
+		<key>SupportCrossPlatformSIMTransfer</key>
+		<true/>
 		<key>SupportedAuthorizationTokens</key>
 		<integer>2</integer>
 		<key>ServerAddress</key>
 		<string>https://efr.softbank.jp/terminal/validate.do</string>
 		<key>SupportPhysicalSIMtoESIMTransfer</key>
 		<true/>
-		<key>Timeout</key>
-		<integer>65</integer>
 		<key>SupportsOnDevicePhysicalSIMConvert</key>
 		<true/>
+		<key>Timeout</key>
+		<integer>65</integer>
 	</dict>
 	<key>RCS</key>
 	<dict>

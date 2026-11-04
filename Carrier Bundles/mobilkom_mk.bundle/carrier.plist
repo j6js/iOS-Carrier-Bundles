@@ -19,6 +19,8 @@
 	<integer>49</integer>
 	<key>RegistrationOptInRequired</key>
 	<true/>
+	<key>ShowVolteWarningUnsupportedCarrier</key>
+	<false/>
 	<key>RoamingVoicemailPilotNumber</key>
 	<string>+389771222</string>
 	<key>AllowedServicesTypeMaskOnInternet</key>
@@ -38,8 +40,32 @@
 	<array>
 		<string>29403</string>
 	</array>
-	<key>ShowDialAssist</key>
-	<true/>
+	<key>IMSConfig</key>
+	<dict>
+		<key>SMS</key>
+		<dict>
+			<key>SupportedDomains</key>
+			<dict>
+				<key>LTE</key>
+				<false/>
+			</dict>
+		</dict>
+		<key>Voice</key>
+		<dict>
+			<key>EnableVolteByDefault</key>
+			<true/>
+		</dict>
+		<key>Signaling</key>
+		<dict>
+			<key>AdditionalContactParams</key>
+			<dict>
+				<key>REGISTER,INVITE,INVITE:*</key>
+				<string>+g.3gpp.mid-call;+g.3gpp.srvcc-alerting;+g.3gpp.ps2cs-srvcc-orig-pre-alerting</string>
+			</dict>
+			<key>UseIPSec</key>
+			<true/>
+		</dict>
+	</dict>
 	<key>CarrierEntitlements</key>
 	<dict>
 		<key>SupportsOnDevicePhysicalSIMConvert</key>
@@ -68,6 +94,8 @@
 			<string>TransferSIMService</string>
 		</array>
 	</dict>
+	<key>ShowDialAssist</key>
+	<true/>
 	<key>PhoneNumberRegistrationGatewayAddress</key>
 	<array>
 		<string>+447537410207</string>

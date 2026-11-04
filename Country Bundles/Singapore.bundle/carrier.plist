@@ -2,6 +2,146 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CellBroadcast</key>
+	<dict>
+		<key>AlertConfigurations</key>
+		<dict>
+			<key>Configuration_SG</key>
+			<dict>
+				<key>Sound</key>
+				<string>cbs_alert_us.caf</string>
+				<key>Vibration</key>
+				<string>cbs_vibe_us.plist</string>
+			</dict>
+			<key>Configuration_WHAM</key>
+			<dict>
+				<key>Sound</key>
+				<string>Text</string>
+				<key>Vibration</key>
+				<string>Default</string>
+			</dict>
+		</dict>
+		<key>GeofencingConfiguration</key>
+		<dict>
+			<key>FeatureEnabled</key>
+			<true/>
+		</dict>
+		<key>SwitchGroupTitle</key>
+		<string>Government Alerts</string>
+		<key>DuplicateDetectionParameters</key>
+		<dict>
+			<key>DuplicationWindowInMinutes</key>
+			<integer>30</integer>
+			<key>PerformInterSimDuplicateDetection</key>
+			<true/>
+			<key>PerformIntraSimDuplicateDetection</key>
+			<true/>
+		</dict>
+		<key>MessageIDParameters3GPP</key>
+		<array>
+			<dict>
+				<key>FromServiceID</key>
+				<integer>4370</integer>
+				<key>AlertType</key>
+				<string>SG Alert</string>
+				<key>AlertConfiguration</key>
+				<string>Configuration_SG</string>
+				<key>ToServiceID</key>
+				<integer>4370</integer>
+			</dict>
+			<dict>
+				<key>FromServiceID</key>
+				<integer>4383</integer>
+				<key>AlertType</key>
+				<string>SG Alert</string>
+				<key>AlertConfiguration</key>
+				<string>Configuration_SG</string>
+				<key>ToServiceID</key>
+				<integer>4383</integer>
+			</dict>
+			<dict>
+				<key>FromServiceID</key>
+				<integer>4380</integer>
+				<key>AlertType</key>
+				<string>Test Alert</string>
+				<key>AlertConfiguration</key>
+				<string>Configuration_SG</string>
+				<key>ToServiceID</key>
+				<integer>4380</integer>
+			</dict>
+			<dict>
+				<key>FromServiceID</key>
+				<integer>4393</integer>
+				<key>AlertType</key>
+				<string>Test Alert</string>
+				<key>AlertConfiguration</key>
+				<string>Configuration_SG</string>
+				<key>ToServiceID</key>
+				<integer>4393</integer>
+			</dict>
+			<dict>
+				<key>FromServiceID</key>
+				<integer>4400</integer>
+				<key>AlertType</key>
+				<string>WHAM</string>
+				<key>AlertConfiguration</key>
+				<string>Configuration_WHAM</string>
+				<key>ToServiceID</key>
+				<integer>4400</integer>
+			</dict>
+		</array>
+		<key>PrimaryBroadcastLanguages</key>
+		<array>
+			<string>en</string>
+			<string>zh</string>
+			<string>ms</string>
+			<string>ta</string>
+		</array>
+		<key>AlertTypes</key>
+		<dict>
+			<key>WHAM</key>
+			<dict>
+				<key>EnabledByDefault</key>
+				<true/>
+				<key>SwitchName</key>
+				<string></string>
+				<key>UserConfigurable</key>
+				<false/>
+				<key>NotificationTitle</key>
+				<string>Geo-fencing Trigger</string>
+			</dict>
+			<key>SG Alert</key>
+			<dict>
+				<key>EnabledByDefault</key>
+				<true/>
+				<key>SoundIsMutableInDND</key>
+				<false/>
+				<key>SwitchName</key>
+				<string>SG Alert</string>
+				<key>UserConfigurable</key>
+				<false/>
+				<key>NotificationTitle</key>
+				<string>SG Alert</string>
+				<key>SoundAlertDeviceInMute</key>
+				<true/>
+			</dict>
+			<key>Test Alert</key>
+			<dict>
+				<key>EnabledByDefault</key>
+				<false/>
+				<key>SoundIsMutableInDND</key>
+				<true/>
+				<key>SwitchName</key>
+				<string>Test Alert</string>
+				<key>UserConfigurable</key>
+				<true/>
+				<key>NotificationTitle</key>
+				<string>Test Alert</string>
+				<key>SoundAlertDeviceInMute</key>
+				<false/>
+			</dict>
+		</dict>
+	</dict>
 	<key>ISOAlpha2CountryCode</key>
 	<array>
 		<string>sg</string>

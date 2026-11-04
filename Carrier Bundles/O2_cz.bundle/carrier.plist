@@ -56,10 +56,6 @@
 	<true/>
 	<key>SupportsNITZ</key>
 	<false/>
-	<key>VoicemailPilotNumber</key>
-	<string>*99</string>
-	<key>ShowVolteWarningUnsupportedCarrier</key>
-	<false/>
 	<key>RemoteCardProvisioningSettings</key>
 	<dict>
 		<key>MatchingICCIDPrefixes</key>
@@ -94,6 +90,10 @@
 		<key>ProvisioningMethod</key>
 		<string>CarrierFlow</string>
 	</dict>
+	<key>ShowVolteWarningUnsupportedCarrier</key>
+	<false/>
+	<key>VoicemailPilotNumber</key>
+	<string>*99</string>
 	<key>ShowDialAssist</key>
 	<true/>
 	<key>PhoneNumberRegistrationGatewayAddress</key>
@@ -473,12 +473,14 @@
 	</dict>
 	<key>VVMIgnoresIntlDataRoaming</key>
 	<false/>
-	<key>RoamingVoicemailPilotNumber</key>
-	<string>+420602999999</string>
+	<key>PreferCarrierNameFromMetadata</key>
+	<true/>
 	<key>APNEditabilityTypemask</key>
 	<integer>53</integer>
 	<key>AllowedServicesTypeMaskOnInternet</key>
 	<integer>32769</integer>
+	<key>RoamingVoicemailPilotNumber</key>
+	<string>+420602999999</string>
 	<key>PushSettings</key>
 	<dict>
 		<key>MultiSIMTopic</key>

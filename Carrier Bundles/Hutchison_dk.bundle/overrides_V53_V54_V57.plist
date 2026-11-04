@@ -5,7 +5,7 @@
 	<key>CarrierEntitlements</key>
 	<dict>
 		<key>SupportedEntitlements</key>
-		<integer>74753</integer>
+		<integer>4269057</integer>
 		<key>SupportPhysicalSIMtoESIMTransfer</key>
 		<true/>
 		<key>SupportPreflightOnSource</key>

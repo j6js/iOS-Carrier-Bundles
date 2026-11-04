@@ -161,11 +161,34 @@
 		<false/>
 		<key>Signaling</key>
 		<dict>
+			<key>EnforceMaximumEmergencyExpirationSeconds</key>
+			<integer>1800</integer>
+			<key>EmergencyURNs</key>
+			<dict>
+				<key>109</key>
+				<string>urn:service:sos.country-specific.kr.109</string>
+				<key>112</key>
+				<string>urn:service:sos.police</string>
+				<key>122</key>
+				<string>urn:service:sos.marine</string>
+				<key>118</key>
+				<string>urn:service:sos.country-specific.kr.118</string>
+				<key>125</key>
+				<string>urn:service:sos.country-specific.kr.125</string>
+				<key>111</key>
+				<string>urn:service:sos.country-specific.kr.111</string>
+				<key>911</key>
+				<string>urn:service:sos.fire</string>
+				<key>117</key>
+				<string>urn:service:sos.country-specific.kr.117</string>
+				<key>113</key>
+				<string>urn:service:sos.country-specific.kr.113</string>
+				<key>119</key>
+				<string>urn:service:sos.fire</string>
+			</dict>
 			<key>EnforceIPSecSetupCompletionCheck</key>
 			<true/>
 			<key>EmergencyCallBackModeExpirationSeconds</key>
-			<integer>1800</integer>
-			<key>EnforceMaximumEmergencyExpirationSeconds</key>
 			<integer>1800</integer>
 		</dict>
 	</dict>
@@ -174,28 +197,70 @@
 		<key>EmergencyNumbers</key>
 		<array>
 			<dict>
+				<key>Number</key>
+				<string>111</string>
+				<key>Category</key>
+				<integer>6</integer>
+			</dict>
+			<dict>
+				<key>PreferredEmergencyNumber</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
 				<key>Title</key>
 				<string>EMERGENCY_DISAMBIGUATION_POLICE</string>
 				<key>Number</key>
 				<string>112</string>
-				<key>PreferredEmergencyNumber</key>
-				<true/>
 			</dict>
 			<dict>
+				<key>Number</key>
+				<string>113</string>
+				<key>Category</key>
+				<integer>3</integer>
+			</dict>
+			<dict>
+				<key>Number</key>
+				<string>117</string>
+				<key>Category</key>
+				<integer>18</integer>
+			</dict>
+			<dict>
+				<key>Number</key>
+				<string>118</string>
+				<key>Category</key>
+				<integer>19</integer>
+			</dict>
+			<dict>
+				<key>PreferredEmergencyNumber</key>
+				<true/>
+				<key>Category</key>
+				<integer>4</integer>
 				<key>Title</key>
 				<string>EMERGENCY_DISAMBIGUATION_FIRE_EMERGENCY_AMBULANCE</string>
 				<key>Number</key>
 				<string>119</string>
-				<key>PreferredEmergencyNumber</key>
-				<true/>
 			</dict>
 			<dict>
+				<key>PreferredEmergencyNumber</key>
+				<true/>
+				<key>Category</key>
+				<integer>8</integer>
 				<key>Title</key>
 				<string>EMERGENCY_DISAMBIGUATION_COAST_GUARD</string>
 				<key>Number</key>
 				<string>122</string>
-				<key>PreferredEmergencyNumber</key>
-				<true/>
+			</dict>
+			<dict>
+				<key>Number</key>
+				<string>125</string>
+				<key>Category</key>
+				<integer>9</integer>
+			</dict>
+			<dict>
+				<key>Number</key>
+				<string>109</string>
+				<key>Category</key>
+				<integer>20</integer>
 			</dict>
 		</array>
 		<key>NonPreferredEmergencyNetworks</key>

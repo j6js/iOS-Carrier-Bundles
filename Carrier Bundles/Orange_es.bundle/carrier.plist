@@ -46,7 +46,7 @@
 	<key>RegistrationOptInRequired</key>
 	<true/>
 	<key>SupportsNITZ</key>
-	<false/>
+	<true/>
 	<key>RemoteCardProvisioningSettings</key>
 	<dict>
 		<key>MatchingICCIDPrefixes</key>

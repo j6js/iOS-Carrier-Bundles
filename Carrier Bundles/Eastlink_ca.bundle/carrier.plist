@@ -178,18 +178,27 @@
 			<key>Username</key>
 			<string>0$IMSI@nai.epc.mnc$MNC.mcc$MCC.3gppnetwork.org</string>
 		</dict>
+		<key>SupportedAuthorizationTokens</key>
+		<integer>2</integer>
 		<key>UpdatePeriod</key>
 		<integer>24</integer>
 	</dict>
-	<key>ShowDialAssist</key>
-	<true/>
+	<key>RCS</key>
+	<dict>
+		<key>ProvisioningData</key>
+		<dict>
+			<key>ServerURL</key>
+			<string>config.rcs.mnc270.mcc302.jibecloud.net</string>
+		</dict>
+		<key>EnableRCSByDefault</key>
+		<true/>
+		<key>ShowRCSSwitch</key>
+		<true/>
+	</dict>
 	<key>PhoneNumberRegistrationGatewayAddress</key>
 	<string>49988</string>
-	<key>SupportedSIMs</key>
-	<array>
-		<string>302270</string>
-		<string>20601_ID-891035</string>
-	</array>
+	<key>ShowDialAssist</key>
+	<true/>
 	<key>CarrierName</key>
 	<string>Eastlink</string>
 	<key>AttachAPN</key>
@@ -208,11 +217,16 @@
 			<integer>1</integer>
 		</dict>
 	</dict>
-	<key>SupportsUserBusyCauseCode</key>
-	<true/>
+	<key>SupportedSIMs</key>
+	<array>
+		<string>302270</string>
+		<string>20601_ID-891035</string>
+	</array>
 	<key>ShowVolteSwitch</key>
 	<false/>
 	<key>SupportsImsCapability</key>
+	<true/>
+	<key>SupportsUserBusyCauseCode</key>
 	<true/>
 	<key>VisualVoicemailServiceName</key>
 	<string>IMAP</string>

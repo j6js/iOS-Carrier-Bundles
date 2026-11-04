@@ -27,6 +27,8 @@
 	<string>https://www.orange.ma</string>
 	<key>VVMIgnoresIntlDataRoaming</key>
 	<false/>
+	<key>EnableLTEAfterUpgrade</key>
+	<true/>
 	<key>RegistrationOptInRequired</key>
 	<true/>
 	<key>MyAccountURLTitle</key>
@@ -146,10 +148,6 @@
 			</dict>
 		</dict>
 	</dict>
-	<key>ShowDialAssist</key>
-	<true/>
-	<key>Show3GSwitchWith4G</key>
-	<false/>
 	<key>CarrierEntitlements</key>
 	<dict>
 		<key>SupportedEntitlements</key>
@@ -170,6 +168,10 @@
 		<key>UpdatePeriod</key>
 		<integer>24</integer>
 	</dict>
+	<key>Show3GSwitchWith4G</key>
+	<false/>
+	<key>ShowDialAssist</key>
+	<true/>
 	<key>PhoneNumberRegistrationGatewayAddress</key>
 	<string>+447786205094</string>
 	<key>CarrierName</key>
@@ -199,7 +201,7 @@
 	<key>VisualVoicemailServiceName</key>
 	<string>none</string>
 	<key>ShowVolteSwitch</key>
-	<true/>
+	<false/>
 	<key>AllowsVoIP</key>
 	<true/>
 	<key>VoicemailPilotNumber</key>

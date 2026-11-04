@@ -108,6 +108,34 @@
 	<true/>
 	<key>Show3GSwitchWith4G</key>
 	<false/>
+	<key>com.apple.voicemail.imap</key>
+	<dict>
+		<key>MaxGreetingDuration</key>
+		<integer>45</integer>
+		<key>UsesSSL</key>
+		<true/>
+		<key>GreetingNotification</key>
+		<true/>
+		<key>MinPINLength</key>
+		<integer>4</integer>
+		<key>UsesMWI</key>
+		<false/>
+		<key>AuthenticationScheme</key>
+		<string>DIGEST-MD5</string>
+		<key>ClientManagesTrash</key>
+		<true/>
+		<key>AllowedIMAPServers</key>
+		<dict>
+			<key>FQDN</key>
+			<array>
+				<string>vvm.tdcnet.dk</string>
+			</array>
+		</dict>
+		<key>MaxPINLength</key>
+		<integer>10</integer>
+		<key>BeaconAddress</key>
+		<string>12489</string>
+	</dict>
 	<key>OverrideOperatorWiFiName</key>
 	<string>WiFi</string>
 	<key>MMS</key>
@@ -261,23 +289,6 @@
 	<integer>5</integer>
 	<key>DataIndicatorOverrideForLTE</key>
 	<string>4G</string>
-	<key>Location</key>
-	<dict>
-		<key>EmergencyLocation</key>
-		<dict>
-			<key>AugmentedEmergencyAction</key>
-			<dict>
-				<key>AML</key>
-				<dict>
-					<key>SMS</key>
-					<dict>
-						<key>Destination</key>
-						<string>+4591155555</string>
-					</dict>
-				</dict>
-			</dict>
-		</dict>
-	</dict>
 	<key>apns</key>
 	<array>
 		<dict>
@@ -288,7 +299,7 @@
 			<key>apn</key>
 			<string>internet</string>
 			<key>type-mask</key>
-			<integer>32817</integer>
+			<integer>32819</integer>
 			<key>AllowedProtocolMask</key>
 			<integer>3</integer>
 		</dict>
@@ -507,7 +518,7 @@
 	<key>APNEditabilityTypemask</key>
 	<integer>53</integer>
 	<key>AllowedServicesTypeMaskOnInternet</key>
-	<integer>32768</integer>
+	<integer>32770</integer>
 	<key>PushSettings</key>
 	<dict>
 		<key>Topic</key>
@@ -518,7 +529,7 @@
 		<string>dk.tdc.entitlements.vowifi</string>
 	</dict>
 	<key>VisualVoicemailServiceName</key>
-	<string>none</string>
+	<string>IMAP</string>
 	<key>StatusBarImages</key>
 	<array>
 		<dict>

@@ -4,12 +4,14 @@
 <dict>
 	<key>CarrierEntitlements</key>
 	<dict>
+		<key>SupportsOnDevicePhysicalSIMConvert</key>
+		<true/>
+		<key>SupportSecureIntent</key>
+		<true/>
 		<key>SupportedEntitlements</key>
-		<integer>5121</integer>
+		<integer>13313</integer>
 		<key>ProtocolVersion</key>
 		<string>2</string>
-		<key>ServerAddress</key>
-		<string>https://es.mnc001.mcc247.pub.3gppnetwork.org:8443/entitlement</string>
 		<key>Authentication</key>
 		<dict>
 			<key>Type</key>
@@ -17,13 +19,17 @@
 			<key>Username</key>
 			<string>0$IMSI@epc.mnc$MNC.mcc$MCC.3gppnetwork.org</string>
 		</dict>
+		<key>ServerAddress</key>
+		<string>https://es.mnc001.mcc247.pub.3gppnetwork.org:8443/entitlement</string>
+		<key>SupportPhysicalSIMtoESIMTransfer</key>
+		<true/>
+		<key>UpdatePeriod</key>
+		<integer>24</integer>
 		<key>SupportedActions</key>
 		<array>
 			<string>AuthenticateTrustFlag</string>
 			<string>TransferSIMService</string>
 		</array>
-		<key>UpdatePeriod</key>
-		<integer>24</integer>
 	</dict>
 	<key>OTASoftwareUpdate</key>
 	<dict>
@@ -59,6 +65,38 @@
 			<string>AAPL</string>
 		</dict>
 	</array>
+	<key>PhoneAccountTransfer</key>
+	<dict>
+		<key>LocalInstallSMDPURL</key>
+		<string>rsp-0001.oberthur.net</string>
+		<key>MinCompatibleOS</key>
+		<string>27.3</string>
+		<key>TransferErrorCodes</key>
+		<dict>
+			<key>CarrierDefaultErrors</key>
+			<array>
+				<string>999</string>
+			</array>
+			<key>IneligibleAccountErrors</key>
+			<array>
+				<string>201</string>
+			</array>
+			<key>MaintenanceErrors</key>
+			<array>
+				<string>211</string>
+				<string>210</string>
+				<string>204</string>
+				<string>209</string>
+				<string>208</string>
+				<string>212</string>
+			</array>
+			<key>BlockedAccountErrors</key>
+			<array>
+				<string>202</string>
+				<string>203</string>
+			</array>
+		</dict>
+	</dict>
 	<key>AllowEDGEEditing</key>
 	<true/>
 	<key>RegistrationOptInRequired</key>
@@ -470,6 +508,8 @@
 	<key>PushSettings</key>
 	<dict>
 		<key>MultiSIMTopic</key>
+		<string>lv.lmt.apple.entitlement</string>
+		<key>CellularPlanTransferTopic</key>
 		<string>lv.lmt.apple.entitlement</string>
 	</dict>
 	<key>Services</key>

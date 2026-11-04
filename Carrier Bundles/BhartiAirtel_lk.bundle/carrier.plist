@@ -113,7 +113,7 @@
 			<key>WaitForRingingTimerMOSeconds</key>
 			<integer>30</integer>
 			<key>ussdEnabled</key>
-			<false/>
+			<true/>
 		</dict>
 		<key>XCAP</key>
 		<dict>

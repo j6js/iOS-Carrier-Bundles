@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>DerPriFileVersion</key>
-	<string>5.0.161</string>
+	<string>6.2.161</string>
 	<key>Show5GWarningUnsupportedCarrier</key>
 	<false/>
 	<key>Show5GStandaloneSwitch</key>
@@ -108,6 +108,8 @@
 	<string>overrides_V53_V54_V57.der.pri</string>
 	<key>AllowSAOnWiFiAssociation</key>
 	<true/>
+	<key>DataIndicatorOverrideForNRMmwave</key>
+	<string>NRPlus</string>
 	<key>ShowVolteSwitch</key>
 	<false/>
 	<key>Enable5GAutoByDefault</key>

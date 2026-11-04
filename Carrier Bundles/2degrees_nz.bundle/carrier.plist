@@ -298,7 +298,7 @@
 		<key>Proxy</key>
 		<string>118.148.1.118:8080</string>
 		<key>MaxRecipients</key>
-		<integer>10</integer>
+		<integer>30</integer>
 		<key>MaxMessageSize</key>
 		<integer>307200</integer>
 	</dict>

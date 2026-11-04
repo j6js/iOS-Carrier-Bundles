@@ -157,16 +157,36 @@
 		<dict>
 			<key>RTCPIntervalSeconds</key>
 			<integer>5</integer>
-			<key>PreferredAMRNBMode</key>
-			<integer>7</integer>
-			<key>EnableBandwidthSpecifiers</key>
-			<true/>
-			<key>PreferredAMRWBMode</key>
-			<integer>8</integer>
 			<key>ModeChangeCapability</key>
 			<integer>2</integer>
+			<key>EnableBandwidthSpecifiers</key>
+			<true/>
+			<key>PreferredAMRNBMode</key>
+			<integer>7</integer>
+			<key>AudioCodecs</key>
+			<dict>
+				<key>96</key>
+				<dict>
+					<key>ch-aw-recv</key>
+					<string>2</string>
+					<key>br</key>
+					<string>9.6-24.4</string>
+					<key>SampleRate</key>
+					<integer>16000</integer>
+					<key>EncodingName</key>
+					<string>EVS</string>
+					<key>bw</key>
+					<string>nb-swb</string>
+					<key>cmr</key>
+					<string>0</string>
+				</dict>
+			</dict>
+			<key>PreferredAMRWBMode</key>
+			<integer>8</integer>
 			<key>InactivityTimerRTPSeconds</key>
 			<integer>10</integer>
+			<key>EVSHardBwLimit</key>
+			<string>nb-swb</string>
 			<key>IncludeSDPModeChangeCapability</key>
 			<true/>
 		</dict>

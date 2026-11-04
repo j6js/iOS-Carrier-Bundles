@@ -1,17 +1,17 @@
 
-# iOS 27.2 Carrier Bundles
+# iOS 27.3 Carrier Bundles
 
-This repo contains the Carrier Bundles currently bundled with iOS version 27.2 for the iPhone 17 Pro Max.
+This repo contains the Carrier Bundles currently bundled with iOS version 27.3 for the iPhone 17 Pro Max.
 ## Last Extraction Metadata
 
 #### Last Extraction Time
-`2026-11-03 04:26:52 UTC`
+`2026-11-04 03:45:58 UTC`
 
 #### iOS Build Info
 
 | iOS Version | iOS Build | iOS Build Timestamp |
 | :-------- | :------- | :------------------ |
-| 27.2 | 24B5110a | 05 Oct 2026 05:06:45 UTC |
+| 27.3 | 24C5037i | 24 Oct 2026 08:20:19 UTC |
 
 #### iOS Device Info
 

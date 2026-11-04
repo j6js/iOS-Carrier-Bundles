@@ -59,6 +59,53 @@
 	<string>+447860015000</string>
 	<key>Show3GSwitchWith4G</key>
 	<false/>
+	<key>EncryptedIdentity</key>
+	<dict>
+		<key>AnonymousUsername</key>
+		<string>anonymous</string>
+		<key>Certificate</key>
+		<string>MIIG3jCCBcagAwIBAgIQCW37pezJS6bCdB/pWGyG5TANBgkqhkiG9w0BAQsFADBZ
+MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMTMwMQYDVQQDEypE
+aWdpQ2VydCBHbG9iYWwgRzIgVExTIFJTQSBTSEEyNTYgMjAyMCBDQTEwHhcNMjYw
+OTAzMDAwMDAwWhcNMjcwMzIwMjM1OTU5WjBuMQswCQYDVQQGEwJVUzETMBEGA1UE
+CBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNU2FuIEZyYW5jaXNjbzEYMBYGA1UEChMP
+Tk9WQSBMQUJTLCBJTkMuMRgwFgYDVQQDEw9oZWxsb2hlbGl1bS5jb20wggEiMA0G
+CSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDn5qMN7jt5ohZlR+wMMr1BlTZGlbs2
+M3HCGvq73jz43aR6foeSVxQ7ylWc3rPWcGW4ta9oGq+6xsOhlFtjxPTLsUNzXoET
+J6nzm7Mb3JwJXKzrZ/ATdfYQggSRf/9Egijl84ZUzGOCyvqNxsbsLx50svVOvlXY
+LfSn9i6k3KfpGob2bjSfNQggpNkiwDUA+3QcTJApHP1ZBCLaP3f+BwI5jDgsOSDP
+H9mGAEe6HXEtGP5pD4N28IN4GXJCkTw77lNF3L12IVh2Hiyy15nIAImp+2irqEI6
+dqx10dhMUxir5RVBKQuCxZUsgNRsE0ue/7xVrEzGqIy6g9p/Mhinw15zAgMBAAGj
+ggOLMIIDhzAfBgNVHSMEGDAWgBR0hYDAZsffN97PvSk3qgMdvu3NFzAdBgNVHQ4E
+FgQUuv8ErZBcSaHMjJ5XScBH2cUjYlUwGgYDVR0RBBMwEYIPaGVsbG9oZWxpdW0u
+Y29tMD4GA1UdIAQ3MDUwMwYGZ4EMAQICMCkwJwYIKwYBBQUHAgEWG2h0dHA6Ly93
+d3cuZGlnaWNlcnQuY29tL0NQUzAOBgNVHQ8BAf8EBAMCBaAwHQYDVR0lBBYwFAYI
+KwYBBQUHAwEGCCsGAQUFBwMCMIGfBgNVHR8EgZcwgZQwSKBGoESGQmh0dHA6Ly9j
+cmwzLmRpZ2ljZXJ0LmNvbS9EaWdpQ2VydEdsb2JhbEcyVExTUlNBU0hBMjU2MjAy
+MENBMS0xLmNybDBIoEagRIZCaHR0cDovL2NybDQuZGlnaWNlcnQuY29tL0RpZ2lD
+ZXJ0R2xvYmFsRzJUTFNSU0FTSEEyNTYyMDIwQ0ExLTEuY3JsMIGHBggrBgEFBQcB
+AQR7MHkwJAYIKwYBBQUHMAGGGGh0dHA6Ly9vY3NwLmRpZ2ljZXJ0LmNvbTBRBggr
+BgEFBQcwAoZFaHR0cDovL2NhY2VydHMuZGlnaWNlcnQuY29tL0RpZ2lDZXJ0R2xv
+YmFsRzJUTFNSU0FTSEEyNTYyMDIwQ0ExLTEuY3J0MAwGA1UdEwEB/wQCMAAwggF+
+BgorBgEEAdZ5AgQCBIIBbgSCAWoBaAB2AExj3JjlnB2riPYeij3ero+rRKM3e1+b
+lMP7oZz8wb4mAAABoGe+9gYAAAQDAEcwRQIhAKGGnLlks7Eh/k4yw5iuLYhwPcf2
+xSfJa0Plr8yfZdhyAiBbPV0uj6bf0g6pZSzDxMMt/k1uS24CjI8y7Wbtne35+QB1
+ANbVjanQF1Pzakqgx1dJAq/rx9ws04zZ92TIDIkZHp8CAAABoGe+9hcAAAQDAEYw
+RAIgVzLGbDaPFlEMaTPDKlxfX4GUSGRxaLxTpYYXlcjm2nACIDElDhfLTPkziAen
+GoZ0MVR2tFg6t8WVGU/BE3R+0OEGAHcARMK9DOkUDmSlyUoBkwpaobs1lw4A7hEW
+iWgqHETXtWYAAAGgZ772SwAABAMASDBGAiEAxE8DXRK1Y8tzbjru7kqcMHYI0i9w
+QwGow2wxq6otBJUCIQCxIR2TAFxqziIART5iae3nGoKF1LOVuMPBG05C03bCCTAN
+BgkqhkiG9w0BAQsFAAOCAQEAjX8gD4sUvflpB9xZKUrBVZU//oHe647O9WfmEICZ
+oee5Ap/dImEo4ZtV/ernMAO27bwRNE8GWgVKjL7zdbmFGnoI73emzFRPMYoZ/ZWN
+PTAcpSbzif76eemcVSD4l5bhB+TAWbF8now+Rc5KE9JIQnqbsEKjCWJmaAZYehUI
+Z3HRwuoYPxlWLXU0E/CitjNOQfGV57PRGySlaI5qNM0QesOqyBOkTj/b3quMbFPW
+Cjfyla6lIW1zKHA5OIwO01vy3+Oz+BWe4t3cjC1lG9EZ114JbiXq+n2dwqAweS4w
+bptVVgttIzC5I9lF92A3FHZs7ZsuTxWhZOde7zb92cuBJg==</string>
+		<key>UpdateURL</key>
+		<string>https://imsi-protection-cert.nova.xyz</string>
+		<key>KeyIdentifier</key>
+		<string>CertificateSerialNumber=096DFBA5ECC94BA6C2741FE9586C86E5</string>
+	</dict>
 	<key>HomeBundleIdentifier</key>
 	<string>com.apple.Mexico</string>
 	<key>MaxBluetoothModemConnections</key>
@@ -243,25 +290,10 @@
 	<true/>
 	<key>APNEditabilityTypemask</key>
 	<integer>0</integer>
-	<key>RoamingVoicemailPilotNumber</key>
-	<string>+525512550000</string>
 	<key>AllowedServicesTypeMaskOnInternet</key>
 	<integer>32768</integer>
-	<key>Services</key>
-	<array>
-		<dict>
-			<key>ServiceCode</key>
-			<string>*767</string>
-			<key>ServiceName</key>
-			<string>Pásame saldo</string>
-		</dict>
-		<dict>
-			<key>ServiceCode</key>
-			<string>#100#</string>
-			<key>ServiceName</key>
-			<string>SOS!</string>
-		</dict>
-	</array>
+	<key>RoamingVoicemailPilotNumber</key>
+	<string>+525512550000</string>
 	<key>EnableLTEAfterUpgrade</key>
 	<true/>
 	<key>StatusBarImages</key>

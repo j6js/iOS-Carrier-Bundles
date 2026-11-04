@@ -32,6 +32,8 @@
 	<true/>
 	<key>ShowVolteWarningUnsupportedCarrier</key>
 	<false/>
+	<key>AllowedServicesTypeMaskOnInternet</key>
+	<integer>32768</integer>
 	<key>StatusBarImages</key>
 	<array>
 		<dict>
@@ -85,9 +87,32 @@
 			<true/>
 		</dict>
 	</dict>
-	<key>ShowDialAssist</key>
-	<true/>
+	<key>CarrierEntitlements</key>
+	<dict>
+		<key>SupportedEntitlements</key>
+		<integer>5121</integer>
+		<key>ProtocolVersion</key>
+		<string>2</string>
+		<key>ServerAddress</key>
+		<string>https://des.1.me/entitlement</string>
+		<key>Authentication</key>
+		<dict>
+			<key>Type</key>
+			<integer>1</integer>
+			<key>Username</key>
+			<string>0$IMSI@nai.epc.mnc$MNC.mcc$MCC.3gppnetwork.org</string>
+		</dict>
+		<key>SupportedActions</key>
+		<array>
+			<string>TransferSIMService</string>
+			<string>AuthenticateTrustFlag</string>
+		</array>
+		<key>UpdatePeriod</key>
+		<integer>24</integer>
+	</dict>
 	<key>Show3GSwitchWith4G</key>
+	<true/>
+	<key>ShowDialAssist</key>
 	<true/>
 	<key>PhoneNumberRegistrationGatewayAddress</key>
 	<array>
@@ -137,8 +162,47 @@
 		<key>MaxMessageSize</key>
 		<integer>307200</integer>
 	</dict>
+	<key>RemoteCardProvisioningSettings</key>
+	<dict>
+		<key>MatchingICCIDPrefixes</key>
+		<array>
+			<string>893820</string>
+		</array>
+		<key>CellularTrialPlan</key>
+		<dict>
+			<key>TrialEndPeriod</key>
+			<string>2027-04-23T00:00:00Z</string>
+			<key>TrialPlanType</key>
+			<string>FreeTrial</string>
+			<key>SupportsTrialPlan</key>
+			<true/>
+			<key>TrialStartPeriod</key>
+			<string>2024-02-06T00:00:00Z</string>
+		</dict>
+		<key>ServerURL</key>
+		<string>esimmanager.invigo.com</string>
+		<key>ActivatingStateSubscriptionCheckTimerIntervals</key>
+		<array>
+			<integer>1800</integer>
+			<string>3600</string>
+			<string>5400</string>
+		</array>
+		<key>MinCompatibleWatchOS</key>
+		<string>27.2</string>
+		<key>SupportedSKUs</key>
+		<array>
+			<string>SKU_EU</string>
+		</array>
+		<key>ProvisioningMethod</key>
+		<string>CarrierFlow</string>
+	</dict>
 	<key>APNEditabilityTypemaskNew</key>
 	<integer>53</integer>
+	<key>PushSettings</key>
+	<dict>
+		<key>MultiSIMTopic</key>
+		<string>com.me1.multisim</string>
+	</dict>
 	<key>apns</key>
 	<array>
 		<dict>
@@ -149,7 +213,7 @@
 			<key>apn</key>
 			<string>internet</string>
 			<key>type-mask</key>
-			<integer>49</integer>
+			<integer>32817</integer>
 		</dict>
 		<dict>
 			<key>password</key>

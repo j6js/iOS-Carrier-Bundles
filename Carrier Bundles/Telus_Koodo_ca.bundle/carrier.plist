@@ -144,7 +144,7 @@
 		<key>SupportsFauxCard</key>
 		<false/>
 		<key>MinCompatibleWatchOSForStandaloneMode</key>
-		<string>11.1</string>
+		<string>27.2</string>
 		<key>ProvisioningMethod</key>
 		<string>CarrierFlow</string>
 	</dict>

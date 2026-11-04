@@ -36,7 +36,7 @@
 	<key>SupportsNITZ</key>
 	<true/>
 	<key>MyAccountURL</key>
-	<string>https://www.movistar.com.co</string>
+	<string>https://www.tigo.com.co</string>
 	<key>EnableLTEAfterUpgrade</key>
 	<true/>
 	<key>SMSSettings</key>
@@ -45,7 +45,7 @@
 		<false/>
 	</dict>
 	<key>MyAccountURLTitle</key>
-	<string>movistar</string>
+	<string>TIGO Web</string>
 	<key>AllowedServicesTypeMaskOnInternet</key>
 	<integer>32768</integer>
 	<key>ShowVolteWarningUnsupportedCarrier</key>
@@ -56,33 +56,9 @@
 			<key>AllowPrefixMatching</key>
 			<true/>
 			<key>CarrierName</key>
-			<string>AR - Movistar</string>
-			<key>StatusBarCarrierName</key>
-			<string>Movistar</string>
-		</dict>
-		<dict>
-			<key>AllowPrefixMatching</key>
-			<true/>
-			<key>CarrierName</key>
 			<string>MOVISTAR</string>
 			<key>StatusBarCarrierName</key>
-			<string>Movistar</string>
-		</dict>
-		<dict>
-			<key>AllowPrefixMatching</key>
-			<true/>
-			<key>CarrierName</key>
-			<string>MOVISTARNI</string>
-			<key>StatusBarCarrierName</key>
-			<string>Movistar</string>
-		</dict>
-		<dict>
-			<key>AllowPrefixMatching</key>
-			<true/>
-			<key>CarrierName</key>
-			<string>movistar</string>
-			<key>StatusBarCarrierName</key>
-			<string>Movistar</string>
+			<string>TIGO</string>
 		</dict>
 	</array>
 	<key>SupportedSIMs</key>
@@ -193,7 +169,7 @@
 	<key>PhoneNumberRegistrationGatewayAddress</key>
 	<string>+447860015000</string>
 	<key>CarrierName</key>
-	<string>movistar</string>
+	<string>Tigo</string>
 	<key>AttachAPN</key>
 	<dict>
 		<key>3GPP</key>

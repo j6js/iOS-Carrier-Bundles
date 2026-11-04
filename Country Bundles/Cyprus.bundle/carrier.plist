@@ -6,24 +6,10 @@
 	<dict>
 		<key>AlertConfigurations</key>
 		<dict>
-			<key>Configuration_cy</key>
-			<dict>
-				<key>Sound</key>
-				<string>cbs_alert_us.caf</string>
-				<key>Vibration</key>
-				<string>cbs_vibe_us.plist</string>
-			</dict>
 			<key>Configuration_cy2</key>
 			<dict>
 				<key>Sound</key>
 				<string>TEXT</string>
-				<key>Vibration</key>
-				<string>cbs_vibe_us.plist</string>
-			</dict>
-			<key>Configuration_cy1</key>
-			<dict>
-				<key>Sound</key>
-				<string></string>
 				<key>Vibration</key>
 				<string>cbs_vibe_us.plist</string>
 			</dict>
@@ -33,6 +19,13 @@
 				<string></string>
 				<key>Vibration</key>
 				<string></string>
+			</dict>
+			<key>Configuration_cy</key>
+			<dict>
+				<key>Sound</key>
+				<string>cbs_alert_us.caf</string>
+				<key>Vibration</key>
+				<string>cbs_vibe_us.plist</string>
 			</dict>
 		</dict>
 		<key>SwitchGroupTitle</key>
@@ -92,7 +85,7 @@
 				<key>FromServiceID</key>
 				<integer>4379</integer>
 				<key>AlertType</key>
-				<string>KidnappingMissingPerson</string>
+				<string>KidnappingorMissingPerson</string>
 				<key>AlertConfiguration</key>
 				<string>Configuration_cy3</string>
 				<key>ToServiceID</key>
@@ -102,9 +95,9 @@
 				<key>FromServiceID</key>
 				<integer>4380</integer>
 				<key>AlertType</key>
-				<string>StateandlocalTests</string>
+				<string>SystemTest</string>
 				<key>AlertConfiguration</key>
-				<string>Configuration_cy</string>
+				<string>Configuration_cy2</string>
 				<key>ToServiceID</key>
 				<integer>4380</integer>
 			</dict>
@@ -112,7 +105,7 @@
 				<key>FromServiceID</key>
 				<integer>4381</integer>
 				<key>AlertType</key>
-				<string>Exercisetests</string>
+				<string>StateServicesExercises</string>
 				<key>AlertConfiguration</key>
 				<string>Configuration_cy</string>
 				<key>ToServiceID</key>
@@ -152,7 +145,7 @@
 				<key>FromServiceID</key>
 				<integer>4392</integer>
 				<key>AlertType</key>
-				<string>KidnappingMissingPerson</string>
+				<string>KidnappingorMissingPerson</string>
 				<key>AlertConfiguration</key>
 				<string>Configuration_cy3</string>
 				<key>ToServiceID</key>
@@ -162,7 +155,7 @@
 				<key>FromServiceID</key>
 				<integer>4394</integer>
 				<key>AlertType</key>
-				<string>Exercisetests</string>
+				<string>StateServicesExercises</string>
 				<key>AlertConfiguration</key>
 				<string>Configuration_cy</string>
 				<key>ToServiceID</key>
@@ -172,9 +165,9 @@
 				<key>FromServiceID</key>
 				<integer>4393</integer>
 				<key>AlertType</key>
-				<string>StateandlocalTests</string>
+				<string>SystemTest</string>
 				<key>AlertConfiguration</key>
-				<string>Configuration_cy</string>
+				<string>Configuration_cy2</string>
 				<key>ToServiceID</key>
 				<integer>4393</integer>
 			</dict>
@@ -185,31 +178,12 @@
 		</array>
 		<key>AlertTypes</key>
 		<dict>
-			<key>StateandlocalTests</key>
-			<dict>
-				<key>SoundAlertPeriod</key>
-				<integer>10500</integer>
-				<key>NotificationTitle</key>
-				<string>State and local test</string>
-				<key>SwitchName</key>
-				<string>State and local Tests</string>
-				<key>SoundIsMutableInDND</key>
-				<true/>
-				<key>ShowTimestamp</key>
-				<true/>
-				<key>UserConfigurable</key>
-				<true/>
-				<key>EnabledByDefault</key>
-				<false/>
-				<key>SoundAlertDeviceInMute</key>
-				<false/>
-			</dict>
 			<key>ExtremeThreats</key>
 			<dict>
 				<key>SoundAlertPeriod</key>
 				<integer>10500</integer>
 				<key>NotificationTitle</key>
-				<string>Extreme Threat</string>
+				<string>CY-Alert Extreme Threats</string>
 				<key>SwitchName</key>
 				<string>Extreme Threats</string>
 				<key>SoundIsMutableInDND</key>
@@ -223,14 +197,14 @@
 				<key>SoundAlertDeviceInMute</key>
 				<true/>
 			</dict>
-			<key>Exercisetests</key>
+			<key>SystemTest</key>
 			<dict>
 				<key>SoundAlertPeriod</key>
 				<integer>10500</integer>
 				<key>NotificationTitle</key>
-				<string>Exercise test</string>
+				<string>CY-Alert System Test</string>
 				<key>SwitchName</key>
-				<string>Exercise tests</string>
+				<string>System Test</string>
 				<key>SoundIsMutableInDND</key>
 				<true/>
 				<key>ShowTimestamp</key>
@@ -239,6 +213,25 @@
 				<true/>
 				<key>EnabledByDefault</key>
 				<false/>
+				<key>SoundAlertDeviceInMute</key>
+				<false/>
+			</dict>
+			<key>KidnappingorMissingPerson</key>
+			<dict>
+				<key>SoundAlertPeriod</key>
+				<integer>10500</integer>
+				<key>NotificationTitle</key>
+				<string>CY-Alert Kidnapping or Missing Person</string>
+				<key>SwitchName</key>
+				<string>Kidnapping or Missing Person</string>
+				<key>SoundIsMutableInDND</key>
+				<true/>
+				<key>ShowTimestamp</key>
+				<true/>
+				<key>UserConfigurable</key>
+				<true/>
+				<key>EnabledByDefault</key>
+				<true/>
 				<key>SoundAlertDeviceInMute</key>
 				<false/>
 			</dict>
@@ -247,7 +240,7 @@
 				<key>SoundAlertPeriod</key>
 				<integer>10500</integer>
 				<key>NotificationTitle</key>
-				<string>Public Safety Message</string>
+				<string>CY-Alert Public Safety Messages</string>
 				<key>SwitchName</key>
 				<string>Public Safety Messages</string>
 				<key>SoundIsMutableInDND</key>
@@ -255,9 +248,28 @@
 				<key>ShowTimestamp</key>
 				<true/>
 				<key>UserConfigurable</key>
-				<false/>
+				<true/>
 				<key>EnabledByDefault</key>
 				<true/>
+				<key>SoundAlertDeviceInMute</key>
+				<false/>
+			</dict>
+			<key>StateServicesExercises</key>
+			<dict>
+				<key>SoundAlertPeriod</key>
+				<integer>10500</integer>
+				<key>NotificationTitle</key>
+				<string>CY-Alert State Services Exercises</string>
+				<key>SwitchName</key>
+				<string>State Services Exercises</string>
+				<key>SoundIsMutableInDND</key>
+				<true/>
+				<key>ShowTimestamp</key>
+				<true/>
+				<key>UserConfigurable</key>
+				<true/>
+				<key>EnabledByDefault</key>
+				<false/>
 				<key>SoundAlertDeviceInMute</key>
 				<false/>
 			</dict>
@@ -266,7 +278,7 @@
 				<key>SoundAlertPeriod</key>
 				<integer>300000</integer>
 				<key>NotificationTitle</key>
-				<string>Extreme National Alert</string>
+				<string>CY-Alert Extreme National Alert</string>
 				<key>SwitchName</key>
 				<string>Extreme National Alerts</string>
 				<key>SoundIsMutableInDND</key>
@@ -280,31 +292,12 @@
 				<key>SoundAlertDeviceInMute</key>
 				<true/>
 			</dict>
-			<key>KidnappingMissingPerson</key>
-			<dict>
-				<key>SoundAlertPeriod</key>
-				<integer>10500</integer>
-				<key>NotificationTitle</key>
-				<string>Kidnapping - Missing Person</string>
-				<key>SwitchName</key>
-				<string>Kidnapping - Missing Person</string>
-				<key>SoundIsMutableInDND</key>
-				<true/>
-				<key>ShowTimestamp</key>
-				<true/>
-				<key>UserConfigurable</key>
-				<true/>
-				<key>EnabledByDefault</key>
-				<true/>
-				<key>SoundAlertDeviceInMute</key>
-				<false/>
-			</dict>
 			<key>SevereThreats</key>
 			<dict>
 				<key>SoundAlertPeriod</key>
 				<integer>10500</integer>
 				<key>NotificationTitle</key>
-				<string>Severe Threat</string>
+				<string>CY-Alert Severe Threats</string>
 				<key>SwitchName</key>
 				<string>Severe Threats</string>
 				<key>SoundIsMutableInDND</key>
@@ -312,7 +305,7 @@
 				<key>ShowTimestamp</key>
 				<true/>
 				<key>UserConfigurable</key>
-				<false/>
+				<true/>
 				<key>EnabledByDefault</key>
 				<true/>
 				<key>SoundAlertDeviceInMute</key>

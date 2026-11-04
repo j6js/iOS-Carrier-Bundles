@@ -106,6 +106,34 @@
 	<true/>
 	<key>PhoneNumberRegistrationGatewayAddress</key>
 	<string>10220</string>
+	<key>com.apple.voicemail.imap</key>
+	<dict>
+		<key>MaxGreetingDuration</key>
+		<integer>300</integer>
+		<key>UsesSSL</key>
+		<true/>
+		<key>GreetingNotification</key>
+		<true/>
+		<key>MinPINLength</key>
+		<integer>7</integer>
+		<key>UsesMWI</key>
+		<false/>
+		<key>AuthenticationScheme</key>
+		<string>Plain</string>
+		<key>ClientManagesTrash</key>
+		<true/>
+		<key>AllowedIMAPServers</key>
+		<dict>
+			<key>FQDN</key>
+			<array>
+				<string>vvm.telenor.se</string>
+			</array>
+		</dict>
+		<key>MaxPINLength</key>
+		<integer>10</integer>
+		<key>BeaconAddress</key>
+		<string>10312</string>
+	</dict>
 	<key>OverrideOperatorWiFiName</key>
 	<string>WiFi-samtal</string>
 	<key>MMS</key>
@@ -256,7 +284,7 @@
 			<key>apn</key>
 			<string>services.telenor.se</string>
 			<key>type-mask</key>
-			<integer>32817</integer>
+			<integer>32819</integer>
 			<key>AllowedProtocolMask</key>
 			<integer>3</integer>
 		</dict>
@@ -318,14 +346,6 @@
 		<key>SMSCarrierReportJunkAddress</key>
 		<string>71791</string>
 	</dict>
-	<key>VVMIgnoresIntlDataRoaming</key>
-	<false/>
-	<key>PreferCarrierNameFromMetadata</key>
-	<true/>
-	<key>APNEditabilityTypemask</key>
-	<integer>53</integer>
-	<key>AllowedServicesTypeMaskOnInternet</key>
-	<integer>32768</integer>
 	<key>IMSConfig</key>
 	<dict>
 		<key>Signaling</key>
@@ -496,6 +516,14 @@
 			<true/>
 		</dict>
 	</dict>
+	<key>PreferCarrierNameFromMetadata</key>
+	<true/>
+	<key>APNEditabilityTypemask</key>
+	<integer>53</integer>
+	<key>AllowedServicesTypeMaskOnInternet</key>
+	<integer>32768</integer>
+	<key>VVMIgnoresIntlDataRoaming</key>
+	<true/>
 	<key>Services</key>
 	<array>
 		<dict>
@@ -512,7 +540,7 @@
 		</dict>
 	</array>
 	<key>VisualVoicemailServiceName</key>
-	<string>none</string>
+	<string>IMAP</string>
 	<key>EnableLTEAfterUpgrade</key>
 	<true/>
 	<key>StatusBarImages</key>
@@ -579,6 +607,8 @@
 	</dict>
 	<key>ShowWiFiCallingWarningUnsupportedCarrier</key>
 	<false/>
+	<key>VMSMFilterNumber</key>
+	<string>888</string>
 	<key>SupportedSIMs</key>
 	<array>
 		<string>24008</string>

@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>DerPriFileVersion</key>
-	<string>5.1.161</string>
+	<string>6.2.161</string>
 	<key>AllowSAOnWiFiAssociation</key>
 	<true/>
 	<key>ShowVoNRSwitch</key>

@@ -478,6 +478,10 @@
 	<dict>
 		<key>TransportFallback</key>
 		<false/>
+		<key>enableSMSReportJunk</key>
+		<true/>
+		<key>SMSCarrierReportJunkAddress</key>
+		<string>7726</string>
 	</dict>
 	<key>VVMIgnoresIntlDataRoaming</key>
 	<false/>

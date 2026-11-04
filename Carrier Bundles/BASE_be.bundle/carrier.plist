@@ -504,7 +504,7 @@
 		<key>ShowBusinessMessagingSwitch</key>
 		<true/>
 		<key>SupportsE2EE</key>
-		<false/>
+		<true/>
 		<key>EnableRCSByDefault</key>
 		<true/>
 	</dict>

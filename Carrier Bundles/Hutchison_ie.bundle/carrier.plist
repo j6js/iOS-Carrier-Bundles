@@ -385,7 +385,7 @@
 			<key>strictCallFlows</key>
 			<true/>
 			<key>InviteErrorResponsesToTriggerCSFB</key>
-			<string>-408,3XX,4XX,5XX,6XX</string>
+			<string>-408,3XX,4XX,5XX,6XX,-603</string>
 			<key>SupportPEarlyMediaHeader</key>
 			<true/>
 			<key>RingbackTimerSeconds</key>

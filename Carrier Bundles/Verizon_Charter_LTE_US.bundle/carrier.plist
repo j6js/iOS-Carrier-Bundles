@@ -1115,6 +1115,11 @@ Hjud2pQ=</string>
 		<key>UpdatePeriod</key>
 		<integer>0</integer>
 	</dict>
+	<key>VoiceTextMedia</key>
+	<dict>
+		<key>EnableHoldForRTT</key>
+		<true/>
+	</dict>
 	<key>RemoteCardProvisioningSettings</key>
 	<dict>
 		<key>MatchingICCIDPrefixes</key>

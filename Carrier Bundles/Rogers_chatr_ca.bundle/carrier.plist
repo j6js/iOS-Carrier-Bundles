@@ -12,6 +12,11 @@
 	<string>https://www.chatrwireless.com</string>
 	<key>VVMIgnoresIntlDataRoaming</key>
 	<false/>
+	<key>PhoneSettings</key>
+	<dict>
+		<key>CarrierVoiceCallSpamReportAddress</key>
+		<string>7729</string>
+	</dict>
 	<key>SMSSettings</key>
 	<dict>
 		<key>SMSCarrierReportJunkAddress</key>

@@ -48,6 +48,8 @@
 	<string>we</string>
 	<key>RoamingVoicemailPilotNumber</key>
 	<string>+201555000505</string>
+	<key>ShowVolteWarningUnsupportedCarrier</key>
+	<false/>
 	<key>StatusBarImages</key>
 	<array>
 		<dict>
@@ -93,13 +95,70 @@
 	<dict>
 		<key>AllowWiFiCallingInAirplaneMode</key>
 		<false/>
+		<key>Media</key>
+		<dict>
+			<key>InactivityTimerRTPSeconds</key>
+			<integer>20</integer>
+			<key>EnableBandwidthSpecifiers</key>
+			<true/>
+			<key>PreferredAMRWBMode</key>
+			<integer>8</integer>
+		</dict>
 		<key>Signaling</key>
 		<dict>
+			<key>IncomingCallEndReasons</key>
+			<dict>
+				<key>NoAnswerFromUser</key>
+				<dict>
+					<key>Protocol</key>
+					<string>Q.850</string>
+					<key>TerminationEvent</key>
+					<string>RemoteHangup</string>
+					<key>ReasonHeaderCause</key>
+					<integer>19</integer>
+					<key>StatusCode</key>
+					<integer>480</integer>
+				</dict>
+				<key>NormalUnspecified</key>
+				<dict>
+					<key>Protocol</key>
+					<string>Q.850</string>
+					<key>TerminationEvent</key>
+					<string>RemoteHangup</string>
+					<key>ReasonHeaderCause</key>
+					<integer>31</integer>
+					<key>StatusCode</key>
+					<integer>480</integer>
+				</dict>
+				<key>SubscriberAbsent</key>
+				<dict>
+					<key>Protocol</key>
+					<string>Q.850</string>
+					<key>TerminationEvent</key>
+					<string>RemoteHangup</string>
+					<key>ReasonHeaderCause</key>
+					<integer>20</integer>
+					<key>StatusCode</key>
+					<integer>480</integer>
+				</dict>
+			</dict>
+			<key>AdditionalContactParams</key>
+			<dict>
+				<key>REGISTER,INVITE,INVITE:*</key>
+				<string>+g.3gpp.mid-call;+g.3gpp.srvcc-alerting;+g.3gpp.ps2cs-srvcc-orig-pre-alerting</string>
+			</dict>
 			<key>AllowPCNIInAirplaneMode</key>
 			<false/>
-			<key>EnableCellularNetworkInfo</key>
+			<key>UseIPSec</key>
 			<true/>
 			<key>DropRegistrationOnAirplaneModeToggle</key>
+			<true/>
+			<key>EnableCellularNetworkInfo</key>
+			<true/>
+		</dict>
+		<key>Voice</key>
+		<dict>
+			<key>EnableVolteByDefault</key>
 			<true/>
 		</dict>
 	</dict>

@@ -121,6 +121,8 @@
 		<integer>20</integer>
 		<key>MaxVideoBitrate</key>
 		<integer>131072</integer>
+		<key>MMSCarrierReportJunkAddress</key>
+		<string>7226</string>
 		<key>Proxy</key>
 		<string>10.202.2.60:8080</string>
 		<key>MaxMessageSize</key>
@@ -173,12 +175,14 @@
 				<string>IPv6Address</string>
 			</dict>
 		</array>
+		<key>WifiCallingAllowedInRoaming</key>
+		<false/>
+		<key>WiFiCallingControlsAlliWLanServices</key>
+		<true/>
 		<key>FatalActivationErrors</key>
 		<array>
 			<integer>9000</integer>
 		</array>
-		<key>WiFiCallingControlsAlliWLanServices</key>
-		<true/>
 		<key>5wiServiceMask</key>
 		<integer>3</integer>
 		<key>IKE</key>
@@ -451,16 +455,21 @@
 			<true/>
 		</dict>
 	</dict>
+	<key>SMSSettings</key>
+	<dict>
+		<key>SMSCarrierReportJunkAddress</key>
+		<string>7226</string>
+	</dict>
 	<key>SuspendFastDormancyAllowed</key>
 	<true/>
-	<key>Show3GSwitch</key>
-	<false/>
 	<key>PreferCarrierNameFromMetadata</key>
 	<true/>
 	<key>RoamingVoicemailPilotNumber</key>
 	<string>+61414121121</string>
 	<key>AllowedServicesTypeMaskOnInternet</key>
 	<integer>32768</integer>
+	<key>Show3GSwitch</key>
+	<false/>
 	<key>VVMIgnoresIntlDataRoaming</key>
 	<false/>
 	<key>PhoneSettings</key>

@@ -88,8 +88,6 @@
 			</array>
 		</dict>
 	</dict>
-	<key>Show3GSwitchWithVolte</key>
-	<true/>
 	<key>VoicemailPilotNumber</key>
 	<string>888</string>
 	<key>RegistrationOptInRequired</key>
@@ -294,6 +292,8 @@
 	<integer>5</integer>
 	<key>DataIndicatorOverrideForLTE</key>
 	<string>4G</string>
+	<key>ShowVolteSwitch</key>
+	<false/>
 	<key>apns</key>
 	<array>
 		<dict>
@@ -387,11 +387,42 @@
 		<dict>
 			<key>RTCPIntervalSeconds</key>
 			<integer>5</integer>
-			<key>IncludeSDPModeChangeCapability</key>
-			<true/>
+			<key>EVSHardBwLimit</key>
+			<string>nb-swb</string>
 			<key>PreferredAMRWBMode</key>
 			<integer>8</integer>
 			<key>EnableBandwidthSpecifiers</key>
+			<true/>
+			<key>AudioCodecs</key>
+			<dict>
+				<key>97</key>
+				<dict>
+					<key>br</key>
+					<string>5.9-24.4</string>
+					<key>SampleRate</key>
+					<integer>16000</integer>
+					<key>EncodingName</key>
+					<string>EVS</string>
+					<key>bw</key>
+					<string>nb-swb</string>
+					<key>max-red</key>
+					<string>0</string>
+				</dict>
+				<key>96</key>
+				<dict>
+					<key>br</key>
+					<string>9.6-24.4</string>
+					<key>SampleRate</key>
+					<integer>16000</integer>
+					<key>EncodingName</key>
+					<string>EVS</string>
+					<key>bw</key>
+					<string>swb</string>
+					<key>max-red</key>
+					<string>0</string>
+				</dict>
+			</dict>
+			<key>IncludeSDPMaxRed</key>
 			<true/>
 			<key>InactivityTimerRTPSeconds</key>
 			<integer>20</integer>
@@ -399,7 +430,7 @@
 			<string>CEPT</string>
 			<key>UseSDPTemplateForAllInvites</key>
 			<true/>
-			<key>IncludeSDPMaxRed</key>
+			<key>IncludeSDPModeChangeCapability</key>
 			<true/>
 		</dict>
 		<key>Signaling</key>

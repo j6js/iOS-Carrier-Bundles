@@ -78,38 +78,44 @@
 			<string>orange</string>
 			<key>username</key>
 			<string>orange</string>
+			<key>AllowedProtocolMask</key>
+			<integer>1</integer>
 			<key>apn</key>
 			<string>orangeworld</string>
 			<key>type-mask</key>
 			<integer>32769</integer>
-			<key>AllowedProtocolMask</key>
-			<integer>1</integer>
+			<key>UseNetworkMTU</key>
+			<true/>
 		</dict>
 		<dict>
 			<key>password</key>
 			<string>orange</string>
 			<key>username</key>
 			<string>orange</string>
+			<key>AllowedProtocolMask</key>
+			<integer>1</integer>
 			<key>apn</key>
 			<string>orangemms</string>
 			<key>type-mask</key>
 			<integer>4</integer>
-			<key>AllowedProtocolMask</key>
-			<integer>1</integer>
+			<key>UseNetworkMTU</key>
+			<true/>
 		</dict>
 		<dict>
-			<key>password</key>
-			<string>orange</string>
-			<key>username</key>
-			<string>orange</string>
-			<key>AllowedProtocolMask</key>
-			<integer>1</integer>
-			<key>apn</key>
-			<string>internet</string>
 			<key>type-mask</key>
 			<integer>48</integer>
 			<key>Support5GSaHandOver</key>
 			<true/>
+			<key>password</key>
+			<string>orange</string>
+			<key>UseNetworkMTU</key>
+			<true/>
+			<key>username</key>
+			<string>orange</string>
+			<key>apn</key>
+			<string>internet</string>
+			<key>AllowedProtocolMask</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>type-mask</key>

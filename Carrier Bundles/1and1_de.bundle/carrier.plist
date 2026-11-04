@@ -162,25 +162,6 @@
 	</dict>
 	<key>OverrideOperatorWiFiName</key>
 	<string>1&amp;1 VoWiFi</string>
-	<key>MMS</key>
-	<dict>
-		<key>MaxImageDimension</key>
-		<integer>1024</integer>
-		<key>MMSC</key>
-		<string>http://mms.1und1-mobilfunk.de</string>
-		<key>GroupModeEnabled</key>
-		<false/>
-		<key>MaxVideoBitrate</key>
-		<integer>131072</integer>
-		<key>OnWhileDataOff</key>
-		<true/>
-		<key>MaxRecipients</key>
-		<integer>50</integer>
-		<key>Proxy</key>
-		<string>2a00:0fbc:2200:c999:0109:1f87:2:1:80</string>
-		<key>MaxMessageSize</key>
-		<integer>307200</integer>
-	</dict>
 	<key>TechSettings</key>
 	<dict>
 		<key>WifiCallingAllowedInRoaming</key>
@@ -355,21 +336,9 @@
 			<key>AllowedProtocolMask</key>
 			<integer>2</integer>
 		</dict>
-		<dict>
-			<key>password</key>
-			<string></string>
-			<key>username</key>
-			<string></string>
-			<key>AllowedProtocolMaskInRoaming</key>
-			<integer>3</integer>
-			<key>apn</key>
-			<string>mms</string>
-			<key>type-mask</key>
-			<integer>4</integer>
-			<key>AllowedProtocolMask</key>
-			<integer>2</integer>
-		</dict>
 	</array>
+	<key>SuppressSimToolkitSendShortMessageNotifications</key>
+	<true/>
 	<key>IMSConfig</key>
 	<dict>
 		<key>Signaling</key>
@@ -518,8 +487,6 @@
 			<true/>
 		</dict>
 	</dict>
-	<key>SuppressSimToolkitSendShortMessageNotifications</key>
-	<true/>
 	<key>SMSSettings</key>
 	<dict>
 		<key>TransportFallback</key>

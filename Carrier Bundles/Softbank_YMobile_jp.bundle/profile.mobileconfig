@@ -11,7 +11,7 @@
 			<dict>
 				<key>AcceptEAPTypes</key>
 				<array>
-					<integer>18</integer>
+					<integer>23</integer>
 				</array>
 				<key>EAPFASTProvisionPAC</key>
 				<false/>
@@ -49,9 +49,9 @@
 		</dict>
 	</array>
 	<key>PayloadDescription</key>
-	<string>Added EAP-SIM support</string>
+	<string>Added EAP-AKA support</string>
 	<key>PayloadDisplayName</key>
-	<string>SoftBank WiFi rev4</string>
+	<string>SoftBank WiFi rev5</string>
 	<key>PayloadIdentifier</key>
 	<string>com.apple.Softbank_YMobile_jp.e5c7f216-da0e-11eb-8e7e-f45c89abb0d9</string>
 	<key>PayloadOrganization</key>

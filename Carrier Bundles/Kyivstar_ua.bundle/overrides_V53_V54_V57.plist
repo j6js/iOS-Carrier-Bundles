@@ -2,18 +2,30 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>ShowSatelliteSwitch</key>
-	<true/>
-	<key>DerPriFileName</key>
-	<string>overrides_V53_V54_V57.der.pri</string>
+	<key>SatelliteAccessInfo</key>
+	<dict>
+		<key>AppCategories</key>
+		<array>
+			<string>8001</string>
+			<string>8002</string>
+		</array>
+		<key>Tier</key>
+		<integer>4</integer>
+	</dict>
 	<key>DerPriFileVersion</key>
 	<string>5.2.161</string>
+	<key>DerPriFileName</key>
+	<string>overrides_V53_V54_V57.der.pri</string>
+	<key>ShowSatelliteSwitch</key>
+	<true/>
 	<key>SatelliteSystemTransitionTimeToAllowed</key>
 	<integer>30</integer>
 	<key>Show4GSwitchWith5G</key>
 	<true/>
 	<key>SupportsSatellite</key>
 	<true/>
+	<key>SatelliteNoDataSuspendDelayTimeout</key>
+	<integer>1</integer>
 	<key>IMSConfig</key>
 	<dict>
 		<key>Satellite</key>
@@ -22,7 +34,5 @@
 			<integer>2</integer>
 		</dict>
 	</dict>
-	<key>SatelliteNoDataSuspendDelayTimeout</key>
-	<integer>1</integer>
 </dict>
 </plist>

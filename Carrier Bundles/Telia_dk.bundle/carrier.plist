@@ -251,23 +251,6 @@
 	<integer>5</integer>
 	<key>DataIndicatorOverrideForLTE</key>
 	<string>4G</string>
-	<key>Location</key>
-	<dict>
-		<key>EmergencyLocation</key>
-		<dict>
-			<key>AugmentedEmergencyAction</key>
-			<dict>
-				<key>AML</key>
-				<dict>
-					<key>SMS</key>
-					<dict>
-						<key>Destination</key>
-						<string>+4591155555</string>
-					</dict>
-				</dict>
-			</dict>
-		</dict>
-	</dict>
 	<key>apns</key>
 	<array>
 		<dict>

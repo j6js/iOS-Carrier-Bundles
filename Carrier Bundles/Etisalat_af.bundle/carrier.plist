@@ -43,9 +43,9 @@
 	<array>
 		<dict>
 			<key>Title</key>
-			<string>Etisalat</string>
+			<string>e&amp;</string>
 			<key>URL</key>
-			<string>https://www.etisalat.af</string>
+			<string>https://eand.af/en/</string>
 		</dict>
 	</array>
 	<key>MandatoryVerify</key>
@@ -56,7 +56,7 @@
 	<key>SupportsNITZ</key>
 	<true/>
 	<key>MyAccountURL</key>
-	<string>https://etisalat.af/en/support/etisalat-customer-care</string>
+	<string>https://eand.af/en/support/etisalat-customer-care/11-en-etisalat-customer-care</string>
 	<key>EnableLTEAfterUpgrade</key>
 	<true/>
 	<key>APNEditabilityTypemask</key>
@@ -67,7 +67,7 @@
 		<false/>
 	</dict>
 	<key>MyAccountURLTitle</key>
-	<string>Etisalat Customer Care</string>
+	<string>e&amp; Afghanistan Customer Care</string>
 	<key>AllowedServicesTypeMaskOnInternet</key>
 	<integer>1</integer>
 	<key>RegistrationOptInRequired</key>
@@ -80,9 +80,9 @@
 			<key>AllowPrefixMatching</key>
 			<false/>
 			<key>CarrierName</key>
-			<string>Etisalat</string>
+			<string>e&amp;</string>
 			<key>StatusBarCarrierName</key>
-			<string>Etisalat</string>
+			<string>e&amp;</string>
 		</dict>
 	</array>
 	<key>SupportedSIMs</key>
@@ -179,7 +179,7 @@
 	<key>PhoneNumberRegistrationGatewayAddress</key>
 	<string>+447786205094</string>
 	<key>CarrierName</key>
-	<string>Etisalat</string>
+	<string>e&amp;</string>
 	<key>AttachAPN</key>
 	<dict>
 		<key>3GPP</key>

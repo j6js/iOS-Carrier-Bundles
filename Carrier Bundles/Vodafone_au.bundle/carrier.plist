@@ -152,6 +152,25 @@
 		<key>GreetingNotification</key>
 		<true/>
 	</dict>
+	<key>MMS</key>
+	<dict>
+		<key>Version</key>
+		<string>1.2</string>
+		<key>MMSC</key>
+		<string>http://pxt.vodafone.net.au/pxtsend</string>
+		<key>GroupModeEnabled</key>
+		<false/>
+		<key>MaxRecipients</key>
+		<integer>20</integer>
+		<key>MaxVideoBitrate</key>
+		<integer>131072</integer>
+		<key>MMSCarrierReportJunkAddress</key>
+		<string>7226</string>
+		<key>Proxy</key>
+		<string>10.202.2.60:8080</string>
+		<key>MaxMessageSize</key>
+		<integer>307200</integer>
+	</dict>
 	<key>TechSettings</key>
 	<dict>
 		<key>WiFiCallingIdentityProtectionMethod</key>
@@ -199,12 +218,14 @@
 				<string>IPv6Address</string>
 			</dict>
 		</array>
+		<key>WifiCallingAllowedInRoaming</key>
+		<false/>
+		<key>WiFiCallingControlsAlliWLanServices</key>
+		<true/>
 		<key>FatalActivationErrors</key>
 		<array>
 			<integer>9000</integer>
 		</array>
-		<key>WiFiCallingControlsAlliWLanServices</key>
-		<true/>
 		<key>5wiServiceMask</key>
 		<integer>3</integer>
 		<key>IKE</key>
@@ -273,23 +294,6 @@
 		<true/>
 		<key>SupportCallHandover</key>
 		<true/>
-	</dict>
-	<key>MMS</key>
-	<dict>
-		<key>Version</key>
-		<string>1.2</string>
-		<key>MMSC</key>
-		<string>http://pxt.vodafone.net.au/pxtsend</string>
-		<key>GroupModeEnabled</key>
-		<false/>
-		<key>MaxRecipients</key>
-		<integer>20</integer>
-		<key>MaxVideoBitrate</key>
-		<integer>131072</integer>
-		<key>Proxy</key>
-		<string>10.202.2.60:8080</string>
-		<key>MaxMessageSize</key>
-		<integer>307200</integer>
 	</dict>
 	<key>DormancyInactivity</key>
 	<integer>3500</integer>
@@ -447,16 +451,21 @@
 			<true/>
 		</dict>
 	</dict>
+	<key>SMSSettings</key>
+	<dict>
+		<key>SMSCarrierReportJunkAddress</key>
+		<string>7226</string>
+	</dict>
 	<key>SuspendFastDormancyAllowed</key>
 	<true/>
-	<key>VVMIgnoresIntlDataRoaming</key>
-	<false/>
 	<key>PreferCarrierNameFromMetadata</key>
 	<true/>
 	<key>AllowedServicesTypeMaskOnInternet</key>
 	<integer>32768</integer>
 	<key>RoamingVoicemailPilotNumber</key>
 	<string>+61414121121</string>
+	<key>VVMIgnoresIntlDataRoaming</key>
+	<false/>
 	<key>PushSettings</key>
 	<dict>
 		<key>MultiSIMTopic</key>

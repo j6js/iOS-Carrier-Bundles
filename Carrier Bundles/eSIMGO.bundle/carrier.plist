@@ -40,6 +40,11 @@
 	</array>
 	<key>IMSConfig</key>
 	<dict>
+		<key>XCAP</key>
+		<dict>
+			<key>supported</key>
+			<false/>
+		</dict>
 		<key>EnableWiFiCallingWithoutEntitlement</key>
 		<false/>
 	</dict>
@@ -660,6 +665,25 @@
 		<string>424003</string>
 		<string>708001</string>
 		<string>738002</string>
+		<string>22101</string>
+		<string>313790</string>
+		<string>334140</string>
+		<string>34008</string>
+		<string>40102</string>
+		<string>40211</string>
+		<string>41677</string>
+		<string>43405</string>
+		<string>43709</string>
+		<string>46011</string>
+		<string>47002</string>
+		<string>62703</string>
+		<string>63001</string>
+		<string>63301</string>
+		<string>63801</string>
+		<string>64009</string>
+		<string>71021</string>
+		<string>71401</string>
+		<string>732101</string>
 	</array>
 	<key>APNEditabilityTypemaskNew</key>
 	<integer>49</integer>

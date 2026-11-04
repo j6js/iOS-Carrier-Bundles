@@ -27,7 +27,7 @@
 		<key>SupportPhysicalSIMtoESIMTransfer</key>
 		<true/>
 		<key>SupportedEntitlements</key>
-		<integer>4204169</integer>
+		<integer>4203657</integer>
 		<key>SupportsOnDevicePhysicalSIMConvert</key>
 		<true/>
 	</dict>

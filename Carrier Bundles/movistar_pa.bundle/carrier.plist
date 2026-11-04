@@ -53,6 +53,85 @@
 		<string>71420</string>
 		<string>21407_ID-8950702</string>
 	</array>
+	<key>IMSConfig</key>
+	<dict>
+		<key>Signaling</key>
+		<dict>
+			<key>InviteErrorResponsesToTriggerCSFB</key>
+			<string>403,500,503,380</string>
+			<key>DefaultAuthAlgorithm</key>
+			<string>AKAv1-MD5</string>
+			<key>EmergencyURNs</key>
+			<dict>
+				<key>103</key>
+				<string>urn:service:sos.fire</string>
+				<key>104</key>
+				<string>urn:service:sos.police</string>
+				<key>911</key>
+				<string>urn:service:sos.ambulance</string>
+			</dict>
+			<key>AlwaysSendSessionProgress</key>
+			<true/>
+			<key>RingingTimerSeconds</key>
+			<integer>30</integer>
+			<key>UseIPSec</key>
+			<true/>
+			<key>Preconditions</key>
+			<string>None</string>
+			<key>ussdEnabled</key>
+			<false/>
+			<key>AdditionalContactParams</key>
+			<dict>
+				<key>REGISTER,INVITE,INVITE:*</key>
+				<string>+g.3gpp.srvcc-alerting</string>
+			</dict>
+			<key>RingbackTimerSeconds</key>
+			<integer>30</integer>
+			<key>CountryOfOriginationFormat</key>
+			<string>PANI</string>
+		</dict>
+		<key>XCAP</key>
+		<dict>
+			<key>supported</key>
+			<false/>
+		</dict>
+		<key>ConferenceCalling</key>
+		<dict>
+			<key>SendConferenceSubscribeInNewDialog</key>
+			<false/>
+			<key>SendReferToPeer</key>
+			<false/>
+			<key>AlwaysSubscribeToConferenceEvents</key>
+			<false/>
+			<key>conferenceServer</key>
+			<string>sip:mmtel@conf-factory.ims.mnc020.mcc714.3gppnetwork.org</string>
+		</dict>
+		<key>SMS</key>
+		<dict>
+			<key>SMSBundleToVoice</key>
+			<true/>
+			<key>SupportedDomains</key>
+			<dict>
+				<key>GSM</key>
+				<false/>
+				<key>LTE</key>
+				<true/>
+				<key>UMTS</key>
+				<false/>
+			</dict>
+		</dict>
+		<key>Voice</key>
+		<dict>
+			<key>E911OverCSIfNoIMSReg</key>
+			<true/>
+			<key>E911OverIMSSupported</key>
+			<true/>
+			<key>EnableVolteByDefault</key>
+			<true/>
+			<key>endNonEmergencyCalls</key>
+			<false/>
+		</dict>
+	</dict>
 	<key>ShowDialAssist</key>
 	<false/>
 	<key>PhoneNumberRegistrationGatewayAddress</key>
@@ -79,6 +158,30 @@
 	<string>none</string>
 	<key>SMSUseLocalTZ</key>
 	<true/>
+	<key>EmergencyCalling</key>
+	<dict>
+		<key>EmergencyNumbers</key>
+		<array>
+			<dict>
+				<key>Number</key>
+				<string>911</string>
+				<key>Category</key>
+				<integer>2</integer>
+			</dict>
+			<dict>
+				<key>Number</key>
+				<string>103</string>
+				<key>Category</key>
+				<integer>4</integer>
+			</dict>
+			<dict>
+				<key>Number</key>
+				<string>104</string>
+				<key>Category</key>
+				<integer>1</integer>
+			</dict>
+		</array>
+	</dict>
 	<key>VoicemailPilotNumber</key>
 	<string>*86</string>
 	<key>HomeBundleIdentifier</key>
@@ -94,6 +197,32 @@
 			<string>internet.tigo.pa</string>
 			<key>type-mask</key>
 			<integer>49</integer>
+			<key>AllowedProtocolMask</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>password</key>
+			<string></string>
+			<key>username</key>
+			<string></string>
+			<key>apn</key>
+			<string>ims</string>
+			<key>type-mask</key>
+			<integer>131072</integer>
+			<key>AllowedProtocolMask</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>password</key>
+			<string></string>
+			<key>username</key>
+			<string></string>
+			<key>apn</key>
+			<string>sos</string>
+			<key>type-mask</key>
+			<integer>262144</integer>
+			<key>AllowedProtocolMask</key>
+			<integer>1</integer>
 		</dict>
 	</array>
 	<key>OTASoftwareUpdate</key>

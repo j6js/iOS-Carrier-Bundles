@@ -10,6 +10,8 @@
 	<string>4G</string>
 	<key>EncryptedIdentity</key>
 	<dict>
+		<key>UpdateOnBootup</key>
+		<true/>
 		<key>AnonymousUsername</key>
 		<string>anonymous</string>
 		<key>Certificate</key>
@@ -51,7 +53,7 @@ riOVI+5j+L+FCGZORgv66DY2iaXxShcoU8dvfBY32nt9odYCFDc5wYHp</string>
 		<key>KeyIdentifier</key>
 		<string>CertificateSerialNumber=0d9b7181db9d5613f2919d1a135c4c08</string>
 		<key>UpdatePeriod</key>
-		<string>48</string>
+		<string>24</string>
 	</dict>
 	<key>MandatoryVerify</key>
 	<dict>

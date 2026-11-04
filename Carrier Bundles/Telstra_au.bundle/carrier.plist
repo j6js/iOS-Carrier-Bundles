@@ -73,6 +73,8 @@
 				<string>IPv6Address</string>
 			</dict>
 		</array>
+		<key>WifiCallingAllowedInRoaming</key>
+		<false/>
 		<key>WiFiCallingControlsAlliWLanServices</key>
 		<true/>
 		<key>5wiServiceMask</key>
@@ -268,6 +270,22 @@
 			<key>Username</key>
 			<string>0$IMSI@nai.epc.mnc$MNC.mcc$MCC.3gppnetwork.org</string>
 		</dict>
+		<key>ExtraEndPoints</key>
+		<array>
+			<dict>
+				<key>SupportedEntitlements</key>
+				<integer>4194320</integer>
+				<key>ServerAddress</key>
+				<string>https://aes.mnc001.mcc505.pub.3gppnetwork.org/auth</string>
+				<key>SupportedAuthorizationTokens</key>
+				<integer>2</integer>
+				<key>PushSettingsOverlay</key>
+				<dict>
+					<key>Topic</key>
+					<string>com.telstra.rcs</string>
+				</dict>
+			</dict>
+		</array>
 		<key>ServerAddress</key>
 		<string>https://telentprod.mobile.telstra.com</string>
 		<key>SupportPhysicalSIMtoESIMTransfer</key>
@@ -281,6 +299,17 @@
 	<false/>
 	<key>SupportsUserBusyCauseCode</key>
 	<true/>
+	<key>RCS</key>
+	<dict>
+		<key>EnableBusinessMessagingByDefault</key>
+		<true/>
+		<key>RefetchRCSStateIfDisabled</key>
+		<true/>
+		<key>ShowBusinessMessagingSwitch</key>
+		<true/>
+		<key>EnableRCSByDefault</key>
+		<true/>
+	</dict>
 	<key>SMSSettings</key>
 	<dict>
 		<key>SMSCarrierReportJunkAddress</key>

@@ -175,6 +175,8 @@
 		</dict>
 		<key>Voice</key>
 		<dict>
+			<key>DialAsEmergencyOverIMSForUndetectedEmergency</key>
+			<true/>
 			<key>EnableVolteByDefault</key>
 			<true/>
 		</dict>

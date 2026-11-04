@@ -68,7 +68,7 @@
 		<array>
 			<dict>
 				<key>Identifier</key>
-				<integer>16386</integer>
+				<integer>21</integer>
 				<key>Name</key>
 				<string>AssignedPCSCFIPv6</string>
 				<key>Type</key>
@@ -133,7 +133,7 @@
 		<array>
 			<dict>
 				<key>Identifier</key>
-				<integer>16384</integer>
+				<integer>20</integer>
 				<key>Name</key>
 				<string>AssignedPCSCFIPv4</string>
 				<key>Type</key>
@@ -683,8 +683,6 @@
 			<integer>10</integer>
 			<key>AddLocationToEmergencySMS</key>
 			<true/>
-			<key>RegisterOnServiceUpdate</key>
-			<false/>
 			<key>SpamCallRiskLevels</key>
 			<dict>
 				<key>low</key>
@@ -694,6 +692,8 @@
 				<key>medium</key>
 				<string>76:84</string>
 			</dict>
+			<key>RegisterOnServiceUpdate</key>
+			<false/>
 			<key>SpamHeaderFeatureCapability</key>
 			<string>Enabled</string>
 			<key>RegistrationPolicy</key>
@@ -741,16 +741,12 @@
 			<integer>90</integer>
 			<key>UseCIDUrlInPIDF</key>
 			<true/>
-			<key>AccessNetworkRefreshDelayMilliseconds</key>
-			<integer>30000</integer>
 			<key>AlwaysAddGeolocationForEmergencyCalls</key>
 			<true/>
 			<key>PIDFGeoPrivShape</key>
 			<string>ellipsoid</string>
 			<key>EnableBrandedCalling</key>
 			<true/>
-			<key>AccessNetworkRefreshMethod</key>
-			<string>INVITE</string>
 			<key>IgnoreOverridesForWPSCalls</key>
 			<true/>
 			<key>UseTupleInPIDF</key>

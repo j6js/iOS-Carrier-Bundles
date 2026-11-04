@@ -21,6 +21,8 @@
 	<integer>53</integer>
 	<key>RegistrationOptInRequired</key>
 	<true/>
+	<key>ShowVolteWarningUnsupportedCarrier</key>
+	<false/>
 	<key>StatusBarImages</key>
 	<array>
 		<dict>
@@ -36,6 +38,24 @@
 	<array>
 		<string>60402</string>
 	</array>
+	<key>IMSConfig</key>
+	<dict>
+		<key>Voice</key>
+		<dict>
+			<key>EnableVolteByDefault</key>
+			<true/>
+		</dict>
+		<key>Signaling</key>
+		<dict>
+			<key>AdditionalContactParams</key>
+			<dict>
+				<key>REGISTER,INVITE,INVITE:*</key>
+				<string>+g.3gpp.mid-call;+g.3gpp.srvcc-alerting;+g.3gpp.ps2cs-srvcc-orig-pre-alerting</string>
+			</dict>
+			<key>UseIPSec</key>
+			<true/>
+		</dict>
+	</dict>
 	<key>ShowDialAssist</key>
 	<true/>
 	<key>Show3GSwitchWith4G</key>

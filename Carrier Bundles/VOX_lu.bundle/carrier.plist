@@ -321,6 +321,8 @@
 			<string>403,408,5XX</string>
 			<key>AlwaysSendSessionProgress</key>
 			<true/>
+			<key>EnableRingbackAudioForTextCalls</key>
+			<true/>
 			<key>RingbackTimerSeconds</key>
 			<integer>90</integer>
 			<key>SendPreferredServiceInInvite</key>

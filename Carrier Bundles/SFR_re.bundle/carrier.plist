@@ -30,7 +30,7 @@
 	<key>SupportsNITZ</key>
 	<false/>
 	<key>MyAccountURL</key>
-	<string>https://m.sfr.fr</string>
+	<string>https://sfr.re </string>
 	<key>VVMIgnoresIntlDataRoaming</key>
 	<false/>
 	<key>TetheringURL</key>
@@ -82,6 +82,23 @@
 			<string>SFR</string>
 		</dict>
 	</array>
+	<key>Location</key>
+	<dict>
+		<key>EmergencyLocation</key>
+		<dict>
+			<key>AugmentedEmergencyAction</key>
+			<dict>
+				<key>AML</key>
+				<dict>
+					<key>SMS</key>
+					<dict>
+						<key>Destination</key>
+						<string>+33755544050</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+	</dict>
 	<key>SupportedSIMs</key>
 	<array>
 		<string>64710</string>

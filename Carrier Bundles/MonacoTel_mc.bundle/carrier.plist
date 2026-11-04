@@ -2,6 +2,30 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CarrierEntitlements</key>
+	<dict>
+		<key>SupportSecureIntent</key>
+		<true/>
+		<key>SupportedEntitlements</key>
+		<integer>8193</integer>
+		<key>ProtocolVersion</key>
+		<string>2</string>
+		<key>Authentication</key>
+		<dict>
+			<key>Type</key>
+			<integer>1</integer>
+			<key>Username</key>
+			<string>0$IMSI@nai.epc.mnc$MNC.mcc$MCC.3gppnetwork.org</string>
+		</dict>
+		<key>ServerAddress</key>
+		<string>https://es.monaco-telecom.mc</string>
+		<key>SupportPhysicalSIMtoESIMTransfer</key>
+		<true/>
+		<key>SupportsOnDevicePhysicalSIMConvert</key>
+		<true/>
+		<key>UpdatePeriod</key>
+		<integer>24</integer>
+	</dict>
 	<key>OTASoftwareUpdate</key>
 	<dict>
 		<key>SoftwareUpdateOptInRequired</key>
@@ -23,6 +47,35 @@
 			<integer>1</integer>
 		</dict>
 	</dict>
+	<key>PhoneAccountTransfer</key>
+	<dict>
+		<key>LocalInstallSMDPURL</key>
+		<string>https://mct.prod.ondemandconnectivity.com</string>
+		<key>TransferErrorCodes</key>
+		<dict>
+			<key>MaintenanceErrors</key>
+			<array>
+				<string>5020</string>
+				<string>5021</string>
+				<string>5022</string>
+			</array>
+			<key>IneligibleAccountErrors</key>
+			<array>
+				<string>5010</string>
+				<string>5011</string>
+			</array>
+			<key>CarrierDefaultErrors</key>
+			<array>
+				<string>5000</string>
+				<string>5001</string>
+				<string>5009</string>
+			</array>
+		</dict>
+		<key>MinCompatibleOS</key>
+		<string>27.3</string>
+		<key>SupportsFallbackToLegacyFlow</key>
+		<false/>
+	</dict>
 	<key>Show3GSwitchWithVolte</key>
 	<false/>
 	<key>VMSMFilterContents</key>
@@ -35,8 +88,6 @@
 	<false/>
 	<key>ShowVolteWarningUnsupportedCarrier</key>
 	<false/>
-	<key>ShowDialAssist</key>
-	<true/>
 	<key>PhoneNumberRegistrationGatewayAddress</key>
 	<array>
 		<string>+447537410207</string>
@@ -50,6 +101,8 @@
 		<string>+447537410287</string>
 		<string>+447537410297</string>
 	</array>
+	<key>ShowDialAssist</key>
+	<true/>
 	<key>Show3GSwitchWith4G</key>
 	<false/>
 	<key>com.apple.voicemail.imap</key>
@@ -185,7 +238,7 @@
 			<key>apn</key>
 			<string>internet</string>
 			<key>type-mask</key>
-			<integer>55</integer>
+			<integer>32823</integer>
 		</dict>
 		<dict>
 			<key>type-mask</key>
@@ -326,6 +379,13 @@
 	<false/>
 	<key>RoamingVoicemailPilotNumber</key>
 	<string>+37799668888</string>
+	<key>AllowedServicesTypeMaskOnInternet</key>
+	<integer>32768</integer>
+	<key>PushSettings</key>
+	<dict>
+		<key>CellularPlanTransferTopic</key>
+		<string>mc.monaco-telecom.notification.iphone-transfer</string>
+	</dict>
 	<key>Services</key>
 	<array>
 		<dict>

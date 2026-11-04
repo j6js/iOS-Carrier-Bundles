@@ -518,6 +518,11 @@
 			<true/>
 		</dict>
 	</dict>
+	<key>SMSSettings</key>
+	<dict>
+		<key>SMSCarrierReportJunkAddress</key>
+		<string>7726</string>
+	</dict>
 	<key>VVMIgnoresIntlDataRoaming</key>
 	<false/>
 	<key>PreferCarrierNameFromMetadata</key>
@@ -558,13 +563,16 @@
 			<string>ST ASISTENT</string>
 		</dict>
 	</array>
+	<key>PhoneSettings</key>
+	<dict>
+		<key>CarrierVoiceCallSpamReportAddress</key>
+		<string>7726</string>
+	</dict>
 	<key>PushSettings</key>
 	<dict>
 		<key>MultiSIMTopic</key>
 		<string>net.telekom-sk.entitlements</string>
 	</dict>
-	<key>VisualVoicemailServiceName</key>
-	<string>none</string>
 	<key>StatusBarImages</key>
 	<array>
 		<dict>
@@ -584,6 +592,8 @@
 			<string>Telekom SK</string>
 		</dict>
 	</array>
+	<key>VisualVoicemailServiceName</key>
+	<string>none</string>
 	<key>CarrierName</key>
 	<string>Telekom SK</string>
 	<key>SupportsImsCapability</key>

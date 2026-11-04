@@ -9,7 +9,7 @@
 		<key>SupportSecureIntent</key>
 		<true/>
 		<key>ServerAddress</key>
-		<string>https://es-de.vodafone.com:4445/ium-OEMInterface/servlet/IUMServlet</string>
+		<string>https://de-prod.entitlement.vodafone.com:4445/ium-OEMInterface/servlet/IUMServlet</string>
 		<key>ProvisioningRecheckPeriod</key>
 		<integer>24</integer>
 		<key>Authentication</key>
@@ -19,12 +19,14 @@
 			<key>Username</key>
 			<string>0$IMSI@nai.epc.mnc$MNC.mcc$MCC.3gppnetwork.org</string>
 		</dict>
-		<key>UserAgent</key>
-		<string>Entitlement/$version ($device) iOS/$iOSVersion</string>
 		<key>SupportedEntitlements</key>
 		<integer>4303872</integer>
 		<key>SupportedAuthorizationTokens</key>
 		<integer>2</integer>
+		<key>UserAgent</key>
+		<string>Entitlement/$version ($device) iOS/$iOSVersion</string>
+		<key>SupportCrossPlatformSIMTransfer</key>
+		<true/>
 		<key>SupportPhysicalSIMtoESIMTransfer</key>
 		<true/>
 		<key>ProtocolVersion</key>
@@ -351,6 +353,8 @@
 			<key>UseCIDUrlInPIDF</key>
 			<true/>
 			<key>SupportPEarlyMediaHeader</key>
+			<true/>
+			<key>ussdEnabled</key>
 			<true/>
 			<key>EarlyMediaNeedsHeader</key>
 			<true/>

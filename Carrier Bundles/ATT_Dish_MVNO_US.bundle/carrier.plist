@@ -22,7 +22,7 @@
 			<string>0$IMSI@nai.epc.mnc$MNC.mcc$MCC.3gppnetwork.org</string>
 		</dict>
 		<key>SupportedEntitlements</key>
-		<integer>4206217</integer>
+		<integer>4205705</integer>
 		<key>SupportedAuthorizationTokens</key>
 		<integer>3</integer>
 		<key>UserAgent</key>
@@ -413,7 +413,7 @@
 		<array>
 			<dict>
 				<key>Identifier</key>
-				<integer>16386</integer>
+				<integer>21</integer>
 				<key>Name</key>
 				<string>AssignedPCSCFIPv6</string>
 				<key>Type</key>
@@ -478,7 +478,7 @@
 		<array>
 			<dict>
 				<key>Identifier</key>
-				<integer>16384</integer>
+				<integer>20</integer>
 				<key>Name</key>
 				<string>AssignedPCSCFIPv4</string>
 				<key>Type</key>
@@ -619,16 +619,16 @@
 	<dict>
 		<key>Signaling</key>
 		<dict>
-			<key>PrivacyHeaderValue</key>
-			<string>header</string>
+			<key>SendPreferredServiceInInvite</key>
+			<true/>
 			<key>ForcedFeatureTags</key>
 			<string>voice,sms</string>
 			<key>MaxFatalRegistrationErrors</key>
 			<integer>1</integer>
 			<key>MaxReRegistrationAttempts</key>
 			<integer>0</integer>
-			<key>LocalQoSTimeoutMTSeconds</key>
-			<integer>6</integer>
+			<key>PrivacyHeaderValue</key>
+			<string>header</string>
 			<key>AdditionalHeaders</key>
 			<dict>
 				<key>INVITE[wifi,911]</key>
@@ -637,8 +637,8 @@
 					<string>Supported: geolocation</string>
 				</array>
 			</dict>
-			<key>EarlyMediaNeedsHeader</key>
-			<true/>
+			<key>LocalQoSTimeoutMTSeconds</key>
+			<integer>6</integer>
 			<key>InviteErrorResponsesToTriggerCSFB</key>
 			<string></string>
 			<key>strictCallFlows</key>
@@ -709,14 +709,10 @@
 			<integer>90</integer>
 			<key>UseCIDUrlInPIDF</key>
 			<true/>
-			<key>AccessNetworkRefreshDelayMilliseconds</key>
-			<integer>30000</integer>
 			<key>AlwaysAddGeolocationForEmergencyCalls</key>
 			<true/>
 			<key>PIDFGeoPrivShape</key>
 			<string>ellipsoid</string>
-			<key>AccessNetworkRefreshMethod</key>
-			<string>INVITE</string>
 			<key>IgnoreOverridesForWPSCalls</key>
 			<true/>
 			<key>UseTupleInPIDF</key>
@@ -753,8 +749,6 @@
 			<string>0</string>
 			<key>AccessBarringType</key>
 			<string>ACB</string>
-			<key>UseFakeSAsForDeregistration</key>
-			<true/>
 			<key>ussdEnabled</key>
 			<true/>
 			<key>IncomingCallEndReasons</key>
@@ -774,22 +768,24 @@
 					<string>RemoteHangup</string>
 				</dict>
 			</dict>
-			<key>ReRegisterOnErrorCodes</key>
-			<string>REGISTER:480,500,503,504;INVITE:60,403,504</string>
 			<key>LocationForShortCodeCalls</key>
 			<string>CIVIC</string>
+			<key>ReRegisterOnErrorCodes</key>
+			<string>REGISTER:480,500,503,504;INVITE:60,403,504</string>
 			<key>CountryOfOriginationFormat</key>
 			<string>BOTH</string>
-			<key>EmergencyPreferredIdentity</key>
-			<string>IMEI</string>
+			<key>UseFakeSAsForDeregistration</key>
+			<true/>
 			<key>RingbackTimerSeconds</key>
 			<integer>180</integer>
-			<key>AllowResponsesOverDifferentTransport</key>
-			<false/>
+			<key>EmergencyPreferredIdentity</key>
+			<string>IMEI</string>
+			<key>EarlyMediaNeedsHeader</key>
+			<true/>
 			<key>WaitForRingingTimerWPSSeconds</key>
 			<integer>8</integer>
-			<key>SendPreferredServiceInInvite</key>
-			<true/>
+			<key>AllowResponsesOverDifferentTransport</key>
+			<false/>
 		</dict>
 		<key>LocalShortCodeNumbers</key>
 		<array>
@@ -942,8 +938,6 @@
 	</array>
 	<key>PushSettings</key>
 	<dict>
-		<key>VVMTopic</key>
-		<string>com.att.ent.cns.vvm</string>
 		<key>MultiSIMTopic</key>
 		<string>com.att.ent.cns.multi-sim</string>
 		<key>VoWiFiTopic</key>

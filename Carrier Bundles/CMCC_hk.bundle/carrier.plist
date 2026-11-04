@@ -227,8 +227,6 @@
 		<string>http://mms.hk.chinamobile.com/mms</string>
 		<key>GroupModeEnabled</key>
 		<false/>
-		<key>Proxy</key>
-		<string>172.31.31.36:8080</string>
 		<key>Version</key>
 		<string>1.2</string>
 		<key>MaxMessageSize</key>

@@ -41,6 +41,8 @@
 	<string>LIBERTY</string>
 	<key>RoamingVoicemailPilotNumber</key>
 	<string>+50660020600</string>
+	<key>AllowedServicesTypeMaskOnInternet</key>
+	<integer>32771</integer>
 	<key>ShowVolteWarningUnsupportedCarrier</key>
 	<false/>
 	<key>SupportedSIMs</key>
@@ -169,9 +171,37 @@
 			<true/>
 		</dict>
 	</dict>
-	<key>ShowDialAssist</key>
-	<true/>
+	<key>CarrierEntitlements</key>
+	<dict>
+		<key>SupportsOnDevicePhysicalSIMConvert</key>
+		<true/>
+		<key>SupportSecureIntent</key>
+		<true/>
+		<key>SupportedEntitlements</key>
+		<integer>8209</integer>
+		<key>ProtocolVersion</key>
+		<string>2</string>
+		<key>Authentication</key>
+		<dict>
+			<key>Type</key>
+			<integer>1</integer>
+			<key>Username</key>
+			<string>0$IMSI@nai.epc.mnc$MNC.mcc$MCC.3gppnetwork.org</string>
+		</dict>
+		<key>ServerAddress</key>
+		<string>https://ses.mnc004.mcc712.pub.3gppnetwork.org</string>
+		<key>SupportPhysicalSIMtoESIMTransfer</key>
+		<true/>
+		<key>UpdatePeriod</key>
+		<integer>24</integer>
+		<key>SupportedActions</key>
+		<array>
+			<string>TransferSIMService</string>
+		</array>
+	</dict>
 	<key>Show3GSwitchWith4G</key>
+	<true/>
+	<key>ShowDialAssist</key>
 	<true/>
 	<key>PhoneNumberRegistrationGatewayAddress</key>
 	<string>30019</string>
@@ -195,6 +225,26 @@
 	</dict>
 	<key>VisualVoicemailServiceName</key>
 	<string>none</string>
+	<key>PhoneAccountTransfer</key>
+	<dict>
+		<key>LocalInstallSMDPURL</key>
+		<string>https://sm-v4-099-a-gtm.pr.go-esim.com</string>
+		<key>TransferErrorCodes</key>
+		<dict>
+			<key>MaintenanceErrors</key>
+			<array>
+				<string>5003</string>
+			</array>
+			<key>IneligibleAccountErrors</key>
+			<array>
+				<string>5011</string>
+			</array>
+			<key>BlockedAccountErrors</key>
+			<array>
+				<string>5009</string>
+			</array>
+		</dict>
+	</dict>
 	<key>ShowVolteSwitch</key>
 	<true/>
 	<key>SMSUseLocalTZ</key>
@@ -205,6 +255,11 @@
 	<string>600</string>
 	<key>HomeBundleIdentifier</key>
 	<string>com.apple.CostaRica</string>
+	<key>PushSettings</key>
+	<dict>
+		<key>CellularPlanTransferTopic</key>
+		<string>com.libertycr.ent.plan-transfer-to-eSIM</string>
+	</dict>
 	<key>apns</key>
 	<array>
 		<dict>
@@ -215,7 +270,7 @@
 			<key>apn</key>
 			<string>internet.movistar.cr</string>
 			<key>type-mask</key>
-			<integer>49</integer>
+			<integer>32817</integer>
 		</dict>
 		<dict>
 			<key>password</key>

@@ -38,70 +38,6 @@
 		<key>SoftwareUpdateOptInRequired</key>
 		<true/>
 	</dict>
-	<key>EmergencyCalling</key>
-	<dict>
-		<key>EmergencyNumbers</key>
-		<array>
-			<dict>
-				<key>Number</key>
-				<string>111</string>
-				<key>Category</key>
-				<integer>6</integer>
-			</dict>
-			<dict>
-				<key>Title</key>
-				<string>EMERGENCY_DISAMBIGUATION_POLICE</string>
-				<key>Number</key>
-				<string>112</string>
-				<key>PreferredEmergencyNumber</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>Number</key>
-				<string>113</string>
-				<key>Category</key>
-				<integer>3</integer>
-			</dict>
-			<dict>
-				<key>Number</key>
-				<string>117</string>
-				<key>Category</key>
-				<integer>18</integer>
-			</dict>
-			<dict>
-				<key>Number</key>
-				<string>118</string>
-				<key>Category</key>
-				<integer>19</integer>
-			</dict>
-			<dict>
-				<key>PreferredEmergencyNumber</key>
-				<true/>
-				<key>Category</key>
-				<integer>4</integer>
-				<key>Title</key>
-				<string>EMERGENCY_DISAMBIGUATION_FIRE_EMERGENCY_AMBULANCE</string>
-				<key>Number</key>
-				<string>119</string>
-			</dict>
-			<dict>
-				<key>PreferredEmergencyNumber</key>
-				<true/>
-				<key>Category</key>
-				<integer>8</integer>
-				<key>Title</key>
-				<string>EMERGENCY_DISAMBIGUATION_COAST_GUARD</string>
-				<key>Number</key>
-				<string>122</string>
-			</dict>
-			<dict>
-				<key>Number</key>
-				<string>125</string>
-				<key>Category</key>
-				<integer>9</integer>
-			</dict>
-		</array>
-	</dict>
 	<key>AttachAPN</key>
 	<dict>
 		<key>3GPP</key>
@@ -190,11 +126,11 @@
 	<key>EncryptedIdentity</key>
 	<dict>
 		<key>Certificate</key>
-		<string>MIIDgDCCAmgCCQDX4oqcPRQo/DANBgkqhkiG9w0BAQUFADCBgTELMAkGA1UEBhMCS1IxDjAMBgNVBAgTBVNlb3VsMQ4wDAYDVQQHEwVTZW91bDEQMA4GA1UEChMHQ09NUEFOWTEMMAoGA1UECxMDREVWMRwwGgYJKoZIhvcNAQkBFg10ZWxjb3dhcmUuY29tMRQwEgYDVQQDEwt0ZXN0bWFjaGluZTAeFw0xOTA3MzAwODI2NTVaFw0yMDA3MjkwODI2NTVaMIGBMQswCQYDVQQGEwJLUjEOMAwGA1UECBMFU2VvdWwxDjAMBgNVBAcTBVNlb3VsMRAwDgYDVQQKEwdDT01QQU5ZMQwwCgYDVQQLEwNERVYxHDAaBgkqhkiG9w0BCQEWDXRlbGNvd2FyZS5jb20xFDASBgNVBAMTC3Rlc3RtYWNoaW5lMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAo6ZxlaQU41MLYR56wTiuRgpVa6zMwuc0TcmsNPSGKCyQpqWq6Opo+VCVk+wUvfa6yV5SP4rucKwBCAyqFFM0K+vVO9fL5rB2ZrL0Hvwe/VY2av0BvDKxVkOBG54/PnnItkNW/7qJH9oh1mdT7t47hfCHag0fk6PU8+xLm63xpstiNRjVXTNxqTQwAqhjm7AAI2CKg/epoyiSR9dDmpAMzIv88RVjmTHrCFhPiOz37HwtKABj4lTqIDMnIdjxCvFxmIGohTrBaEFnP82M9Uk9IBtM0hEAdK3P3OMrH+hmu94k3cO7DzFD8jJZyysqjAgyAAmII3FnaeOKras54tXB3wIDAQABMA0GCSqGSIb3DQEBBQUAA4IBAQCFKGk7pk/EHjO9L9utcaCG1jnCdm4UDdW/uwwoDUHAMP4sqn7VFI4USSPQTEF1DKa/6iO2aOf6IbMHoUzCbHKKqKF5IlSrm44FBUuxVazGpMGg4Yu3nQV+eToTcJBzEUfB+UGf+np4mhNU1SNW9j5GUyoqZBU9E5QZP7YVgTw1ybAM9fr4OHr2ysRpJPjeyBu98i0xS6enHXiQ04qD6ZmWTj3Lf1nLajhvDefq5hjCh9mX6ccHukA/Ud4v4ArRHqeWirq0GHQGlMpRSeBQHG3URISVptuW/Xhnjr4UXZswOC2ErY1RV+hAoRm23ozyvMBk+Ea3kTAjJRwDcuXNpY3p</string>
+		<string>MIIElzCCA3+gAwIBAgIJALOsCFcsuxJTMA0GCSqGSIb3DQEBBQUAMIGNMQswCQYDVQQGEwJLUjEOMAwGA1UECBMFU0VPVUwxDzANBgNVBAcTBlNFT0NITzESMBAGA1UEChMJVEVMQ09XQVJFMQ0wCwYDVQQLEwRDT1JFMRIwEAYDVQQDEwlURUxDT1dBUkUxJjAkBgkqhkiG9w0BCQEWF3RlbGNvd2FyZUB0ZWxjb3dhcmUuY29tMCAXDTIwMTAwNjA4MTE1OVoYDzIwNzAwOTI0MDgxMTU5WjCBjTELMAkGA1UEBhMCS1IxDjAMBgNVBAgTBVNFT1VMMQ8wDQYDVQQHEwZTRU9DSE8xEjAQBgNVBAoTCVRFTENPV0FSRTENMAsGA1UECxMEQ09SRTESMBAGA1UEAxMJVEVMQ09XQVJFMSYwJAYJKoZIhvcNAQkBFhd0ZWxjb3dhcmVAdGVsY293YXJlLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANOgHWw5dgnoPbw/ygwXYSGfRofYltJXbp6gtujp+7f2CTOwYZ7yofh8IE37xmxeXI2NnOpQkh3jf5T29RNMbfaqJuFBrBHyIMixpKC9r8wqDglliB6rSsiYf7cz4jlDs/yvaYlF2vRSpAdVkg65p8kM6ktfi7YB9hcsGfI5xEqPic4cTzVD5rq7jZssFgaIVdegM/Vs6ZZtSDBYldK70HVLGLz3J8WRfsindzuR2czCwm2YKbalxGzVTlr6Jiw4eBRvyTZdotJREhQZLg+EvCXEe3SUr/s+1xRIAzWb48zm+hz+lRfjfAWzMjyc2JMkpBgFtWHHCt8c6oljzhhxG20CAwEAAaOB9TCB8jAdBgNVHQ4EFgQUUFbWGEyPkf4JJ5C8ZhTzc2iRdXUwgcIGA1UdIwSBujCBt4AUUFbWGEyPkf4JJ5C8ZhTzc2iRdXWhgZOkgZAwgY0xCzAJBgNVBAYTAktSMQ4wDAYDVQQIEwVTRU9VTDEPMA0GA1UEBxMGU0VPQ0hPMRIwEAYDVQQKEwlURUxDT1dBUkUxDTALBgNVBAsTBENPUkUxEjAQBgNVBAMTCVRFTENPV0FSRTEmMCQGCSqGSIb3DQEJARYXdGVsY293YXJlQHRlbGNvd2FyZS5jb22CCQCzrAhXLLsSUzAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBQUAA4IBAQBDOWIKMHy8KpHaCCP65jx4Dw0Wt1agTorxgi8G7bjBnTX1LM2ILZR3gCrVtGZqrEcVz3bOKTtp8A7j2ZPeq8JoU3GSZW0nqKaG2hYAx7aQciBCVwZ4Ek+ePXz5/wwV+jaIpAp8+lEgeGI36Rtpu4djA2PrPyYZxihH2JecMFUmcuQZnU2UmPDhliqxN+AsbRrY4APv1je4BoY41VWWx56pst3ZzAeIenPH8wjWqbONocqEmEiJb4wVp30jbV7qVhsiP0AkCKk52jyH5gkwZjsvycNVzRhEOG1qqCgR6aa3zEBvNKu0QSGUy1KrCLnerELn3PG3FxAPFdFfXUIQUwL4</string>
 		<key>KeyIdentifier</key>
-		<string>KeySerialNumber=1907121130</string>
+		<string>KeySerialNumber=2010061635</string>
 		<key>AnonymousUsername</key>
-		<string>999anonymous</string>
+		<string>0anonymous</string>
 	</dict>
 	<key>HomeBundleIdentifier</key>
 	<string>com.apple.SouthKorea</string>
@@ -291,20 +227,20 @@
 		<dict>
 			<key>SecurityAgreementEalgs</key>
 			<string>aes-cbc,null</string>
-			<key>RingbackTimerSeconds</key>
-			<integer>180</integer>
 			<key>SessionExpiresSeconds</key>
 			<integer>180</integer>
-			<key>RingingTimerSeconds</key>
+			<key>RingbackTimerSeconds</key>
 			<integer>180</integer>
+			<key>UserAgentHeaderValue</key>
+			<string>TTA-VoLTE/2.0 ${OS}/${OS_VERSION} ${DEVICE}/1.0/SKT</string>
 			<key>RegSubscriptionEnabled</key>
 			<false/>
 			<key>UsePublicDomainForPhoneContext</key>
 			<true/>
+			<key>RingingTimerSeconds</key>
+			<integer>180</integer>
 			<key>SecurityAgreementAlgs</key>
 			<string>hmac-md5-96,hmac-sha-1-96</string>
-			<key>UserAgentHeaderValue</key>
-			<string>TTA-VoLTE/2.0 ${OS}/${OS_VERSION} ${DEVICE}/1.0/SKT</string>
 			<key>MaxUdpMessageSize</key>
 			<integer>3000</integer>
 			<key>SetSessionTimerRefresherInInitialRequest</key>
@@ -340,31 +276,10 @@
 			<true/>
 			<key>UseNormalIdentityForEmergencyCalls</key>
 			<true/>
-			<key>EmergencyURNs</key>
-			<dict>
-				<key>122</key>
-				<string>urn:service:sos.marine</string>
-				<key>112</key>
-				<string>urn:service:sos.police</string>
-				<key>125</key>
-				<string>urn:service:sos.country-specific.kr.125</string>
-				<key>118</key>
-				<string>urn:service:sos.country-specific.kr.118</string>
-				<key>911</key>
-				<string>urn:service:sos.fire</string>
-				<key>111</key>
-				<string>urn:service:sos.country-specific.kr.111</string>
-				<key>117</key>
-				<string>urn:service:sos.country-specific.kr.117</string>
-				<key>113</key>
-				<string>urn:service:sos.country-specific.kr.113</string>
-				<key>119</key>
-				<string>urn:service:sos.fire</string>
-			</dict>
-			<key>InviteErrorResponsesToTriggerCSFB</key>
-			<string>380,404,414,499,606</string>
 			<key>RegistrationMaxTime</key>
 			<integer>1800</integer>
+			<key>InviteErrorResponsesToTriggerCSFB</key>
+			<string>380,404,414,499,606</string>
 			<key>DefaultAuthAlgorithm</key>
 			<string>AKAv1-MD5</string>
 			<key>VirtualInterfaceMtu</key>
@@ -506,13 +421,13 @@
 	</dict>
 	<key>SMSSizeInBytesSentAsMMSInstead</key>
 	<integer>140</integer>
+	<key>VVMIgnoresIntlDataRoaming</key>
+	<false/>
 	<key>SMSSettings</key>
 	<dict>
 		<key>TransportFallback</key>
 		<false/>
 	</dict>
-	<key>VVMIgnoresIntlDataRoaming</key>
-	<false/>
 	<key>AllowedServicesTypeMaskOnInternet</key>
 	<integer>32769</integer>
 	<key>RCS</key>

@@ -462,6 +462,8 @@
 	</array>
 	<key>MaxBluetoothModemConnections</key>
 	<integer>5</integer>
+	<key>ShowVolteSwitch</key>
+	<false/>
 	<key>apns</key>
 	<array>
 		<dict>

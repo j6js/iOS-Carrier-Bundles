@@ -458,25 +458,27 @@
 			<integer>55</integer>
 			<key>AllowPhoneContextInEmergencyUri</key>
 			<false/>
-			<key>SessionExpiresSeconds</key>
-			<integer>300</integer>
 			<key>EnableCellularNetworkInfo</key>
 			<true/>
 			<key>ImpuRank</key>
 			<string>IMSI@domain</string>
 			<key>RegistrationExpirationSeconds</key>
 			<integer>7200</integer>
+			<key>SessionExpiresSeconds</key>
+			<integer>300</integer>
 			<key>UseCIDUrlInPIDF</key>
 			<true/>
+			<key>MaxUdpMessageSize</key>
+			<integer>1200</integer>
 			<key>SipTimers</key>
 			<dict>
 				<key>InviteResponseTimeout</key>
 				<integer>10000</integer>
 			</dict>
-			<key>MaxUdpMessageSize</key>
-			<integer>1200</integer>
 			<key>UserAgentHeaderValue</key>
 			<string>APPLE---${DEVICE}---${OS_VERSION}</string>
+			<key>PIDFGeoPrivShape</key>
+			<string>ellipsoid</string>
 			<key>AlwaysSendSessionProgress</key>
 			<true/>
 			<key>AdditionalFeatureTags</key>
@@ -496,10 +498,12 @@
 					<string></string>
 				</dict>
 			</dict>
-			<key>WaitForRingingTimerMOSeconds</key>
-			<integer>25</integer>
 			<key>EmergencyRegistrationTimeoutSeconds</key>
 			<integer>2</integer>
+			<key>WaitForRingingTimerMOSeconds</key>
+			<integer>25</integer>
+			<key>PIDFConfidence</key>
+			<integer>90</integer>
 			<key>RegSubscriptionExpirationSeconds</key>
 			<integer>7200</integer>
 			<key>CountryOfOriginationFormat</key>
@@ -519,6 +523,8 @@
 				<key>default</key>
 				<string>urn:service:sos</string>
 			</dict>
+			<key>SendEmergencyLocationUpdates</key>
+			<true/>
 			<key>OutgoingDomain</key>
 			<string>1</string>
 			<key>DefaultAuthAlgorithm</key>
@@ -590,6 +596,8 @@
 			<false/>
 			<key>ContactUser</key>
 			<string>MDN</string>
+			<key>AlwaysAddGeolocationForEmergencyCalls</key>
+			<true/>
 			<key>SendLocalTimeZoneInformation</key>
 			<true/>
 			<key>RequirePreconditionsWhenMandatory</key>

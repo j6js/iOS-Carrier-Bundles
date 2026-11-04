@@ -29,16 +29,8 @@
 	</array>
 	<key>IMSConfig</key>
 	<dict>
-		<key>Voice</key>
-		<dict>
-			<key>EnableVolteByDefault</key>
-			<true/>
-		</dict>
-		<key>XCAP</key>
-		<dict>
-			<key>ContentType</key>
-			<string>application/xcap-el+xml</string>
-		</dict>
+		<key>EnableWiFiCallingByDefault</key>
+		<true/>
 		<key>Signaling</key>
 		<dict>
 			<key>AdditionalContactParams</key>
@@ -46,6 +38,16 @@
 				<key>REGISTER,INVITE,INVITE:*</key>
 				<string>+g.3gpp.mid-call;+g.3gpp.srvcc-alerting;+g.3gpp.ps2cs-srvcc-orig-pre-alerting</string>
 			</dict>
+		</dict>
+		<key>XCAP</key>
+		<dict>
+			<key>ContentType</key>
+			<string>application/xcap-el+xml</string>
+		</dict>
+		<key>Voice</key>
+		<dict>
+			<key>EnableVolteByDefault</key>
+			<true/>
 		</dict>
 	</dict>
 	<key>ShowDialAssist</key>
@@ -84,8 +86,44 @@
 	<integer>49</integer>
 	<key>TechSettings</key>
 	<dict>
+		<key>IKE</key>
+		<dict>
+			<key>RemoteCertificateHostname</key>
+			<string>epdg.epc.mnc077.mcc278.pub.3gppnetwork.org</string>
+			<key>RemoteCertificateAuthorityName</key>
+			<string>DigiCert Global Root G2</string>
+			<key>Proposals</key>
+			<array>
+				<dict>
+					<key>EncryptionAlgorithm</key>
+					<string>AES-256</string>
+					<key>IntegrityAlgorithm</key>
+					<string>SHA2-256</string>
+					<key>DHGroup</key>
+					<integer>14</integer>
+					<key>AuthenticationMethod</key>
+					<string>Certificate</string>
+					<key>Lifetime</key>
+					<integer>80000</integer>
+					<key>EAPMethod</key>
+					<string>EAP-AKA</string>
+					<key>PRFAlgorithm</key>
+					<string>SHA2-256</string>
+				</dict>
+			</array>
+			<key>Username</key>
+			<string>0$imsi@nai.epc.mnc077.mcc278.3gppnetwork.org</string>
+			<key>LocalIdentifier</key>
+			<string>anonymous@nai.epc.mnc077.mcc278.3gppnetwork.org</string>
+			<key>ValidateRemoteCertificate</key>
+			<true/>
+			<key>RemoteAddress</key>
+			<string>epdg.epc.mnc077.mcc278.pub.3gppnetwork.org</string>
+		</dict>
 		<key>SupportCallHandover</key>
 		<true/>
+		<key>WiFiCallingIdentityProtectionMethod</key>
+		<string>PseudoID</string>
 		<key>iRatPolicies</key>
 		<dict>
 			<key>PreferredTechnology</key>

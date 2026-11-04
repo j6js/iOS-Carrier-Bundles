@@ -344,22 +344,31 @@ PdgNrmJo5Hkahl7lhnTEltg3ePRzJNA=</string>
 	<dict>
 		<key>Signaling</key>
 		<dict>
-			<key>UseIPSec</key>
+			<key>AdditionalContactParams</key>
+			<dict>
+				<key>REGISTER,INVITE,INVITE:*</key>
+				<string>+g.3gpp.mid-call;+g.3gpp.srvcc-alerting;+g.3gpp.ps2cs-srvcc-orig-pre-alerting</string>
+			</dict>
+			<key>UseOutgoingSipUri</key>
 			<true/>
-			<key>InviteErrorResponsesToTriggerCSFB</key>
-			<string>3XX,4XX,5XX,6XX</string>
-			<key>RegSubscriptionExpirationSeconds</key>
-			<string>259200</string>
-			<key>AllowResponsesOverDifferentTransport</key>
-			<false/>
+			<key>ussdEnabled</key>
+			<true/>
+			<key>TriggerCSFBOnSDPError</key>
+			<true/>
 			<key>SupportPEarlyMediaHeader</key>
 			<true/>
-			<key>RingbackTimerSeconds</key>
-			<integer>90</integer>
+			<key>AlwaysAddSipInstance</key>
+			<true/>
+			<key>UseFakeSAsForDeregistration</key>
+			<true/>
+			<key>EarlyMediaNeedsHeader</key>
+			<true/>
+			<key>AllowResponsesOverDifferentTransport</key>
+			<false/>
+			<key>InviteErrorResponsesToTriggerCSFB</key>
+			<string>3XX,4XX,5XX,6XX</string>
 			<key>MaxUdpMessageSize</key>
 			<integer>1300</integer>
-			<key>RingingTimerSeconds</key>
-			<integer>90</integer>
 			<key>EmergencyURNs</key>
 			<dict>
 				<key>105</key>
@@ -369,29 +378,22 @@ PdgNrmJo5Hkahl7lhnTEltg3ePRzJNA=</string>
 				<key>911</key>
 				<string>urn:service:sos.police</string>
 			</dict>
-			<key>RequirePreconditionsWhenMandatory</key>
-			<false/>
-			<key>EarlyMediaNeedsHeader</key>
-			<true/>
-			<key>TriggerCSFBOnSDPError</key>
-			<true/>
-			<key>Preconditions</key>
-			<string>Supported</string>
-			<key>UseOutgoingSipUri</key>
-			<true/>
-			<key>RegistrationExpirationSeconds</key>
-			<integer>3600</integer>
-			<key>AlwaysAddSipInstance</key>
-			<true/>
-			<key>AdditionalContactParams</key>
-			<dict>
-				<key>REGISTER,INVITE,INVITE:*</key>
-				<string>+g.3gpp.mid-call;+g.3gpp.srvcc-alerting;+g.3gpp.ps2cs-srvcc-orig-pre-alerting</string>
-			</dict>
+			<key>RingbackTimerSeconds</key>
+			<integer>90</integer>
 			<key>SessionExpiresSeconds</key>
 			<integer>1800</integer>
-			<key>UseFakeSAsForDeregistration</key>
+			<key>RequirePreconditionsWhenMandatory</key>
+			<false/>
+			<key>Preconditions</key>
+			<string>Supported</string>
+			<key>RingingTimerSeconds</key>
+			<integer>90</integer>
+			<key>UseIPSec</key>
 			<true/>
+			<key>RegSubscriptionExpirationSeconds</key>
+			<string>259200</string>
+			<key>RegistrationExpirationSeconds</key>
+			<integer>3600</integer>
 		</dict>
 		<key>ConferenceCalling</key>
 		<dict>

@@ -467,7 +467,7 @@
 					<key>Server</key>
 					<string>rci.i.hiya.com</string>
 					<key>Certificate</key>
-					<string>8Rw90Ej3Ttt8RRkrg+WYDS9n7IS03bk5bjP/UXPtaY8=</string>
+					<string>Y1e/3DqsL/yWI4RIaJ4OfhLEW5JiJoNKFVF1AxFqkiA=</string>
 				</dict>
 			</array>
 			<key>LocalQoSTimeoutMOSeconds</key>
@@ -638,15 +638,19 @@
 	<integer>32768</integer>
 	<key>RCS</key>
 	<dict>
+		<key>EnableBusinessMessagingByDefault</key>
+		<true/>
 		<key>ProvisioningData</key>
 		<dict>
 			<key>ServerURL</key>
 			<string>config.rcs.mnc370.mcc302.jibecloud.net</string>
 		</dict>
-		<key>EnableRCSByDefault</key>
+		<key>ShowBusinessMessagingSwitch</key>
 		<true/>
 		<key>ShowRCSSwitch</key>
 		<false/>
+		<key>EnableRCSByDefault</key>
+		<true/>
 	</dict>
 	<key>PushSettings</key>
 	<dict>
@@ -654,6 +658,11 @@
 		<string>com.rogers.hp.entc</string>
 		<key>VoWiFiTopic</key>
 		<string>com.rogers.hp.vwf</string>
+	</dict>
+	<key>PhoneSettings</key>
+	<dict>
+		<key>CarrierVoiceCallSpamReportAddress</key>
+		<string>7729</string>
 	</dict>
 	<key>VVMIgnoresIntlDataRoaming</key>
 	<false/>

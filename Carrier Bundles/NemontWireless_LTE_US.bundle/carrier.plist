@@ -72,8 +72,6 @@
 	<true/>
 	<key>PhoneNumberRegistrationGatewayAddress</key>
 	<string>2775</string>
-	<key>OverrideOperatorName</key>
-	<string>Nemont</string>
 	<key>SendTextMMSToShortCodeAsSMS</key>
 	<true/>
 	<key>OverrideOperatorWiFiName</key>

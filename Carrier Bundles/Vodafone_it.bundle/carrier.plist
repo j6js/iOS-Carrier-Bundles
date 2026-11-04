@@ -147,8 +147,15 @@
 	</dict>
 	<key>TechSettings</key>
 	<dict>
-		<key>5wiServiceMask</key>
-		<integer>1</integer>
+		<key>iRatPolicies</key>
+		<dict>
+			<key>PreferredTechnology</key>
+			<string>ims</string>
+		</dict>
+		<key>WifiCallingAllowedInRoaming</key>
+		<false/>
+		<key>EmergencyRemoteIdRequired</key>
+		<true/>
 		<key>TechPolicies</key>
 		<array>
 			<dict>
@@ -164,8 +171,17 @@
 				<integer>262144</integer>
 			</dict>
 		</array>
-		<key>EmergencyRemoteIdRequired</key>
-		<true/>
+		<key>IKE</key>
+		<dict>
+			<key>NATTKeepAliveEnabled</key>
+			<true/>
+			<key>NATTKeepAliveOffload</key>
+			<true/>
+			<key>NATTKeepAliveinterval</key>
+			<integer>20</integer>
+		</dict>
+		<key>5wiServiceMask</key>
+		<integer>1</integer>
 		<key>EPDGResolutionFallbackEnabled</key>
 		<true/>
 	</dict>
@@ -285,12 +301,16 @@
 			<true/>
 			<key>RingbackTimerSeconds</key>
 			<integer>120</integer>
-			<key>SendPreferredServiceInInvite</key>
-			<true/>
 			<key>DropRegistrationOnAirplaneModeToggle</key>
 			<true/>
+			<key>SendPreferredServiceInInvite</key>
+			<true/>
+			<key>ResetSocketWhenNetworkChange</key>
+			<false/>
 			<key>RequirePreconditionsWhenMandatory</key>
 			<false/>
+			<key>EnableCellularNetworkInfo</key>
+			<true/>
 			<key>IncomingCallEndReasons</key>
 			<dict>
 				<key>NoAnswerFromUser1</key>
@@ -320,8 +340,6 @@
 					<integer>480</integer>
 				</dict>
 			</dict>
-			<key>EnableCellularNetworkInfo</key>
-			<true/>
 			<key>Preconditions</key>
 			<string>Supported</string>
 			<key>RingingTimerSeconds</key>
@@ -395,6 +413,8 @@
 			<true/>
 			<key>E911OverITechSupported</key>
 			<false/>
+			<key>E911OverIMSSupported</key>
+			<true/>
 			<key>EnableVolteByDefault</key>
 			<true/>
 		</dict>
@@ -439,7 +459,7 @@
 	<key>SupportsImsCapability</key>
 	<true/>
 	<key>MyAccountURL</key>
-	<string>https://myweb.vodafone.it</string>
+	<string>https://privati.vodafone.it/appledevice/</string>
 	<key>MyAccountURLTitle</key>
 	<string>Vodafone</string>
 	<key>MandatoryVerify</key>

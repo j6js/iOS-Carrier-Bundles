@@ -4,6 +4,36 @@
 <dict>
 	<key>MaxBluetoothModemConnections</key>
 	<integer>5</integer>
+	<key>EncryptedIdentity</key>
+	<dict>
+		<key>AnonymousUsername</key>
+		<string>anonymous</string>
+		<key>Certificate</key>
+		<string>MIIDfzCCAmcCFHLeKiVqD6EVd+UGLSynpd4nOyBrMA0GCSqGSIb3DQEBCwUAMIGH
+MQswCQYDVQQGEwJSRTEQMA4GA1UECAwHUmV1bmlvbjEQMA4GA1UEBwwHTGUgUG9y
+dDERMA8GA1UECgwIWkVPUCBTQVMxCzAJBgNVBAsMAklUMRkwFwYDVQQDDBBaRU9Q
+IEludGVybmFsIENBMRkwFwYJKoZIhvcNAQkBFgpzaUB6ZW9wLnJlMB4XDTI2MDgw
+NjA1MjMwM1oXDTI3MDgwNjA1MjMwM1owcDELMAkGA1UEBhMCUkUxEDAOBgNVBAgM
+B1JldW5pb24xEDAOBgNVBAcMB0xlIFBvcnQxETAPBgNVBAoMCFpFT1AgU0FTMQsw
+CQYDVQQLDAJJVDEdMBsGA1UEAwwUaW1zaS1wcml2YWN5Lnplb3AucmUwggEiMA0G
+CSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDL56nxoS6UqDDC/8jnw2WW29f36GwW
+G0U1pbRb7gykdwxHkpiT5oGmsbvDXeSVGyhuswYIGVdmu0UXJjzcxj0JnkfMupBj
+c5/AFkBWqBwI4hyWelbrXhIi33JeAFPaBmFCbcUVUD+F1Ae/bLG9aiLNNQHcPZ34
+kBNnEq3OEzwZWpRcqSMtr+MeOck7EWNakBuNk3nepEzkF1mtZmwnKOVk/Ob44btx
+DmI7okq4SiuUncgaEvn8R0ul+MoNU+Y2M+gQ/PCJPsON77uYcrQcVyDmHK0D/1yg
+bhWnC46AvaVL7Aro1n+zcEvO9PSGcjYRGPi84Iq+3eiiA0UXCbtkvsc9AgMBAAEw
+DQYJKoZIhvcNAQELBQADggEBABCV7ZS3fhiYYoiIsBmwkdRMZRODfTe+GLwYC9Bi
+f2sOZmlE4BlpoKc+PvnxgqFKuxbS54fNqwjVGT7C6EZV9zFU9YBx2WqZzl+Q6CET
+L8Gr+nvUceakJkQ8TRtj2wyll20RG6JykL9JfuO2FRg5az3eF4VNZl1rAcv6SAdG
+9pkCU4hnJuV1UdeA1k+quwNTWiOzgKX8eUKyR4RLpCLwHoQC6BcYyexEOIR9N9NF
+ZXZBNPN759w36RM6B9JxMa51mExRyLxejONNektIhtj2eX3xfkYyk5jRQcfahQTG
+6h+sADLhwsqcsIQMKOp1fTBoXxMy38HLibv/Q/faQE9igP8=
+</string>
+		<key>UpdateURL</key>
+		<string>https://impr.zeop.re/update.php</string>
+		<key>KeyIdentifier</key>
+		<string>CertificateSerialNumber=72de2a256a0fa11577e5062d2ca7a5de273b206b</string>
+	</dict>
 	<key>MyAccountURL</key>
 	<string>https://mon.zeop.re/login</string>
 	<key>VVMIgnoresIntlDataRoaming</key>
@@ -25,11 +55,23 @@
 			<string>Zeop</string>
 		</dict>
 	</array>
-	<key>SupportedSIMs</key>
-	<array>
-		<string>64704</string>
-		<string>20801_ID-892620497</string>
-	</array>
+	<key>Location</key>
+	<dict>
+		<key>EmergencyLocation</key>
+		<dict>
+			<key>AugmentedEmergencyAction</key>
+			<dict>
+				<key>AML</key>
+				<dict>
+					<key>SMS</key>
+					<dict>
+						<key>Destination</key>
+						<string>+33755544050</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+	</dict>
 	<key>IMSConfig</key>
 	<dict>
 		<key>Voice</key>
@@ -37,11 +79,18 @@
 			<key>EnableVolteByDefault</key>
 			<true/>
 		</dict>
+		<key>EnableWiFiCallingByDefault</key>
+		<true/>
 	</dict>
-	<key>ShowDialAssist</key>
-	<true/>
+	<key>SupportedSIMs</key>
+	<array>
+		<string>64704</string>
+		<string>20801_ID-892620497</string>
+	</array>
 	<key>Show3GSwitchWith4G</key>
 	<false/>
+	<key>ShowDialAssist</key>
+	<true/>
 	<key>PhoneNumberRegistrationGatewayAddress</key>
 	<string>+447786205094</string>
 	<key>CarrierName</key>
@@ -80,6 +129,11 @@
 		<string>10.10.198.22:80</string>
 		<key>MaxMessageSize</key>
 		<integer>307200</integer>
+	</dict>
+	<key>TechSettings</key>
+	<dict>
+		<key>WiFiCallingIdentityProtectionMethod</key>
+		<string>EncryptedIdentity</string>
 	</dict>
 	<key>apns</key>
 	<array>

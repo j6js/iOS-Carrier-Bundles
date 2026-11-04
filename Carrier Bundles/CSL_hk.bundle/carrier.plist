@@ -469,20 +469,6 @@
 	</array>
 	<key>IMSConfig</key>
 	<dict>
-		<key>SMS</key>
-		<dict>
-			<key>enableInNonVoLTEMode</key>
-			<false/>
-		</dict>
-		<key>Media</key>
-		<dict>
-			<key>ModeSetAMRWB</key>
-			<string>0,1,2</string>
-			<key>EnableBandwidthSpecifiers</key>
-			<true/>
-			<key>RTCPIntervalSeconds</key>
-			<integer>5</integer>
-		</dict>
 		<key>Signaling</key>
 		<dict>
 			<key>InviteErrorResponsesToTriggerCSFB</key>
@@ -550,8 +536,27 @@
 			<key>conferenceServer</key>
 			<string>sip:conference-factory1@ims.mnc000.mcc454.3gppnetwork.org</string>
 		</dict>
+		<key>SMS</key>
+		<dict>
+			<key>enableInNonVoLTEMode</key>
+			<false/>
+		</dict>
+		<key>Media</key>
+		<dict>
+			<key>ModeSetAMRWB</key>
+			<string>0,1,2</string>
+			<key>EnableBandwidthSpecifiers</key>
+			<true/>
+			<key>RTCPIntervalSeconds</key>
+			<integer>5</integer>
+		</dict>
 		<key>EnableWiFiCallingWithoutEntitlement</key>
 		<true/>
+		<key>Emergency</key>
+		<dict>
+			<key>PreferSameDomainAsNormalCall</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SMSSettings</key>
 	<dict>

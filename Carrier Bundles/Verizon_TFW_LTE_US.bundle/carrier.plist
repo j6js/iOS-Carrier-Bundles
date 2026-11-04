@@ -84,9 +84,9 @@
 		<key>iRatPolicies</key>
 		<dict>
 			<key>PreferredTechnology</key>
-			<string>cellular</string>
+			<string>ims</string>
 			<key>PreferredTechnologyRoaming</key>
-			<string>cellular</string>
+			<string>ims</string>
 		</dict>
 		<key>ExtraConfigurationAttributeRequestv6</key>
 		<array>

@@ -604,13 +604,13 @@
 			<key>AllowPrefixMatching</key>
 			<false/>
 			<key>CarrierName</key>
-			<string>vodafone HU</string>
+			<string>One HU</string>
 			<key>StatusBarCarrierName</key>
-			<string>vodafone HU</string>
+			<string>One HU</string>
 		</dict>
 	</array>
 	<key>CarrierName</key>
-	<string>vodafone HU</string>
+	<string>One HU</string>
 	<key>SupportsImsCapability</key>
 	<true/>
 	<key>MyAccountURL</key>

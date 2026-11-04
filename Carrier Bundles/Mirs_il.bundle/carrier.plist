@@ -4,6 +4,8 @@
 <dict>
 	<key>CarrierEntitlements</key>
 	<dict>
+		<key>UpdatePeriod</key>
+		<integer>24</integer>
 		<key>SupportSecureIntent</key>
 		<true/>
 		<key>SupportedEntitlements</key>
@@ -21,10 +23,10 @@
 		<string>https://hotmes.hotmobile.co.il/entitlement/</string>
 		<key>SupportPhysicalSIMtoESIMTransfer</key>
 		<true/>
+		<key>UserAgent</key>
+		<string>Entitlement/$version ($device) iOS/$iOSVersion</string>
 		<key>SupportsOnDevicePhysicalSIMConvert</key>
 		<true/>
-		<key>UpdatePeriod</key>
-		<integer>24</integer>
 	</dict>
 	<key>AttachAPN</key>
 	<dict>

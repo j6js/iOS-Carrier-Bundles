@@ -731,7 +731,7 @@
 	<key>SupportsImsCapability</key>
 	<true/>
 	<key>MyAccountURL</key>
-	<string>https://m.sfr.fr</string>
+	<string>https://www.sfr.fr</string>
 	<key>SupportedPLMNs</key>
 	<array>
 		<string>20810</string>

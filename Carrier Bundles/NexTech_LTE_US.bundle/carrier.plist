@@ -254,7 +254,7 @@
 		<key>ProvisioningData</key>
 		<dict>
 			<key>ServerURL</key>
-			<string>rcs-acs-nextech-carrier-us.jibe.google.com</string>
+			<string>config.rcs.mnc420.mcc312.jibecloud.net</string>
 		</dict>
 		<key>ShowBusinessMessagingSwitch</key>
 		<true/>
@@ -405,7 +405,7 @@
 	<dict>
 		<key>Signaling</key>
 		<dict>
-			<key>RestartRingbackTimerOn180</key>
+			<key>EarlyMediaNeedsHeader</key>
 			<true/>
 			<key>RingbackTimerSeconds</key>
 			<integer>95</integer>
@@ -415,6 +415,10 @@
 			<string>IMSI@domain</string>
 			<key>UseCIDUrlInPIDF</key>
 			<true/>
+			<key>AddGeolocationSupportedHeader</key>
+			<true/>
+			<key>TcpIdleTimeoutSeconds</key>
+			<integer>0</integer>
 			<key>OutgoingCallPrefix</key>
 			<dict>
 				<key>Local</key>
@@ -422,10 +426,8 @@
 				<key>International</key>
 				<string>011</string>
 			</dict>
-			<key>TcpIdleTimeoutSeconds</key>
-			<integer>0</integer>
-			<key>EmergencyImpuRank</key>
-			<string>IMSI@domain</string>
+			<key>RestartRingbackTimerOn180</key>
+			<true/>
 			<key>MaxUdpMessageSize</key>
 			<integer>1200</integer>
 			<key>SipTimers</key>
@@ -506,12 +508,12 @@
 			<true/>
 			<key>RequirePreconditionsWhenMandatory</key>
 			<false/>
-			<key>Preconditions</key>
-			<string>Supported</string>
+			<key>EmergencyImpuRank</key>
+			<string>IMSI@domain</string>
 			<key>WaitForRingingTimerMOSeconds</key>
 			<integer>30</integer>
-			<key>EarlyMediaNeedsHeader</key>
-			<true/>
+			<key>Preconditions</key>
+			<string>Supported</string>
 			<key>WaitForRingingTimerMTSeconds</key>
 			<integer>30</integer>
 		</dict>
@@ -846,7 +848,11 @@
 	</array>
 	<key>VoiceTextMedia</key>
 	<dict>
+		<key>SupportsRTT</key>
+		<true/>
 		<key>EnableHoldForRTT</key>
+		<true/>
+		<key>SupportsEmergencyRTT</key>
 		<true/>
 	</dict>
 	<key>RemoteCardProvisioningSettings</key>

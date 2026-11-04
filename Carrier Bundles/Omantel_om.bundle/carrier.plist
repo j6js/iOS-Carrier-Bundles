@@ -46,18 +46,20 @@
 		<dict>
 			<key>IgnoreRegNotificationContactExpires</key>
 			<true/>
+			<key>PreferPCellularNetworkInfo</key>
+			<false/>
+			<key>DefaultAuthAlgorithm</key>
+			<string>AKAv1-MD5</string>
 			<key>AdditionalContactParams</key>
 			<dict>
 				<key>REGISTER,INVITE,INVITE:*</key>
 				<string>+g.3gpp.mid-call;+g.3gpp.srvcc-alerting;+g.3gpp.ps2cs-srvcc-orig-pre-alerting</string>
 			</dict>
-			<key>DefaultAuthAlgorithm</key>
-			<string>AKAv1-MD5</string>
 			<key>TriggerCSFBOnSDPError</key>
 			<true/>
-			<key>ussdEnabled</key>
-			<true/>
 			<key>SupportPEarlyMediaHeader</key>
+			<true/>
+			<key>ussdEnabled</key>
 			<true/>
 			<key>EarlyMediaNeedsHeader</key>
 			<false/>

@@ -14,20 +14,6 @@
 				<key>password</key>
 				<string></string>
 				<key>PcscfAddressRequired</key>
-				<true/>
-				<key>username</key>
-				<string></string>
-				<key>apn</key>
-				<string>ims</string>
-				<key>AllowedProtocolMaskInRoamingLTE</key>
-				<integer>3</integer>
-				<key>AllowedProtocolMask</key>
-				<integer>3</integer>
-			</dict>
-			<dict>
-				<key>password</key>
-				<string></string>
-				<key>PcscfAddressRequired</key>
 				<false/>
 				<key>username</key>
 				<string></string>

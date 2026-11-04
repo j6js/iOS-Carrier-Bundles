@@ -495,6 +495,8 @@
 	<dict>
 		<key>SMSCarrierReportJunkAddress</key>
 		<string>8080</string>
+		<key>EnableReplyToAlphanumericOriginator</key>
+		<false/>
 		<key>TransportFallback</key>
 		<false/>
 	</dict>

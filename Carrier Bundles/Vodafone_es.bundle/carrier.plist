@@ -510,7 +510,7 @@
 		<key>ShowBusinessMessagingSwitch</key>
 		<true/>
 		<key>SupportsE2EE</key>
-		<false/>
+		<true/>
 		<key>ShowRCSSwitch</key>
 		<true/>
 		<key>EnableRCSByDefault</key>

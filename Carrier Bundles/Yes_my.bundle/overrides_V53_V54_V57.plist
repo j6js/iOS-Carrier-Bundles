@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>DerPriFileVersion</key>
-	<string>6.0.161</string>
+	<string>6.2.162</string>
 	<key>ShowVoNRSwitch</key>
 	<true/>
 	<key>AllowSAOnWiFiAssociation</key>
 	<true/>
-	<key>Show5GSwitch</key>
+	<key>Enable5GStandaloneByDefault</key>
 	<true/>
 	<key>ShowHighDataModeSwitch</key>
 	<true/>
@@ -32,17 +32,67 @@
 	<true/>
 	<key>DerPriFileName</key>
 	<string>overrides_V53_V54_V57.der.pri</string>
+	<key>DataIndicatorOverrideForNRMmwave</key>
+	<string>NRPlus</string>
 	<key>ShowVolteSwitch</key>
 	<false/>
 	<key>Show5GStandaloneSwitch</key>
 	<true/>
+	<key>apns</key>
+	<array>
+		<dict>
+			<key>configuration</key>
+			<array>
+				<dict>
+					<key>apn</key>
+					<string>yesnet</string>
+					<key>AllowedProtocolMask</key>
+					<integer>3</integer>
+					<key>type-mask</key>
+					<integer>1048625</integer>
+				</dict>
+				<dict>
+					<key>type-mask</key>
+					<integer>131072</integer>
+					<key>Support5GSaHandOver</key>
+					<true/>
+					<key>password</key>
+					<string></string>
+					<key>SupportSwitchOver</key>
+					<true/>
+					<key>username</key>
+					<string></string>
+					<key>apn</key>
+					<string>ims</string>
+					<key>AllowedProtocolMask</key>
+					<integer>2</integer>
+				</dict>
+				<dict>
+					<key>password</key>
+					<string></string>
+					<key>tech-type-mask</key>
+					<integer>262144</integer>
+					<key>username</key>
+					<string></string>
+					<key>apn</key>
+					<string>sos</string>
+					<key>type-mask</key>
+					<integer>262144</integer>
+					<key>AllowedProtocolMask</key>
+					<integer>2</integer>
+				</dict>
+			</array>
+			<key>technology-mask</key>
+			<integer>9</integer>
+		</dict>
+	</array>
 	<key>Show5GWarningUnsupportedCarrier</key>
 	<false/>
 	<key>Enable5GAutoByDefault</key>
 	<true/>
 	<key>SupportsNRNSAInboundRoaming</key>
 	<true/>
-	<key>Enable5GStandaloneByDefault</key>
+	<key>Show5GSwitch</key>
 	<true/>
 </dict>
 </plist>

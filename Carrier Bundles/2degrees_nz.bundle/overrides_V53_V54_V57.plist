@@ -17,6 +17,8 @@
 		<true/>
 		<key>SupportSecureIntent</key>
 		<true/>
+		<key>SupportCrossPlatformSIMTransfer</key>
+		<true/>
 	</dict>
 	<key>ShowHighDataModeSwitch</key>
 	<true/>

@@ -94,15 +94,19 @@
 	</dict>
 	<key>RCS</key>
 	<dict>
+		<key>EnableBusinessMessagingByDefault</key>
+		<true/>
 		<key>RefetchRCSStateIfDisabled</key>
 		<true/>
-		<key>EnableRCSByDefault</key>
+		<key>ShowBusinessMessagingSwitch</key>
 		<true/>
 		<key>ProvisioningData</key>
 		<dict>
 			<key>ServerURL</key>
 			<string>config.rcs.mnc$mnc.mcc$mcc.jibecloud.net</string>
 		</dict>
+		<key>EnableRCSByDefault</key>
+		<true/>
 	</dict>
 	<key>SMSSettings</key>
 	<dict>
@@ -311,7 +315,7 @@
 			<key>DropRegistrationOnWaitTimeout</key>
 			<true/>
 			<key>DropRegistrationOnErrorCodes</key>
-			<string>INVITE:408;MESSAGE:408;REGISTER:408,305,503,504</string>
+			<string>MESSAGE:408;REGISTER:408,305,503,504</string>
 			<key>EmergencyURNs</key>
 			<dict>
 				<key>110</key>

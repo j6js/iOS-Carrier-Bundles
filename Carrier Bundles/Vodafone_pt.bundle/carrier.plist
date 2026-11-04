@@ -243,29 +243,31 @@
 		<dict>
 			<key>InviteErrorResponsesToTriggerCSFB</key>
 			<string>3XX,4XX,5XX,6XX,-408</string>
-			<key>DefaultAuthAlgorithm</key>
-			<string>AKAv1-MD5</string>
 			<key>SupportPEarlyMediaHeader</key>
 			<true/>
+			<key>RingbackTimerSeconds</key>
+			<integer>120</integer>
 			<key>RingingTimerSeconds</key>
 			<integer>120</integer>
-			<key>UseIPSec</key>
+			<key>EnableRingbackAudioForTextCalls</key>
+			<true/>
+			<key>RequirePreconditionsWhenMandatory</key>
+			<false/>
+			<key>EarlyMediaNeedsHeader</key>
+			<false/>
+			<key>DefaultAuthAlgorithm</key>
+			<string>AKAv1-MD5</string>
+			<key>TriggerCSFBOnSDPError</key>
 			<true/>
 			<key>Preconditions</key>
 			<string>Supported</string>
-			<key>RequirePreconditionsWhenMandatory</key>
-			<false/>
-			<key>TriggerCSFBOnSDPError</key>
-			<true/>
-			<key>EarlyMediaNeedsHeader</key>
-			<false/>
 			<key>AdditionalContactParams</key>
 			<dict>
 				<key>REGISTER,INVITE,INVITE:*</key>
 				<string>+g.3gpp.mid-call;+g.3gpp.srvcc-alerting;+g.3gpp.ps2cs-srvcc-orig-pre-alerting</string>
 			</dict>
-			<key>RingbackTimerSeconds</key>
-			<integer>120</integer>
+			<key>UseIPSec</key>
+			<true/>
 		</dict>
 		<key>XCAP</key>
 		<dict>

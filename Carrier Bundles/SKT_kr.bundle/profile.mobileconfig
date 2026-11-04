@@ -11,7 +11,7 @@
 			<dict>
 				<key>AcceptEAPTypes</key>
 				<array>
-					<integer>18</integer>
+					<integer>23</integer>
 				</array>
 				<key>EAPSIMAKAEncryptedIdentityEnabled</key>
 				<true/>
@@ -33,7 +33,7 @@
 			<key>PayloadType</key>
 			<string>com.apple.wifi.managed</string>
 			<key>PayloadUUID</key>
-			<string>8152BFFB-9839-4389-BE7B-F24ABA0F52E3</string>
+			<string>779B3FBB-EBAD-40B5-B387-F69C415AEEF0</string>
 			<key>PayloadVersion</key>
 			<integer>1</integer>
 			<key>SSID_STR</key>
@@ -46,7 +46,7 @@
 			<dict>
 				<key>AcceptEAPTypes</key>
 				<array>
-					<integer>18</integer>
+					<integer>23</integer>
 				</array>
 				<key>EAPSIMAKAEncryptedIdentityEnabled</key>
 				<true/>
@@ -68,7 +68,7 @@
 			<key>PayloadType</key>
 			<string>com.apple.wifi.managed</string>
 			<key>PayloadUUID</key>
-			<string>FA90CB13-80B5-4296-AF37-3856071C4251</string>
+			<string>4CF7AC15-E7D5-47CB-ACB3-47D53CB9F228</string>
 			<key>PayloadVersion</key>
 			<integer>1</integer>
 			<key>SSID_STR</key>
@@ -89,7 +89,7 @@
 			<dict>
 				<key>AcceptEAPTypes</key>
 				<array>
-					<integer>18</integer>
+					<integer>23</integer>
 				</array>
 				<key>EAPSIMAKAEncryptedIdentityEnabled</key>
 				<true/>
@@ -119,7 +119,7 @@
 			<key>PayloadType</key>
 			<string>com.apple.wifi.managed</string>
 			<key>PayloadUUID</key>
-			<string>079D1CBE-CE81-4EC8-9BEA-FEB159941E39</string>
+			<string>434917E9-DD91-4196-A481-3D1AAA49020A</string>
 			<key>PayloadVersion</key>
 			<integer>1</integer>
 			<key>ProxyType</key>
@@ -143,7 +143,7 @@
 	<key>PayloadType</key>
 	<string>Configuration</string>
 	<key>PayloadUUID</key>
-	<string>D0C4E8A1-D364-4D39-BDDE-391587F366A7</string>
+	<string>0B645A86-04B9-41A1-AE5E-B4F30C10D443</string>
 	<key>PayloadVersion</key>
 	<integer>1</integer>
 </dict>

@@ -352,8 +352,8 @@
 	<dict>
 		<key>Signaling</key>
 		<dict>
-			<key>PrivacyHeaderValue</key>
-			<string>header</string>
+			<key>AllowResponsesOverDifferentTransport</key>
+			<false/>
 			<key>ForcedFeatureTags</key>
 			<string>voice,sms</string>
 			<key>MaxFatalRegistrationErrors</key>
@@ -369,8 +369,8 @@
 					<string>Supported: geolocation</string>
 				</array>
 			</dict>
-			<key>LocalQoSTimeoutMTSeconds</key>
-			<integer>6</integer>
+			<key>SendPreferredServiceInInvite</key>
+			<true/>
 			<key>InviteErrorResponsesToTriggerCSFB</key>
 			<string></string>
 			<key>strictCallFlows</key>
@@ -379,14 +379,14 @@
 			<true/>
 			<key>TriggerCSFBOnLocalQoSTimeoutMO</key>
 			<false/>
-			<key>EarlyMediaNeedsHeader</key>
-			<true/>
+			<key>PrivacyHeaderValue</key>
+			<string>header</string>
 			<key>UseBase64ForMultipartSMS</key>
 			<false/>
 			<key>VerstatFeatureCapability</key>
 			<string>Enabled</string>
-			<key>StartLocalQosTimerOnSessionProgress</key>
-			<true/>
+			<key>LocalQoSTimeoutMTSeconds</key>
+			<integer>6</integer>
 			<key>SipTimers</key>
 			<dict>
 				<key>D</key>
@@ -406,10 +406,12 @@
 				<key>H</key>
 				<integer>32000</integer>
 			</dict>
-			<key>AddLocationToEmergencySMS</key>
+			<key>EarlyMediaNeedsHeader</key>
 			<true/>
 			<key>LocalQoSTimeoutMOSeconds</key>
 			<integer>10</integer>
+			<key>AddLocationToEmergencySMS</key>
+			<true/>
 			<key>RegisterOnServiceUpdate</key>
 			<false/>
 			<key>RegistrationPolicy</key>
@@ -418,8 +420,92 @@
 			<integer>90</integer>
 			<key>CSFBOnAccessBarred</key>
 			<false/>
+			<key>BrandedCallingImageFetchingTimeoutMilliseconds</key>
+			<integer>1500</integer>
 			<key>NetworkTerminationRetryIntervalSeconds</key>
 			<integer>1</integer>
+			<key>CallEndReasons</key>
+			<dict>
+				<key>EmergencyUserTriggered</key>
+				<dict>
+					<key>ReasonHeaderText</key>
+					<string>User ends call</string>
+					<key>ReasonHeaderCause</key>
+					<integer>1</integer>
+					<key>ReasonHeaderProtocol</key>
+					<string>RELEASE_CAUSE</string>
+				</dict>
+				<key>EmergencySetupTimeout</key>
+				<dict>
+					<key>ReasonHeaderText</key>
+					<string>Call-setup time-out</string>
+					<key>ReasonHeaderCause</key>
+					<integer>6</integer>
+					<key>ReasonHeaderProtocol</key>
+					<string>RELEASE_CAUSE</string>
+				</dict>
+				<key>EmergencyUserTriggeredTimeout</key>
+				<dict>
+					<key>ReasonHeaderText</key>
+					<string>SIP response time-out</string>
+					<key>ReasonHeaderCause</key>
+					<integer>5</integer>
+					<key>ReasonHeaderProtocol</key>
+					<string>RELEASE_CAUSE</string>
+				</dict>
+				<key>RejectedByUser</key>
+				<dict>
+					<key>ReasonHeaderText</key>
+					<string>User ends call</string>
+					<key>ReasonHeaderCause</key>
+					<integer>1</integer>
+					<key>ReasonHeaderProtocol</key>
+					<string>RELEASE_CAUSE</string>
+				</dict>
+				<key>UserTriggered</key>
+				<dict>
+					<key>ReasonHeaderText</key>
+					<string>User ends call</string>
+					<key>ReasonHeaderCause</key>
+					<integer>1</integer>
+					<key>ReasonHeaderProtocol</key>
+					<string>RELEASE_CAUSE</string>
+				</dict>
+				<key>MediaTimeout</key>
+				<dict>
+					<key>ReasonHeaderText</key>
+					<string>RTP/RTCP time-out</string>
+					<key>ReasonHeaderCause</key>
+					<integer>2</integer>
+					<key>ReasonHeaderProtocol</key>
+					<string>RELEASE_CAUSE</string>
+				</dict>
+				<key>DeferToSecondary</key>
+				<dict>
+					<key>ReasonHeaderText</key>
+					<string>Not Acceptable</string>
+					<key>StatusCode</key>
+					<integer>406</integer>
+				</dict>
+				<key>NormalUnspecified</key>
+				<dict>
+					<key>Protocol</key>
+					<string>Q.850</string>
+					<key>TerminationEvent</key>
+					<string>RemoteHangup</string>
+					<key>ReasonHeaderText</key>
+					<string>Interworking, unspecified</string>
+					<key>ReasonHeaderCause</key>
+					<integer>127</integer>
+				</dict>
+				<key>LocalQualityOfServiceTimeout</key>
+				<dict>
+					<key>ReasonHeaderText</key>
+					<string>Service Unavailable</string>
+					<key>ReasonHeaderCause</key>
+					<integer>503</integer>
+				</dict>
+			</dict>
 			<key>KillRegistrationOnHandoverTimeout</key>
 			<false/>
 			<key>TriggerCSFBOnLocalQoSTimeoutMT</key>
@@ -446,6 +532,8 @@
 			<true/>
 			<key>PIDFGeoPrivShape</key>
 			<string>ellipsoid</string>
+			<key>EnableBrandedCalling</key>
+			<true/>
 			<key>AccessNetworkRefreshMethod</key>
 			<string>INVITE</string>
 			<key>IgnoreOverridesForWPSCalls</key>
@@ -511,17 +599,26 @@
 			<string>CIVIC</string>
 			<key>CountryOfOriginationFormat</key>
 			<string>BOTH</string>
-			<key>EmergencyPreferredIdentity</key>
-			<string>IMEI</string>
+			<key>BrandedCallingAssetServersAllowList</key>
+			<array>
+				<dict>
+					<key>Server</key>
+					<string>branding-fo.boostmobile.com</string>
+					<key>Certificate</key>
+					<string>DxH4tt40L+eduF6szpY6TONlxhZhBd+pJ9wbHlQ2fuw=</string>
+				</dict>
+			</array>
 			<key>RingbackTimerSeconds</key>
 			<integer>90</integer>
-			<key>AllowResponsesOverDifferentTransport</key>
-			<false/>
+			<key>EmergencyPreferredIdentity</key>
+			<string>IMEI</string>
+			<key>StartLocalQosTimerOnSessionProgress</key>
+			<true/>
 			<key>WaitForRingingTimerWPSSeconds</key>
 			<integer>8</integer>
-			<key>SendPreferredServiceInInvite</key>
-			<true/>
 		</dict>
+		<key>EnableBrandedCallingByDefault</key>
+		<true/>
 		<key>LocalShortCodeNumbers</key>
 		<array>
 			<string>211</string>
@@ -533,14 +630,54 @@
 			<string>811</string>
 			<string>988</string>
 		</array>
-		<key>AllowHandoverWithoutIMSVoiceService</key>
-		<true/>
 		<key>ConferenceCalling</key>
 		<dict>
 			<key>TreatAllNotificationsAsPartial</key>
 			<true/>
 			<key>conferenceServer</key>
 			<string>sip:n-way_voice@ims.mnc340.mcc313.3gppnetwork.org</string>
+		</dict>
+		<key>AllowHandoverWithoutIMSVoiceService</key>
+		<true/>
+		<key>SMS</key>
+		<dict>
+			<key>enableInNonVoLTEMode</key>
+			<false/>
+			<key>SMSBundleToVoice</key>
+			<true/>
+			<key>allowCSFBInVolteMode</key>
+			<false/>
+		</dict>
+		<key>XCAP</key>
+		<dict>
+			<key>NafHost</key>
+			<string>xcap.ims.mnc340.mcc313.pub.3gppnetwork.org</string>
+			<key>BsfPort</key>
+			<integer>80</integer>
+			<key>imsFeatureDependency</key>
+			<true/>
+			<key>NafPort</key>
+			<integer>80</integer>
+			<key>SupportsCLIR</key>
+			<true/>
+			<key>ImpuRank</key>
+			<string>first</string>
+			<key>ContentType</key>
+			<string>application/xcap-el+xml</string>
+			<key>DisableOnNetworkError</key>
+			<false/>
+			<key>ForbiddenHttpErrorCodes</key>
+			<string></string>
+			<key>supported</key>
+			<true/>
+			<key>imsRegistrationDependency</key>
+			<true/>
+			<key>UnsolicitedRequestDelay</key>
+			<integer>0</integer>
+			<key>BsfHost</key>
+			<string>bsf.ims.mnc340.mcc313.pub.3gppnetwork.org</string>
+			<key>SupportsCW</key>
+			<false/>
 		</dict>
 		<key>Media</key>
 		<dict>
@@ -591,46 +728,8 @@
 			<key>IncludeSDPMaxRed</key>
 			<true/>
 		</dict>
-		<key>SMS</key>
-		<dict>
-			<key>enableInNonVoLTEMode</key>
-			<false/>
-			<key>SMSBundleToVoice</key>
-			<true/>
-			<key>allowCSFBInVolteMode</key>
-			<false/>
-		</dict>
-		<key>XCAP</key>
-		<dict>
-			<key>NafHost</key>
-			<string>xcap.ims.mnc340.mcc313.pub.3gppnetwork.org</string>
-			<key>BsfPort</key>
-			<integer>80</integer>
-			<key>imsFeatureDependency</key>
-			<true/>
-			<key>NafPort</key>
-			<integer>80</integer>
-			<key>SupportsCLIR</key>
-			<true/>
-			<key>ImpuRank</key>
-			<string>first</string>
-			<key>ContentType</key>
-			<string>application/xcap-el+xml</string>
-			<key>DisableOnNetworkError</key>
-			<false/>
-			<key>ForbiddenHttpErrorCodes</key>
-			<string></string>
-			<key>supported</key>
-			<true/>
-			<key>imsRegistrationDependency</key>
-			<true/>
-			<key>UnsolicitedRequestDelay</key>
-			<integer>0</integer>
-			<key>BsfHost</key>
-			<string>bsf.ims.mnc340.mcc313.pub.3gppnetwork.org</string>
-			<key>SupportsCW</key>
-			<false/>
-		</dict>
+		<key>ShowBrandedCallingSwitch</key>
+		<true/>
 		<key>Voice</key>
 		<dict>
 			<key>E911OverITechSupported</key>
@@ -727,6 +826,8 @@
 	<true/>
 	<key>PhoneNumberIsVoiceMailNumber</key>
 	<true/>
+	<key>TetheringURL</key>
+	<string>https://help.boostmobile.com/</string>
 	<key>SupportedPLMNs</key>
 	<array>
 		<string>313340</string>

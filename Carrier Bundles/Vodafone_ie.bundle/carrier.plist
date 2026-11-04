@@ -8,10 +8,10 @@
 		<true/>
 		<key>SupportSecureIntent</key>
 		<true/>
-		<key>SupportedEntitlements</key>
-		<integer>13312</integer>
 		<key>ProtocolVersion</key>
 		<string>2</string>
+		<key>SupportedEntitlements</key>
+		<integer>13312</integer>
 		<key>Authentication</key>
 		<dict>
 			<key>Type</key>
@@ -19,17 +19,19 @@
 			<key>Username</key>
 			<string>0$IMSI@nai.epc.mnc$MNC.mcc$MCC.3gppnetwork.org</string>
 		</dict>
-		<key>ServerAddress</key>
-		<string>https://es-ie.vodafone.com:4449/ium-OEMInterface/servlet/IUMServlet</string>
-		<key>SupportPhysicalSIMtoESIMTransfer</key>
+		<key>SupportCrossPlatformSIMTransfer</key>
 		<true/>
-		<key>UpdatePeriod</key>
-		<integer>24</integer>
+		<key>ServerAddress</key>
+		<string>https://ie-prod.entitlement.vodafone.com:4449/ium-OEMInterface/servlet/IUMServlet</string>
 		<key>SupportedActions</key>
 		<array>
 			<string>AuthenticateTrustFlag</string>
 			<string>TransferSIMService</string>
 		</array>
+		<key>UpdatePeriod</key>
+		<integer>24</integer>
+		<key>SupportPhysicalSIMtoESIMTransfer</key>
+		<true/>
 	</dict>
 	<key>EmergencyCalling</key>
 	<dict>
@@ -86,6 +88,8 @@
 		<key>SupportsRecoveryOnTransferFailureResponse</key>
 		<true/>
 		<key>RequiresDeleteBeforeTransfer</key>
+		<true/>
+		<key>RequiresPasscodeForCrossPlatformTransfer</key>
 		<true/>
 		<key>TransferErrorCodes</key>
 		<dict>
@@ -155,7 +159,7 @@
 	<key>PhoneNumberRegistrationGatewayAddress</key>
 	<string>+447786205094</string>
 	<key>OverrideOperatorWiFiName</key>
-	<string>Vodafone WiFi Call</string>
+	<string>WiFi Call</string>
 	<key>MMS</key>
 	<dict>
 		<key>MaxImageDimension</key>
@@ -346,8 +350,8 @@
 	<dict>
 		<key>Signaling</key>
 		<dict>
-			<key>WaitForRingingTimerMTSeconds</key>
-			<integer>25</integer>
+			<key>Preconditions</key>
+			<string>Supported</string>
 			<key>RingbackTimerSeconds</key>
 			<integer>240</integer>
 			<key>EnableCellularNetworkInfo</key>
@@ -366,6 +370,8 @@
 			<true/>
 			<key>LocationForShortCodeCalls</key>
 			<string>BOTH</string>
+			<key>EnableRingbackAudioForTextCalls</key>
+			<true/>
 			<key>CountryOfOriginationFormat</key>
 			<string>PANI</string>
 			<key>UseIPSec</key>
@@ -410,16 +416,16 @@
 			<true/>
 			<key>PreconditionUpdateDelayTimerMilliseconds</key>
 			<string>10000</string>
-			<key>Preconditions</key>
-			<string>Supported</string>
 			<key>AddLocationToEmergencySMS</key>
 			<true/>
 			<key>EarlyMediaNeedsHeader</key>
 			<true/>
-			<key>WaitForRingingTimerMOSeconds</key>
-			<integer>25</integer>
 			<key>RequirePreconditionsWhenMandatory</key>
 			<false/>
+			<key>WaitForRingingTimerMOSeconds</key>
+			<integer>25</integer>
+			<key>WaitForRingingTimerMTSeconds</key>
+			<integer>25</integer>
 		</dict>
 		<key>LocalShortCodeNumbers</key>
 		<array>

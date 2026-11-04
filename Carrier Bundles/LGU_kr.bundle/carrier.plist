@@ -38,70 +38,6 @@
 		<key>SoftwareUpdateOptInRequired</key>
 		<true/>
 	</dict>
-	<key>EmergencyCalling</key>
-	<dict>
-		<key>EmergencyNumbers</key>
-		<array>
-			<dict>
-				<key>Number</key>
-				<string>111</string>
-				<key>Category</key>
-				<integer>6</integer>
-			</dict>
-			<dict>
-				<key>Title</key>
-				<string>EMERGENCY_DISAMBIGUATION_POLICE</string>
-				<key>Number</key>
-				<string>112</string>
-				<key>PreferredEmergencyNumber</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>Number</key>
-				<string>113</string>
-				<key>Category</key>
-				<integer>3</integer>
-			</dict>
-			<dict>
-				<key>Number</key>
-				<string>117</string>
-				<key>Category</key>
-				<integer>18</integer>
-			</dict>
-			<dict>
-				<key>Number</key>
-				<string>118</string>
-				<key>Category</key>
-				<integer>19</integer>
-			</dict>
-			<dict>
-				<key>PreferredEmergencyNumber</key>
-				<true/>
-				<key>Category</key>
-				<integer>4</integer>
-				<key>Title</key>
-				<string>EMERGENCY_DISAMBIGUATION_FIRE_EMERGENCY_AMBULANCE</string>
-				<key>Number</key>
-				<string>119</string>
-			</dict>
-			<dict>
-				<key>PreferredEmergencyNumber</key>
-				<true/>
-				<key>Category</key>
-				<integer>8</integer>
-				<key>Title</key>
-				<string>EMERGENCY_DISAMBIGUATION_COAST_GUARD</string>
-				<key>Number</key>
-				<string>122</string>
-			</dict>
-			<dict>
-				<key>Number</key>
-				<string>125</string>
-				<key>Category</key>
-				<integer>9</integer>
-			</dict>
-		</array>
-	</dict>
 	<key>AttachAPN</key>
 	<dict>
 		<key>3GPP</key>
@@ -362,27 +298,6 @@
 			<true/>
 			<key>UseNormalIdentityForEmergencyCalls</key>
 			<true/>
-			<key>EmergencyURNs</key>
-			<dict>
-				<key>122</key>
-				<string>urn:service:sos.marine</string>
-				<key>112</key>
-				<string>urn:service:sos.police</string>
-				<key>125</key>
-				<string>urn:service:sos.country-specific.kr.125</string>
-				<key>118</key>
-				<string>urn:service:sos.country-specific.kr.118</string>
-				<key>911</key>
-				<string>urn:service:sos.fire</string>
-				<key>111</key>
-				<string>urn:service:sos.country-specific.kr.111</string>
-				<key>117</key>
-				<string>urn:service:sos.country-specific.kr.117</string>
-				<key>113</key>
-				<string>urn:service:sos.country-specific.kr.113</string>
-				<key>119</key>
-				<string>urn:service:sos.fire</string>
-			</dict>
 			<key>InviteErrorResponsesToTriggerCSFB</key>
 			<string>380</string>
 			<key>DefaultAuthAlgorithm</key>
@@ -496,6 +411,8 @@
 			<key>Preconditions</key>
 			<string>None</string>
 		</dict>
+		<key>IMSDeregistrationOptimization</key>
+		<true/>
 		<key>ConferenceCalling</key>
 		<dict>
 			<key>SendConferenceSubscribeInNewDialog</key>
@@ -508,35 +425,6 @@
 			<key>enableInNonVoLTEMode</key>
 			<false/>
 			<key>allowCSFBInVolteMode</key>
-			<false/>
-		</dict>
-		<key>XCAP</key>
-		<dict>
-			<key>NafHost</key>
-			<string>xcap.mobvas.uplus.co.kr</string>
-			<key>ReuseAuthCredentials</key>
-			<true/>
-			<key>imsFeatureDependency</key>
-			<true/>
-			<key>NafPort</key>
-			<integer>443</integer>
-			<key>SupportsCLIR</key>
-			<false/>
-			<key>supported</key>
-			<true/>
-			<key>ContentType</key>
-			<string>application/vnd.etsi.simservs+xml</string>
-			<key>DisableOnNetworkError</key>
-			<false/>
-			<key>ForbiddenHttpErrorCodes</key>
-			<string></string>
-			<key>NafUseSecureTransport</key>
-			<true/>
-			<key>imsRegistrationDependency</key>
-			<true/>
-			<key>IgnoreInternationalDataRoamingSwitch</key>
-			<false/>
-			<key>IgnoreCellularDataSwitch</key>
 			<false/>
 		</dict>
 		<key>Media</key>
@@ -593,6 +481,35 @@
 		<key>SIM</key>
 		<dict>
 			<key>USIMFallbackSupport</key>
+			<false/>
+		</dict>
+		<key>XCAP</key>
+		<dict>
+			<key>NafHost</key>
+			<string>xcap.mobvas.uplus.co.kr</string>
+			<key>ReuseAuthCredentials</key>
+			<true/>
+			<key>imsFeatureDependency</key>
+			<true/>
+			<key>NafPort</key>
+			<integer>443</integer>
+			<key>SupportsCLIR</key>
+			<false/>
+			<key>supported</key>
+			<true/>
+			<key>ContentType</key>
+			<string>application/vnd.etsi.simservs+xml</string>
+			<key>DisableOnNetworkError</key>
+			<false/>
+			<key>ForbiddenHttpErrorCodes</key>
+			<string></string>
+			<key>NafUseSecureTransport</key>
+			<true/>
+			<key>imsRegistrationDependency</key>
+			<true/>
+			<key>IgnoreInternationalDataRoamingSwitch</key>
+			<false/>
+			<key>IgnoreCellularDataSwitch</key>
 			<false/>
 		</dict>
 		<key>Voice</key>

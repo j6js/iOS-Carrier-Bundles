@@ -467,10 +467,12 @@
 	</dict>
 	<key>TetheringPhoneNumber</key>
 	<string>119</string>
-	<key>VVMIgnoresIntlDataRoaming</key>
-	<false/>
+	<key>PreferCarrierNameFromMetadata</key>
+	<true/>
 	<key>AllowedServicesTypeMaskOnInternet</key>
 	<integer>32768</integer>
+	<key>VVMIgnoresIntlDataRoaming</key>
+	<false/>
 	<key>PushSettings</key>
 	<dict>
 		<key>MultiSIMTopic</key>
@@ -535,7 +537,7 @@
 	<key>SupportsImsCapability</key>
 	<true/>
 	<key>MyAccountURL</key>
-	<string>https://wap.tim.it</string>
+	<string>https://www.tim.it</string>
 	<key>MyAccountURLTitle</key>
 	<string>Portale TIM</string>
 	<key>MandatoryVerify</key>

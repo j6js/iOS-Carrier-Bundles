@@ -6,6 +6,8 @@
 	<integer>5</integer>
 	<key>AllowEDGEEditing</key>
 	<true/>
+	<key>PreferCarrierNameFromMetadata</key>
+	<true/>
 	<key>MandatoryVerify</key>
 	<dict>
 		<key>SIMs</key>
