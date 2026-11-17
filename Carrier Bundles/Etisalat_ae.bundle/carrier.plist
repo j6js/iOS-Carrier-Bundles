@@ -416,7 +416,7 @@
 	<key>WatchCustomerServicePhoneNumber</key>
 	<string>101</string>
 	<key>OverrideOperatorWiFiName</key>
-	<string>e&amp; WiFi</string>
+	<string>etisalat WiFi</string>
 	<key>MMS</key>
 	<dict>
 		<key>MMSC</key>
@@ -805,7 +805,7 @@
 			<key>ServiceCode</key>
 			<string>*101#</string>
 			<key>ServiceName</key>
-			<string>e&amp; Menu</string>
+			<string>etisalat Menu</string>
 		</dict>
 		<dict>
 			<key>ServiceCode</key>
@@ -846,33 +846,14 @@
 	</array>
 	<key>VisualVoicemailServiceName</key>
 	<string>none</string>
-	<key>StatusBarImages</key>
-	<array>
-		<dict>
-			<key>AllowPrefixMatching</key>
-			<false/>
-			<key>CarrierName</key>
-			<string>ETISALAT</string>
-			<key>StatusBarCarrierName</key>
-			<string>e&amp;</string>
-		</dict>
-		<dict>
-			<key>AllowPrefixMatching</key>
-			<false/>
-			<key>CarrierName</key>
-			<string>etisalat</string>
-			<key>StatusBarCarrierName</key>
-			<string>e&amp;</string>
-		</dict>
-	</array>
 	<key>CarrierName</key>
-	<string>e&amp;</string>
+	<string>etisalat</string>
 	<key>SupportsImsCapability</key>
 	<true/>
 	<key>MyAccountURL</key>
 	<string>https://www.etisalat.ae</string>
 	<key>MyAccountURLTitle</key>
-	<string>e&amp;</string>
+	<string>etisalat</string>
 	<key>ShowWiFiCallingWarningUnsupportedCarrier</key>
 	<false/>
 	<key>SupportedSIMs</key>

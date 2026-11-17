@@ -1132,6 +1132,31 @@
 		<true/>
 		<key>EmergencyLocation</key>
 		<dict>
+			<key>ControlPlane</key>
+			<dict>
+				<key>EnableAdditionalAssistedConstellations</key>
+				<dict>
+					<key>Sbas</key>
+					<string>disabled</string>
+					<key>Glonass</key>
+					<string>disabled</string>
+					<key>Qzss</key>
+					<string>disabled</string>
+					<key>Beidou</key>
+					<string>disabled</string>
+				</dict>
+			</dict>
+			<key>UserPlane</key>
+			<dict>
+				<key>Sbas</key>
+				<string>disabled</string>
+				<key>Glonass</key>
+				<string>disabled</string>
+				<key>Qzss</key>
+				<string>disabled</string>
+				<key>Beidou</key>
+				<string>disabled</string>
+			</dict>
 			<key>AugmentedEmergencyAction</key>
 			<dict>
 				<key>Supplemented911</key>

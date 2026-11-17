@@ -3,18 +3,27 @@
 <plist version="1.0">
 <dict>
 	<key>DerPriFileVersion</key>
-	<string>6.2.162</string>
-	<key>ShowVoNRSwitch</key>
+	<string>6.2.163</string>
+	<key>Show5GWarningUnsupportedCarrier</key>
+	<false/>
+	<key>Show5GStandaloneSwitch</key>
+	<true/>
+	<key>SatelliteNoDataSuspendDelayTimeout</key>
+	<integer>1</integer>
+	<key>EnableLTEAfterUpgrade</key>
 	<true/>
 	<key>Enable5GStandaloneByDefault</key>
 	<true/>
 	<key>Show5GSwitch</key>
 	<true/>
-	<key>PushSettings</key>
-	<dict>
-		<key>CellularPlanTransferTopic</key>
-		<string>br.com.vivo.ent.iphone-transfer</string>
-	</dict>
+	<key>ShowHighDataModeSwitch</key>
+	<true/>
+	<key>IPv6SupportedDataModeMask</key>
+	<integer>110623</integer>
+	<key>SatelliteSystemTransitionTimeToAllowed</key>
+	<integer>30</integer>
+	<key>ShowSatelliteSwitch</key>
+	<true/>
 	<key>IMSConfig</key>
 	<dict>
 		<key>SMS</key>
@@ -35,6 +44,37 @@
 			<key>ResetSocketWhenNetworkChange</key>
 			<false/>
 		</dict>
+	</dict>
+	<key>CarrierEntitlements</key>
+	<dict>
+		<key>SupportedEntitlements</key>
+		<integer>4203537</integer>
+		<key>SupportPhysicalSIMtoESIMTransfer</key>
+		<true/>
+		<key>SupportedActions</key>
+		<array>
+			<string>TransferSIMService</string>
+		</array>
+		<key>SupportsOnDevicePhysicalSIMConvert</key>
+		<true/>
+		<key>SupportSecureIntent</key>
+		<true/>
+	</dict>
+	<key>DerPriFileName</key>
+	<string>overrides_V53_V54_V57.der.pri</string>
+	<key>SupportsSatellite</key>
+	<true/>
+	<key>SatelliteAccessInfo</key>
+	<dict>
+		<key>AllowCarrierApp</key>
+		<true/>
+		<key>AppCategories</key>
+		<array>
+			<string>8001</string>
+			<string>8002</string>
+		</array>
+		<key>Tier</key>
+		<integer>4</integer>
 	</dict>
 	<key>PhoneAccountTransfer</key>
 	<dict>
@@ -67,26 +107,24 @@
 			</array>
 		</dict>
 	</dict>
-	<key>EnableLTEAfterUpgrade</key>
+	<key>DataIndicatorOverrideForNRMmwave</key>
+	<string>NRPlus</string>
+	<key>Enable5GAutoByDefault</key>
 	<true/>
-	<key>DerPriFileName</key>
-	<string>overrides_V53_V54_V57.der.pri</string>
-	<key>IPv6SupportedDataModeMask</key>
-	<integer>110623</integer>
-	<key>CarrierEntitlements</key>
+	<key>ShowVoNRSwitch</key>
+	<true/>
+	<key>SatelliteSystemName</key>
+	<string>VIVO STARLINK</string>
+	<key>SupportsNRNSAInboundRoaming</key>
+	<true/>
+	<key>SatelliteApps</key>
+	<array>
+		<string>br.com.vivo.meuvivo</string>
+	</array>
+	<key>PushSettings</key>
 	<dict>
-		<key>SupportedEntitlements</key>
-		<integer>4203537</integer>
-		<key>SupportPhysicalSIMtoESIMTransfer</key>
-		<true/>
-		<key>SupportedActions</key>
-		<array>
-			<string>TransferSIMService</string>
-		</array>
-		<key>SupportsOnDevicePhysicalSIMConvert</key>
-		<true/>
-		<key>SupportSecureIntent</key>
-		<true/>
+		<key>CellularPlanTransferTopic</key>
+		<string>br.com.vivo.ent.iphone-transfer</string>
 	</dict>
 	<key>apns</key>
 	<array>
@@ -115,6 +153,8 @@
 			<string>vivo</string>
 			<key>apn</key>
 			<string>mms.vivo.com.br</string>
+			<key>UseNetworkMTU</key>
+			<true/>
 			<key>type-mask</key>
 			<integer>4</integer>
 		</dict>
@@ -155,19 +195,7 @@
 			<integer>1</integer>
 		</dict>
 	</array>
-	<key>DataIndicatorOverrideForNRMmwave</key>
-	<string>NRPlus</string>
-	<key>Show5GStandaloneSwitch</key>
-	<true/>
-	<key>ShowHighDataModeSwitch</key>
-	<true/>
-	<key>Show5GWarningUnsupportedCarrier</key>
-	<false/>
 	<key>SupportsVoNR</key>
-	<true/>
-	<key>SupportsNRNSAInboundRoaming</key>
-	<true/>
-	<key>Enable5GAutoByDefault</key>
 	<true/>
 </dict>
 </plist>

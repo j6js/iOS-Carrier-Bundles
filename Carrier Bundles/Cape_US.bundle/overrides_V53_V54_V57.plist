@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ShowHighDataModeSwitch</key>
+	<true/>
+	<key>Enable5GAutoByDefault</key>
+	<true/>
+	<key>DerPriFileName</key>
+	<string>overrides_V53_V54_V57.der.pri</string>
+	<key>DerPriFileVersion</key>
+	<string>6.2.161</string>
+	<key>IPv6SupportedDataModeMask</key>
+	<integer>40960</integer>
+	<key>Show5GWarningUnsupportedCarrier</key>
+	<false/>
+	<key>SupportsNRNSAInboundRoaming</key>
+	<true/>
+	<key>Show5GSwitch</key>
+	<true/>
+</dict>
+</plist>

@@ -2,6 +2,11 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>SupportedCountryIds</key>
+	<array>
+		<string>295</string>
+		<string>com.apple.Liechtenstein</string>
+	</array>
 	<key>EmergencyCalling</key>
 	<dict>
 		<key>EmergencyNumbers</key>
@@ -38,16 +43,13 @@
 			</dict>
 		</array>
 	</dict>
+	<key>ShowTARandomizationSwitch</key>
+	<true/>
 	<key>CountryName</key>
 	<string>Liechtenstein</string>
 	<key>ISOAlpha2CountryCode</key>
 	<array>
 		<string>li</string>
-	</array>
-	<key>SupportedCountryIds</key>
-	<array>
-		<string>295</string>
-		<string>com.apple.Liechtenstein</string>
 	</array>
 </dict>
 </plist>

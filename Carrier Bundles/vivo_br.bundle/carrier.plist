@@ -287,6 +287,8 @@
 			<string>vivo</string>
 			<key>apn</key>
 			<string>mms.vivo.com.br</string>
+			<key>UseNetworkMTU</key>
+			<true/>
 			<key>type-mask</key>
 			<integer>4</integer>
 		</dict>

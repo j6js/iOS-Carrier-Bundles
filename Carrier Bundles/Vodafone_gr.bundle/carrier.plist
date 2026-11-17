@@ -433,41 +433,55 @@
 	<dict>
 		<key>Signaling</key>
 		<dict>
-			<key>InviteErrorResponsesToTriggerCSFB</key>
-			<string>5XX</string>
-			<key>EnableCellularNetworkInfo</key>
-			<true/>
-			<key>SupportPEarlyMediaHeader</key>
-			<true/>
-			<key>RingbackTimerSeconds</key>
-			<integer>150</integer>
-			<key>RingingTimerSeconds</key>
-			<integer>150</integer>
-			<key>SendPreferredServiceInInvite</key>
-			<true/>
-			<key>RequirePreconditionsWhenMandatory</key>
+			<key>AlwaysAddGeolocationToInviteForNormalSetupEmergencyCall</key>
 			<false/>
-			<key>AllowRTTControlInSipUpdate</key>
-			<true/>
-			<key>EarlyMediaNeedsHeader</key>
-			<true/>
-			<key>DefaultAuthAlgorithm</key>
-			<string>AKAv1-MD5</string>
-			<key>CountryOfOriginationFormat</key>
-			<string>PANI</string>
-			<key>Preconditions</key>
-			<string>Supported</string>
 			<key>AdditionalContactParams</key>
 			<dict>
 				<key>REGISTER,INVITE,INVITE:*[primary]</key>
 				<string>+g.3gpp.mid-call;+g.3gpp.srvcc-alerting;+g.3gpp.ps2cs-srvcc-orig-pre-alerting</string>
 			</dict>
+			<key>SendEmergencyLocationUpdates</key>
+			<true/>
+			<key>DefaultAuthAlgorithm</key>
+			<string>AKAv1-MD5</string>
+			<key>AllowGeolocationForEmergencyCallsWhileInboundRoaming</key>
+			<true/>
 			<key>AlwaysAddSipInstance</key>
 			<true/>
-			<key>AlwaysSendSessionProgress</key>
+			<key>SupportPEarlyMediaHeader</key>
 			<true/>
 			<key>UseCIDUrlInPIDF</key>
 			<true/>
+			<key>AllowRTTControlInSipUpdate</key>
+			<true/>
+			<key>EarlyMediaNeedsHeader</key>
+			<true/>
+			<key>AlwaysAddGeolocationForEmergencyCalls</key>
+			<true/>
+			<key>PIDFGeoPrivShape</key>
+			<string>ellipsoid</string>
+			<key>InviteErrorResponsesToTriggerCSFB</key>
+			<string>5XX</string>
+			<key>AlwaysAddGeolocationToUpdateForNormalSetupEmergencyCall</key>
+			<false/>
+			<key>AlwaysSendSessionProgress</key>
+			<true/>
+			<key>RingbackTimerSeconds</key>
+			<integer>150</integer>
+			<key>SendPreferredServiceInInvite</key>
+			<true/>
+			<key>Allow3DPIDFInMessages</key>
+			<true/>
+			<key>RequirePreconditionsWhenMandatory</key>
+			<false/>
+			<key>CountryOfOriginationFormat</key>
+			<string>PANI</string>
+			<key>EnableCellularNetworkInfo</key>
+			<true/>
+			<key>Preconditions</key>
+			<string>Supported</string>
+			<key>RingingTimerSeconds</key>
+			<integer>150</integer>
 			<key>UseIPSec</key>
 			<true/>
 		</dict>

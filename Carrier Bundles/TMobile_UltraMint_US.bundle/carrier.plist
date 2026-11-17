@@ -6,6 +6,8 @@
 	<dict>
 		<key>Topic</key>
 		<string>com.t-mobile.msg.eas</string>
+		<key>MultiSIMTopic</key>
+		<string>com.t-mobile.dejaneiro</string>
 		<key>CellularPlanTransferTopic</key>
 		<string>com.t-mobile.iphone-transfer</string>
 	</dict>
@@ -72,6 +74,8 @@
 		</array>
 		<key>SupportContextSwitchOver</key>
 		<true/>
+		<key>EPDGTimeout</key>
+		<integer>45</integer>
 		<key>5wiServiceMask</key>
 		<integer>3</integer>
 		<key>IKE</key>
@@ -229,7 +233,7 @@
 		<key>AllowCurrentLocation</key>
 		<true/>
 		<key>SupportedEntitlements</key>
-		<integer>4202649</integer>
+		<integer>4203673</integer>
 		<key>SupportedAuthorizationTokens</key>
 		<integer>2</integer>
 		<key>UserAgent</key>
@@ -546,6 +550,13 @@
 			<true/>
 			<key>IncomingCallEndReasons</key>
 			<dict>
+				<key>NotFound</key>
+				<dict>
+					<key>StatusCode</key>
+					<integer>404</integer>
+					<key>TerminationEvent</key>
+					<string>RemoteHangup</string>
+				</dict>
 				<key>DeclineInUse</key>
 				<dict>
 					<key>ReasonHeaderText</key>
@@ -564,10 +575,19 @@
 					<key>TerminationEvent</key>
 					<string>RemoteRequestCanceled</string>
 				</dict>
-				<key>NotFound</key>
+				<key>CallToVoicemail2</key>
+				<dict>
+					<key>ReasonHeaderText</key>
+					<string>CC_TERM_MULTIUA_INST_NOREPLY_TMR_EXPIRED</string>
+					<key>StatusCode</key>
+					<integer>408</integer>
+					<key>TerminationEvent</key>
+					<string>RemoteRequestCanceled</string>
+				</dict>
+				<key>TemporarilyUnavailable</key>
 				<dict>
 					<key>StatusCode</key>
-					<integer>404</integer>
+					<integer>480</integer>
 					<key>TerminationEvent</key>
 					<string>RemoteHangup</string>
 				</dict>
@@ -577,13 +597,6 @@
 					<string>Call completed elsewhere (.*)</string>
 					<key>TerminationEvent</key>
 					<string>CallAnsweredElsewhere</string>
-				</dict>
-				<key>TemporarilyUnavailable</key>
-				<dict>
-					<key>StatusCode</key>
-					<integer>480</integer>
-					<key>TerminationEvent</key>
-					<string>RemoteHangup</string>
 				</dict>
 			</dict>
 			<key>CountryOfOriginationFormat</key>
@@ -1003,6 +1016,26 @@
 				<string>310260_GID1-756d</string>
 			</array>
 		</dict>
+	</dict>
+	<key>RemoteCardProvisioningSettings</key>
+	<dict>
+		<key>MatchingICCIDPrefixes</key>
+		<array>
+			<string>890126</string>
+			<string>890124</string>
+		</array>
+		<key>SupportedSKUs</key>
+		<array>
+			<string>SKU_NA</string>
+		</array>
+		<key>ProvisioningMethod</key>
+		<string>CarrierFlow</string>
+		<key>MinCompatibleWatchOS</key>
+		<string>27.2</string>
+		<key>SupportsFauxCard</key>
+		<false/>
+		<key>ServerURL</key>
+		<string>t-mobile.idemia.io</string>
 	</dict>
 	<key>RequiresServiceProvisioning</key>
 	<true/>

@@ -57,7 +57,7 @@
 	<key>RegistrationOptInRequired</key>
 	<true/>
 	<key>MyAccountURLTitle</key>
-	<string>e&amp; Egypt</string>
+	<string>etisalat Egypt</string>
 	<key>RoamingVoicemailPilotNumber</key>
 	<string>+201111234444</string>
 	<key>IPv6SupportedDataModeMask</key>
@@ -66,16 +66,9 @@
 	<false/>
 	<key>Show4GSwitch</key>
 	<true/>
-	<key>StatusBarImages</key>
+	<key>SupportedSIMs</key>
 	<array>
-		<dict>
-			<key>AllowPrefixMatching</key>
-			<false/>
-			<key>CarrierName</key>
-			<string>etisalat</string>
-			<key>StatusBarCarrierName</key>
-			<string>e&amp; Egypt</string>
-		</dict>
+		<string>60203</string>
 	</array>
 	<key>IMSConfig</key>
 	<dict>
@@ -229,14 +222,10 @@
 	</dict>
 	<key>ShowDialAssist</key>
 	<true/>
-	<key>SupportedSIMs</key>
-	<array>
-		<string>60203</string>
-	</array>
 	<key>PhoneNumberRegistrationGatewayAddress</key>
 	<string>+447786205094</string>
 	<key>CarrierName</key>
-	<string>e&amp; Egypt</string>
+	<string>etisalat Egypt</string>
 	<key>AttachAPN</key>
 	<dict>
 		<key>3GPP</key>

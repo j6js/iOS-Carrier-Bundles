@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>DerPriFileVersion</key>
-	<string>6.0.163</string>
+	<string>6.2.161</string>
 	<key>Show5GWarningUnsupportedCarrier</key>
 	<false/>
 	<key>Show5GStandaloneSwitch</key>
@@ -41,7 +41,7 @@
 	<key>CarrierEntitlements</key>
 	<dict>
 		<key>SupportedEntitlements</key>
-		<integer>4254897</integer>
+		<integer>4779185</integer>
 		<key>SupportPhysicalSIMtoESIMTransfer</key>
 		<true/>
 		<key>ServerAddress</key>

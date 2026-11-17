@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>MaxBluetoothModemConnections</key>
+	<integer>5</integer>
+	<key>Services</key>
+	<array>
+		<dict>
+			<key>ServiceCode</key>
+			<string>6666</string>
+			<key>ServiceName</key>
+			<string>Customer Service</string>
+		</dict>
+	</array>
+	<key>DataIndicatorOverrideForLTE</key>
+	<string>4G</string>
+	<key>EncryptedIdentity</key>
+	<dict>
+		<key>Certificate</key>
+		<string>MIIE1DCCA7ygAwIBAgIFICYBJwAwDQYJKoZIhvcNAQELBQAwgaAxCzAJBgNVBAYT
+Ak1OMRQwEgYDVQQIDAtVbGFhbmJhYXRhcjEUMBIGA1UEBwwLVWxhYW5iYWF0YXIx
+ETAPBgNVBAoMCE9ORE8gTExDMR4wHAYDVQQLDBVUZWNobm9sb2d5IERlcGFydG1l
+bnQxFTATBgNVBAMMDElNU0kgUHJpdmFjeTEbMBkGCSqGSIb3DQEJARYMaW5mb0Bv
+bmRvLm1uMB4XDTI2MDEyNzA4MzQyMVoXDTQ2MDEyMjA4MzQyMVowgaAxCzAJBgNV
+BAYTAk1OMRQwEgYDVQQIDAtVbGFhbmJhYXRhcjEUMBIGA1UEBwwLVWxhYW5iYWF0
+YXIxETAPBgNVBAoMCE9ORE8gTExDMR4wHAYDVQQLDBVUZWNobm9sb2d5IERlcGFy
+dG1lbnQxFTATBgNVBAMMDElNU0kgUHJpdmFjeTEbMBkGCSqGSIb3DQEJARYMaW5m
+b0BvbmRvLm1uMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvpN0GmvF
+CrY3o+KBAfkUqktGE54BppLPItbjVFZ1eQ2M01eqVhyDcaB8e3xDQe1bQ6Toptrh
+ppkCYPumNwjttq+xymipjMuLMon779wf/5hRqjbV4i6rUVEcGVT+UMrG9edEyBPs
+TXR+52zpl5GWbbjP9mghpPPX5fsUlflshbWF9FZlQ2WOXh+nriw+XNptQuy+DTtQ
+lArPmy30KZYlaLldIzHmHSagZyKAeZxPs0XkI96d+HmjW2Zav5FQFbiZu1vN8uMo
+NLFT17qmsDl+vtXHkSrQSTLgZmnxyh3dIMf/9N0WC88AMF+7JSZECuETWHdPm/Xc
+M9b7/+aonp4ZqwIDAQABo4IBETCCAQ0wDAYDVR0TAQH/BAIwADALBgNVHQ8EBAMC
+AqQwEwYDVR0lBAwwCgYIKwYBBQUHAwIwHQYDVR0OBBYEFMwPqIZFxdWDEpWd/9Uk
+j3WOn/rkMIG7BgNVHSMEgbMwgbChgaakgaMwgaAxCzAJBgNVBAYTAk1OMRQwEgYD
+VQQIDAtVbGFhbmJhYXRhcjEUMBIGA1UEBwwLVWxhYW5iYWF0YXIxETAPBgNVBAoM
+CE9ORE8gTExDMR4wHAYDVQQLDBVUZWNobm9sb2d5IERlcGFydG1lbnQxFTATBgNV
+BAMMDElNU0kgUHJpdmFjeTEbMBkGCSqGSIb3DQEJARYMaW5mb0BvbmRvLm1uggUg
+JgEnADANBgkqhkiG9w0BAQsFAAOCAQEAYGpZiChFvWPvE1vu18mhp7uvqKp0Tufv
+rU3Eudt6Q7+VGWkyWzv7NQAKg73bzDjA5SwqTFghHX7b6SBLMLBnY5sLojhr7pUy
+wuQfIBJZYqeO+lEgrS5d07fO9Rhl43CwnOly3RSWDWkUSr2kE6YhsbzGjIgD4Omf
+igmSJjf3BDANvrfnwCvXdWXB3oP3kM6NxjJKz+nPnKCtyKw6I7zwrp0N8weTkVYr
+MFDseNYuNLMHjwW5TXll81kmBF6FkKR/K93fkGiXi02oMbLh6fMrhwhUiO58c6T5
+qQJe40eo12ndkk8eAH0pWF2LCb2a6ArtilSqXkrutqYJW0gCA36asg==</string>
+		<key>UpdateURL</key>
+		<string>https://cdn.ondo.mn/privacy/</string>
+		<key>KeyIdentifier</key>
+		<string>CertificateSerialNumber=2026012700</string>
+	</dict>
+	<key>MandatoryVerify</key>
+	<dict>
+		<key>SIMs</key>
+		<array/>
+	</dict>
+	<key>SupportsNITZ</key>
+	<false/>
+	<key>MyAccountURL</key>
+	<string>https://ondo.mn/</string>
+	<key>RegistrationOptInRequired</key>
+	<true/>
+	<key>MyAccountURLTitle</key>
+	<string>ONDO</string>
+	<key>RoamingVoicemailPilotNumber</key>
+	<string>+923455555502</string>
+	<key>AllowedServicesTypeMaskOnInternet</key>
+	<integer>32768</integer>
+	<key>ShowVolteWarningUnsupportedCarrier</key>
+	<false/>
+	<key>Show4GSwitch</key>
+	<true/>
+	<key>StatusBarImages</key>
+	<array>
+		<dict>
+			<key>AllowPrefixMatching</key>
+			<false/>
+			<key>CarrierName</key>
+			<string>42833</string>
+			<key>StatusBarCarrierName</key>
+			<string>ONDO</string>
+		</dict>
+	</array>
+	<key>IMSConfig</key>
+	<dict>
+		<key>Media</key>
+		<dict>
+			<key>RingbackTone</key>
+			<string>CEPT</string>
+			<key>AudioCodecs</key>
+			<dict>
+				<key>109</key>
+				<dict>
+					<key>br</key>
+					<string>5.9-24.4</string>
+					<key>SampleRate</key>
+					<integer>16000</integer>
+					<key>EncodingName</key>
+					<string>EVS</string>
+					<key>bw</key>
+					<string>nb-swb</string>
+				</dict>
+			</dict>
+			<key>EVSHardBwLimit</key>
+			<string>nb-swb</string>
+			<key>SelectLatestForkWithActiveEarlyMedia</key>
+			<true/>
+			<key>EnableBandwidthSpecifiers</key>
+			<true/>
+		</dict>
+		<key>Signaling</key>
+		<dict>
+			<key>strictCallFlows</key>
+			<true/>
+			<key>SupportPEarlyMediaHeader</key>
+			<true/>
+			<key>RingbackTimerSeconds</key>
+			<integer>65</integer>
+			<key>RingingTimerSeconds</key>
+			<integer>65</integer>
+			<key>SendPreferredServiceInInvite</key>
+			<true/>
+			<key>RequirePreconditionsWhenMandatory</key>
+			<false/>
+			<key>ussdEnabled</key>
+			<true/>
+			<key>DefaultAuthAlgorithm</key>
+			<string>AKAv1-MD5</string>
+			<key>CountryOfOriginationFormat</key>
+			<string>PANI</string>
+			<key>Preconditions</key>
+			<string>Supported</string>
+			<key>AlwaysSendSessionProgress</key>
+			<true/>
+			<key>AlwaysAddSipInstance</key>
+			<true/>
+			<key>UseFakeSAsForDeregistration</key>
+			<true/>
+			<key>UseIPSec</key>
+			<true/>
+		</dict>
+		<key>XCAP</key>
+		<dict>
+			<key>ContentType</key>
+			<string>application/vnd.etsi.simservs+xml</string>
+			<key>supported</key>
+			<true/>
+			<key>BsfPort</key>
+			<integer>8080</integer>
+			<key>NafPort</key>
+			<integer>80</integer>
+		</dict>
+		<key>ConferenceCalling</key>
+		<dict>
+			<key>conferenceServer</key>
+			<string>sip:mmtel@conf-factory.ims.mnc${MNC}.mcc${MCC}.3gppnetwork.org</string>
+		</dict>
+		<key>Voice</key>
+		<dict>
+			<key>BlockCallsOverCS</key>
+			<true/>
+			<key>EnableVolteByDefault</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>CarrierEntitlements</key>
+	<dict>
+		<key>SupportedEntitlements</key>
+		<integer>1</integer>
+		<key>Authentication</key>
+		<dict>
+			<key>Type</key>
+			<integer>1</integer>
+			<key>Username</key>
+			<string>0$IMSI@nai.epc.mnc$MNC.mcc$MCC.3gppnetwork.org</string>
+		</dict>
+		<key>ServerAddress</key>
+		<string>https://ondo-esapi.esim.plus</string>
+	</dict>
+	<key>ShowDialAssist</key>
+	<true/>
+	<key>SupportedSIMs</key>
+	<array>
+		<string>42833</string>
+	</array>
+	<key>PhoneNumberRegistrationGatewayAddress</key>
+	<string>+447786205094</string>
+	<key>CarrierName</key>
+	<string>ONDO</string>
+	<key>AttachAPN</key>
+	<dict>
+		<key>3GPP</key>
+		<array>
+			<dict>
+				<key>password</key>
+				<string></string>
+				<key>username</key>
+				<string></string>
+				<key>apn</key>
+				<string>internet</string>
+				<key>AllowedProtocolMask</key>
+				<integer>3</integer>
+			</dict>
+		</array>
+	</dict>
+	<key>ShowVolteSwitch</key>
+	<false/>
+	<key>SupportsImsCapability</key>
+	<true/>
+	<key>EmergencyCalling</key>
+	<dict>
+		<key>EmergencyNumbers</key>
+		<array>
+			<dict>
+				<key>PreferredEmergencyNumber</key>
+				<true/>
+				<key>Category</key>
+				<integer>4</integer>
+				<key>Title</key>
+				<string>EMERGENCY_DISAMBIGUATION_FIRE</string>
+				<key>Number</key>
+				<string>101</string>
+			</dict>
+			<dict>
+				<key>PreferredEmergencyNumber</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Title</key>
+				<string>EMERGENCY_DISAMBIGUATION_POLICE</string>
+				<key>Number</key>
+				<string>102</string>
+			</dict>
+			<dict>
+				<key>PreferredEmergencyNumber</key>
+				<true/>
+				<key>Category</key>
+				<integer>2</integer>
+				<key>Title</key>
+				<string>EMERGENCY_DISAMBIGUATION_AMBULANCE</string>
+				<key>Number</key>
+				<string>103</string>
+			</dict>
+			<dict>
+				<key>Number</key>
+				<string>105</string>
+				<key>Category</key>
+				<integer>8</integer>
+			</dict>
+		</array>
+	</dict>
+	<key>VoicemailPilotNumber</key>
+	<string>6060</string>
+	<key>HomeBundleIdentifier</key>
+	<string>com.apple.Mongolia</string>
+	<key>Show3GSwitch</key>
+	<false/>
+	<key>apns</key>
+	<array>
+		<dict>
+			<key>password</key>
+			<string></string>
+			<key>username</key>
+			<string></string>
+			<key>apn</key>
+			<string>internet</string>
+			<key>type-mask</key>
+			<integer>1081345</integer>
+			<key>AllowedProtocolMask</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>password</key>
+			<string></string>
+			<key>username</key>
+			<string></string>
+			<key>apn</key>
+			<string>hotspot</string>
+			<key>type-mask</key>
+			<integer>48</integer>
+			<key>AllowedProtocolMask</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>password</key>
+			<string></string>
+			<key>username</key>
+			<string></string>
+			<key>apn</key>
+			<string>ims</string>
+			<key>type-mask</key>
+			<integer>131072</integer>
+			<key>AllowedProtocolMask</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>password</key>
+			<string></string>
+			<key>username</key>
+			<string></string>
+			<key>apn</key>
+			<string></string>
+			<key>type-mask</key>
+			<integer>262144</integer>
+			<key>AllowedProtocolMask</key>
+			<integer>3</integer>
+		</dict>
+	</array>
+	<key>OTASoftwareUpdate</key>
+	<dict>
+		<key>SoftwareUpdateOptInRequired</key>
+		<true/>
+	</dict>
+</dict>
+</plist>

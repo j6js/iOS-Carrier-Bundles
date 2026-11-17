@@ -2,6 +2,29 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>DerPriFileVersion</key>
+	<string>6.2.161</string>
+	<key>Show5GSwitch</key>
+	<true/>
+	<key>SatelliteAccessInfo</key>
+	<dict>
+		<key>Tier</key>
+		<integer>5</integer>
+	</dict>
+	<key>_Exclude</key>
+	<array>
+		<string>EnableLTEAfterUpgrade</string>
+	</array>
+	<key>ShowHighDataModeSwitch</key>
+	<true/>
+	<key>Show3GSwitchWith5G</key>
+	<true/>
+	<key>SatelliteNoDataSuspendDelayTimeout</key>
+	<integer>1</integer>
+	<key>DerPriFileName</key>
+	<string>overrides_V53_V54_V57.der.pri</string>
+	<key>SatelliteSystemName</key>
+	<string>G Starlink</string>
 	<key>CarrierEntitlements</key>
 	<dict>
 		<key>SupportedEntitlements</key>
@@ -15,27 +38,19 @@
 		<key>SupportSecureIntent</key>
 		<true/>
 	</dict>
-	<key>ShowHighDataModeSwitch</key>
+	<key>SatelliteSystemTransitionTimeToAllowed</key>
+	<integer>15</integer>
+	<key>Show4GSwitchWith5G</key>
+	<true/>
+	<key>Show5GWarningUnsupportedCarrier</key>
+	<false/>
+	<key>SupportsSatellite</key>
 	<true/>
 	<key>Enable5GAutoByDefault</key>
 	<true/>
-	<key>DerPriFileName</key>
-	<string>overrides_V53_V54_V57.der.pri</string>
-	<key>DerPriFileVersion</key>
-	<string>0.1.161</string>
-	<key>Show5GWarningUnsupportedCarrier</key>
-	<false/>
-	<key>Show3GSwitchWith5G</key>
+	<key>ShowSatelliteSwitch</key>
 	<true/>
 	<key>SupportsNRNSAInboundRoaming</key>
 	<true/>
-	<key>Show4GSwitchWith5G</key>
-	<true/>
-	<key>Show5GSwitch</key>
-	<true/>
-	<key>_Exclude</key>
-	<array>
-		<string>EnableLTEAfterUpgrade</string>
-	</array>
 </dict>
 </plist>

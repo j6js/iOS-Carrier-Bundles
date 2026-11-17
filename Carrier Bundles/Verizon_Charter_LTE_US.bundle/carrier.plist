@@ -1145,6 +1145,8 @@ Hjud2pQ=</string>
 		</array>
 		<key>MinCompatibleWatchOS</key>
 		<string>7.2</string>
+		<key>MinCompatibleWatchOSForStandaloneMode</key>
+		<string>27.2</string>
 		<key>ProvisioningMethod</key>
 		<string>CarrierFlow</string>
 		<key>SupportsFauxCard</key>

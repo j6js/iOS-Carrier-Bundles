@@ -19,6 +19,8 @@
 		</dict>
 		<key>TransferWebservicesTimeout</key>
 		<integer>95</integer>
+		<key>SupportCrossPlatformSIMTransfer</key>
+		<true/>
 		<key>ServerAddress</key>
 		<string>https://hpdegprod.jio.com:8181/ium-OEMInterface/servlet/IUMServlet</string>
 		<key>SupportPhysicalSIMtoESIMTransfer</key>
@@ -27,6 +29,13 @@
 		<true/>
 		<key>UpdatePeriod</key>
 		<integer>24</integer>
+	</dict>
+	<key>MaxHOAttemptsToCellularForIMS</key>
+	<string>1</string>
+	<key>OTASoftwareUpdate</key>
+	<dict>
+		<key>SoftwareUpdateOptInRequired</key>
+		<true/>
 	</dict>
 	<key>CellularPlanProvisioningSettings</key>
 	<dict>
@@ -42,13 +51,6 @@
 		<key>ServiceImpactOnProvisioning</key>
 		<true/>
 	</dict>
-	<key>OTASoftwareUpdate</key>
-	<dict>
-		<key>SoftwareUpdateOptInRequired</key>
-		<true/>
-	</dict>
-	<key>ShouldHideAllVoicemailUI</key>
-	<true/>
 	<key>AttachAPN</key>
 	<dict>
 		<key>3GPP</key>
@@ -65,6 +67,8 @@
 			<integer>3</integer>
 		</dict>
 	</dict>
+	<key>ShouldHideAllVoicemailUI</key>
+	<true/>
 	<key>SupportsUserBusyCauseCode</key>
 	<true/>
 	<key>PhoneAccountTransfer</key>
@@ -338,15 +342,8 @@
 			<integer>2</integer>
 		</dict>
 	</array>
-	<key>SuppressSimToolkitSendShortMessageNotifications</key>
-	<true/>
 	<key>IgnoresDeactivateOnNetworkScanServiceMask</key>
 	<integer>393216</integer>
-	<key>SMSSettings</key>
-	<dict>
-		<key>TransportFallback</key>
-		<false/>
-	</dict>
 	<key>IMSConfig</key>
 	<dict>
 		<key>Signaling</key>
@@ -559,6 +556,13 @@
 			<true/>
 		</dict>
 	</dict>
+	<key>SMSSettings</key>
+	<dict>
+		<key>TransportFallback</key>
+		<false/>
+	</dict>
+	<key>SuppressSimToolkitSendShortMessageNotifications</key>
+	<true/>
 	<key>VVMIgnoresIntlDataRoaming</key>
 	<false/>
 	<key>AllowedServicesTypeMaskOnInternet</key>

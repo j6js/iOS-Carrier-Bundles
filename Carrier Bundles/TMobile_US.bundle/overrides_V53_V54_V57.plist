@@ -29,7 +29,7 @@
 	<key>Enable5GAutoAfterUpgrade</key>
 	<true/>
 	<key>DerPriFileVersion</key>
-	<string>6.2.161</string>
+	<string>6.2.162</string>
 	<key>IPv6SupportedDataModeMask</key>
 	<integer>106527</integer>
 	<key>MVNOOverrides</key>
@@ -39,7 +39,7 @@
 			<key>OverrideConfiguration</key>
 			<dict>
 				<key>DerPriFileVersion</key>
-				<string>6.2.161</string>
+				<string>6.2.162</string>
 				<key>DerPriFileName</key>
 				<string>overrides_mvno1_V53_V54_V57.der.pri</string>
 				<key>ShowSatelliteSwitch</key>

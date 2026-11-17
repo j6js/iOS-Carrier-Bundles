@@ -74,7 +74,7 @@
 			</dict>
 		</array>
 		<key>WifiCallingAllowedInRoaming</key>
-		<false/>
+		<true/>
 		<key>WiFiCallingControlsAlliWLanServices</key>
 		<true/>
 		<key>5wiServiceMask</key>
